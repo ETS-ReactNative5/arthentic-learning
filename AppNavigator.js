@@ -9,10 +9,16 @@ import theme from './themes/DraftbitTheme.js';
 import LinkingConfiguration from './LinkingConfiguration.js';
 
 import ArtistScreen from './screens/ArtistScreen';
+import AvoidingScamsScreen from './screens/AvoidingScamsScreen';
+import BlockchainScreen from './screens/BlockchainScreen';
 import CollectorScreen from './screens/CollectorScreen';
+import DAOsScreen from './screens/DAOsScreen';
+import EconomicsBasicsScreen from './screens/EconomicsBasicsScreen';
 import FeedbackScreen from './screens/FeedbackScreen';
 import InvestorScreen from './screens/InvestorScreen';
 import UniversalScreen from './screens/UniversalScreen';
+import WalletsScreen from './screens/WalletsScreen';
+import Web30Screen from './screens/Web30Screen';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -147,6 +153,36 @@ export default function RootAppNavigator() {
           name="FeedbackScreen"
           component={FeedbackScreen}
           options={{ title: 'Feedback' }}
+        />
+        <Stack.Screen
+          name="EconomicsBasicsScreen"
+          component={EconomicsBasicsScreen}
+          options={{ title: 'Economics Basics' }}
+        />
+        <Stack.Screen
+          name="Web30Screen"
+          component={Web30Screen}
+          options={{ title: 'Web 3.0' }}
+        />
+        <Stack.Screen
+          name="BlockchainScreen"
+          component={BlockchainScreen}
+          options={{ title: 'Blockchain' }}
+        />
+        <Stack.Screen
+          name="WalletsScreen"
+          component={WalletsScreen}
+          options={{ title: 'Wallets' }}
+        />
+        <Stack.Screen
+          name="DAOsScreen"
+          component={DAOsScreen}
+          options={{ title: 'DAOs' }}
+        />
+        <Stack.Screen
+          name="AvoidingScamsScreen"
+          component={AvoidingScamsScreen}
+          options={{ title: 'Avoiding Scams' }}
         />
         <Stack.Screen
           name="BottomTabNavigator"

@@ -38,8 +38,8 @@ const FeedbackScreen = props => {
               styles.ButtonSolidsK,
               {
                 color: theme.colors.light,
-                borderRadius: 12,
                 backgroundColor: theme.colors.mediumInverse,
+                borderRadius: 12,
               },
             ]}
             title={'Back to\nLearning'}
@@ -187,20 +187,26 @@ const styles = StyleSheet.create({
   TextFieldEL: {
     fontSize: 18,
     fontFamily: 'Roboto_400Regular',
-    marginTop: 18,
-    marginBottom: 18,
+    marginTop: 12,
+    marginBottom: 12,
+    paddingTop: 8,
+    paddingBottom: 8,
   },
   TextFieldEi: {
     fontSize: 18,
     fontFamily: 'Roboto_400Regular',
-    marginBottom: 18,
-    marginTop: 18,
+    marginBottom: 12,
+    marginTop: 12,
+    paddingTop: 8,
+    paddingBottom: 8,
   },
   TextFieldWp: {
     fontSize: 18,
     fontFamily: 'Roboto_400Regular',
-    marginTop: 18,
-    marginBottom: 18,
+    marginTop: 12,
+    marginBottom: 12,
+    paddingBottom: 12,
+    paddingTop: 12,
   },
   Viewvw: {
     marginTop: 50,

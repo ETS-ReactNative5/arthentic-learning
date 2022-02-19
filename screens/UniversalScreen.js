@@ -67,7 +67,15 @@ const UniversalScreen = props => {
 
         <View style={styles.Viewwv} pointerEvents={'auto'}>
           <View style={styles.ViewPC} pointerEvents={'auto'}>
-            <Touchable>
+            <Touchable
+              onPress={() => {
+                try {
+                  navigation.navigate('EconomicsBasicsScreen');
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+            >
               <View style={styles.ViewF7} pointerEvents={'auto'}>
                 <Circle size={80} bgColor={theme.colors.secondary}>
                   <Circle size={70} bgColor={theme.colors.divider}>
@@ -85,7 +93,15 @@ const UniversalScreen = props => {
               </View>
             </Touchable>
 
-            <Touchable>
+            <Touchable
+              onPress={() => {
+                try {
+                  navigation.navigate('Web30Screen');
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+            >
               <View style={styles.ViewFe} pointerEvents={'auto'}>
                 <Circle size={80} bgColor={theme.colors.secondary}>
                   <Circle size={70} bgColor={theme.colors.divider}>
@@ -103,27 +119,15 @@ const UniversalScreen = props => {
               </View>
             </Touchable>
 
-            <Touchable>
-              <View style={styles.ViewTe} pointerEvents={'auto'}>
-                <Circle size={80} bgColor={theme.colors.secondary}>
-                  <Circle size={70} bgColor={theme.colors.divider}>
-                    <Icon
-                      size={32}
-                      color={theme.colors.primary}
-                      name={'Ionicons/wallet-outline'}
-                    />
-                  </Circle>
-                </Circle>
-
-                <Text style={[styles.TextV3, { color: theme.colors.light }]}>
-                  {'Crypto Wallets'}
-                </Text>
-              </View>
-            </Touchable>
-          </View>
-
-          <View style={styles.Viewya} pointerEvents={'auto'}>
-            <Touchable>
+            <Touchable
+              onPress={() => {
+                try {
+                  navigation.navigate('BlockchainScreen');
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+            >
               <View style={styles.ViewWU} pointerEvents={'auto'}>
                 <Circle size={80} bgColor={theme.colors.secondary}>
                   <Circle size={70} bgColor={theme.colors.divider}>
@@ -140,8 +144,44 @@ const UniversalScreen = props => {
                 </Text>
               </View>
             </Touchable>
+          </View>
 
-            <Touchable>
+          <View style={styles.Viewya} pointerEvents={'auto'}>
+            <Touchable
+              onPress={() => {
+                try {
+                  navigation.navigate('WalletsScreen');
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+            >
+              <View style={styles.ViewTe} pointerEvents={'auto'}>
+                <Circle size={80} bgColor={theme.colors.secondary}>
+                  <Circle size={70} bgColor={theme.colors.divider}>
+                    <Icon
+                      size={32}
+                      color={theme.colors.primary}
+                      name={'Ionicons/wallet-outline'}
+                    />
+                  </Circle>
+                </Circle>
+
+                <Text style={[styles.TextV3, { color: theme.colors.light }]}>
+                  {'Crypto Wallets'}
+                </Text>
+              </View>
+            </Touchable>
+
+            <Touchable
+              onPress={() => {
+                try {
+                  navigation.navigate('DAOsScreen');
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+            >
               <View style={styles.Viewhj} pointerEvents={'auto'}>
                 <Circle size={80} bgColor={theme.colors.secondary}>
                   <Circle size={70} bgColor={theme.colors.divider}>
@@ -159,7 +199,15 @@ const UniversalScreen = props => {
               </View>
             </Touchable>
 
-            <Touchable>
+            <Touchable
+              onPress={() => {
+                try {
+                  navigation.navigate('AvoidingScamsScreen');
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+            >
               <View style={styles.ViewkL} pointerEvents={'auto'}>
                 <Circle size={80} bgColor={theme.colors.secondary}>
                   <Circle size={70} bgColor={theme.colors.divider}>
@@ -231,11 +279,11 @@ const styles = StyleSheet.create({
     marginTop: 6,
     marginBottom: 6,
   },
-  TextV3: {
+  Textfc: {
     fontSize: 12,
     fontFamily: 'Roboto_400Regular',
   },
-  ViewTe: {
+  ViewWU: {
     alignItems: 'center',
     marginTop: 6,
     marginBottom: 6,
@@ -244,11 +292,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-evenly',
   },
-  Textfc: {
+  TextV3: {
     fontSize: 12,
     fontFamily: 'Roboto_400Regular',
   },
-  ViewWU: {
+  ViewTe: {
     alignItems: 'center',
     marginTop: 6,
     marginBottom: 6,

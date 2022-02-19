@@ -106,6 +106,28 @@ const InvestorScreen = props => {
             </Touchable>
           </View>
         </View>
+
+        <View pointerEvents={'auto'}>
+          <View style={styles.View_8o} pointerEvents={'auto'}>
+            <Touchable>
+              <View style={styles.ViewLb} pointerEvents={'auto'}>
+                <Circle size={80} bgColor={theme.colors.secondary}>
+                  <Circle size={70} bgColor={theme.colors.divider}>
+                    <Icon
+                      size={32}
+                      color={theme.colors.primary}
+                      name={'FontAwesome/balance-scale'}
+                    />
+                  </Circle>
+                </Circle>
+
+                <Text style={[styles.TextyX, { color: theme.colors.light }]}>
+                  {'US Crypto\nLaws'}
+                </Text>
+              </View>
+            </Touchable>
+          </View>
+        </View>
       </LinearGradient>
     </ScreenContainer>
   );
@@ -171,6 +193,20 @@ const styles = StyleSheet.create({
   },
   View_5Y: {
     flexDirection: 'row',
+    justifyContent: 'space-evenly',
+  },
+  TextyX: {
+    fontSize: 12,
+    fontFamily: 'Roboto_400Regular',
+    textAlign: 'center',
+  },
+  ViewLb: {
+    alignItems: 'center',
+    marginTop: 6,
+    marginBottom: 6,
+  },
+  View_8o: {
+    alignItems: 'center',
     justifyContent: 'space-evenly',
   },
   LinearGradientBE: {

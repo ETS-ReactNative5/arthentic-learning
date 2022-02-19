@@ -3,6 +3,7 @@ import { Asset } from 'expo-asset';
 import * as Font from 'expo-font';
 import {
   Entypo,
+  FontAwesome,
   Ionicons,
   MaterialCommunityIcons,
   MaterialIcons,
@@ -28,6 +29,7 @@ export default function cacheAssetsAsync() {
   const imageAssets = cacheImages(Object.values(IMAGES));
   const iconAssets = cacheFonts([
     Entypo.font,
+    FontAwesome.font,
     Ionicons.font,
     MaterialCommunityIcons.font,
     MaterialIcons.font,
