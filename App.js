@@ -13,10 +13,7 @@ import cacheAssetsAsync from './config/cacheAssetsAsync';
 import { GlobalVariableProvider } from './config/GlobalVariableContext';
 import { useFonts } from 'expo-font';
 import { Roboto_400Regular } from '@expo-google-fonts/roboto';
-import {
-  RobotoCondensed_400Regular,
-  RobotoCondensed_700Bold,
-} from '@expo-google-fonts/roboto-condensed';
+import { RobotoCondensed_400Regular } from '@expo-google-fonts/roboto-condensed';
 
 const queryClient = new QueryClient();
 
@@ -25,7 +22,12 @@ const App = () => {
   const [fontsLoaded] = useFonts({
     RobotoCondensed_400Regular,
     RobotoCondensed_400Regular,
-    RobotoCondensed_700Bold,
+    RobotoCondensed_400Regular,
+    RobotoCondensed_400Regular,
+    RobotoCondensed_400Regular,
+    Roboto_400Regular,
+    Roboto_400Regular,
+    Roboto_400Regular,
     Roboto_400Regular,
     Roboto_400Regular,
   });

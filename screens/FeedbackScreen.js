@@ -11,6 +11,7 @@ import { Image, StyleSheet, Text, View } from 'react-native';
 
 const FeedbackScreen = props => {
   const { theme } = props;
+  const { navigation } = props;
 
   const [textAreaValue, setTextAreaValue] = React.useState('');
   const [textFieldValue, setTextFieldValue] = React.useState('');
@@ -26,6 +27,13 @@ const FeedbackScreen = props => {
       >
         <View style={styles.View_2m} pointerEvents={'auto'}>
           <ButtonSolid
+            onPress={() => {
+              try {
+                navigation.goBack();
+              } catch (err) {
+                console.error(err);
+              }
+            }}
             style={[
               styles.ButtonSolidsK,
               {
