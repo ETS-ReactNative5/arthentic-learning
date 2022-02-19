@@ -16,6 +16,8 @@ import DAOsScreen from './screens/DAOsScreen';
 import EconomicsBasicsScreen from './screens/EconomicsBasicsScreen';
 import FeedbackScreen from './screens/FeedbackScreen';
 import InvestorScreen from './screens/InvestorScreen';
+import MetaverseScreen from './screens/MetaverseScreen';
+import NFTsScreen from './screens/NFTsScreen';
 import UniversalScreen from './screens/UniversalScreen';
 import WalletsScreen from './screens/WalletsScreen';
 import Web30Screen from './screens/Web30Screen';
@@ -183,6 +185,16 @@ export default function RootAppNavigator() {
           name="AvoidingScamsScreen"
           component={AvoidingScamsScreen}
           options={{ title: 'Avoiding Scams' }}
+        />
+        <Stack.Screen
+          name="MetaverseScreen"
+          component={MetaverseScreen}
+          options={{ title: 'Metaverse' }}
+        />
+        <Stack.Screen
+          name="NFTsScreen"
+          component={NFTsScreen}
+          options={{ title: 'NFTs' }}
         />
         <Stack.Screen
           name="BottomTabNavigator"

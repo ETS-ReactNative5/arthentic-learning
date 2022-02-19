@@ -67,7 +67,15 @@ const ArtistScreen = props => {
 
         <View style={styles.ViewqG} pointerEvents={'auto'}>
           <View style={styles.ViewmV} pointerEvents={'auto'}>
-            <Touchable>
+            <Touchable
+              onPress={() => {
+                try {
+                  navigation.navigate('MetaverseScreen');
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+            >
               <View style={styles.Viewqb} pointerEvents={'auto'}>
                 <Circle size={80} bgColor={theme.colors.secondary}>
                   <Circle size={70} bgColor={theme.colors.divider}>
