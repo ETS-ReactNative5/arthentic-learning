@@ -13,32 +13,32 @@ import {
 import * as Linking from 'expo-linking';
 import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 
-const EconomicsBasicsScreen = props => {
+const CryptocurrencyScreen = props => {
   const { theme } = props;
   const { navigation } = props;
 
   return (
     <ScreenContainer>
       <LinearGradient
-        style={styles.LinearGradient_31}
+        style={styles.LinearGradientyK}
         endY={100}
         endX={100}
         color1={theme.colors.background}
         color2={theme.colors.lightInverse}
       >
-        <View style={styles.ViewVz} pointerEvents={'auto'}>
+        <View style={styles.ViewCa} pointerEvents={'auto'}>
           <ButtonSolid
             onPress={() => {
               try {
                 navigation.navigate('BottomTabNavigator', {
-                  screen: 'UniversalScreen',
+                  screen: 'InvestorScreen',
                 });
               } catch (err) {
                 console.error(err);
               }
             }}
             style={[
-              styles.ButtonSolid_7Z,
+              styles.ButtonSolidXd,
               {
                 color: theme.colors.light,
                 backgroundColor: theme.colors.mediumInverse,
@@ -56,7 +56,7 @@ const EconomicsBasicsScreen = props => {
               }
             }}
             style={[
-              styles.ButtonSolidXi,
+              styles.ButtonSolidjI,
               {
                 color: theme.colors.light,
                 borderRadius: 12,
@@ -67,9 +67,9 @@ const EconomicsBasicsScreen = props => {
           />
         </View>
 
-        <View style={styles.ViewFu} pointerEvents={'auto'}>
+        <View style={styles.ViewUa} pointerEvents={'auto'}>
           <Image
-            style={styles.Imagez9}
+            style={styles.ImagebN}
             source={Images.TransparentLogoMark}
             resizeMode={'cover'}
           />
@@ -77,356 +77,296 @@ const EconomicsBasicsScreen = props => {
 
         <View
           style={[
-            styles.ViewTK,
+            styles.Views6,
             { backgroundColor: theme.colors.lightInverse, borderRadius: 12 },
           ]}
           pointerEvents={'auto'}
         >
-          <Text style={[styles.Texty3, { color: theme.colors.surface }]}>
-            {'Economics Basics'}
+          <Text style={[styles.TextWk, { color: theme.colors.surface }]}>
+            {'Cryptocurrency'}
           </Text>
         </View>
 
         <ScrollView showsVerticalScrollIndicator={false} bounces={true}>
           <Swiper
-            style={styles.Swiper_1S}
+            style={styles.SwiperkU}
             dotActiveColor={theme.colors.primary}
             dotsTouchable={true}
             dotColor={theme.colors.background}
             loop={true}
+            from={4}
           >
-            <SwiperItem style={styles.SwiperItemfo}>
+            <SwiperItem style={styles.SwiperItemzS}>
               <Image
-                style={styles.Imaget1}
+                style={styles.ImageUd}
                 source={{
                   uri: 'https://static.draftbit.com/images/placeholder-image.png',
                 }}
                 resizeMode={'cover'}
               />
-              <Text style={[styles.Text_5g, { color: theme.colors.light }]}>
-                {'Supply and Demand'}
+              <Text style={[styles.TextC0, { color: theme.colors.light }]}>
+                {'Currency is Now Fully Digital'}
               </Text>
 
-              <View style={styles.Viewn5} pointerEvents={'auto'}>
+              <View style={styles.Viewkn} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.Icon_4t}
+                  style={styles.Icon_3N}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/shopping-bag'}
+                  name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.Textlr, { color: theme.colors.light }]}>
+                <Text style={[styles.TextjN, { color: theme.colors.light }]}>
                   {
-                    'Supply is the quantity of something for sale, like the number of apples at an apple stand.\n'
+                    'Cryptocurrencies allow the transaction of any type of value without intermediaries.\n'
                   }
                 </Text>
               </View>
 
-              <View style={styles.ViewBz} pointerEvents={'auto'}>
+              <View style={styles.Viewsh} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.IconD3}
-                  name={'Ionicons/ios-people-circle'}
+                  style={styles.Icon_2E}
                   size={24}
                   color={theme.colors.light}
+                  name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.TextYe, { color: theme.colors.light }]}>
+                <Text style={[styles.Textm5, { color: theme.colors.light }]}>
                   {
-                    'Demand is how much of the product/service people want to buy.\n'
+                    'Running on the blockchain allows people to trust one another as all the transactions are visible on the ledger.\n'
                   }
                 </Text>
               </View>
 
-              <View style={styles.ViewAn} pointerEvents={'auto'}>
+              <View style={styles.View_92} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.IconQ3}
+                  style={styles.Icongw}
                   size={24}
                   color={theme.colors.light}
-                  name={'MaterialCommunityIcons/trending-down'}
+                  name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.Textxg, { color: theme.colors.light }]}>
-                  {'When supply >(greater) demand, the price decreases.\n'}
-                </Text>
-              </View>
-
-              <View style={styles.ViewnJ} pointerEvents={'auto'}>
-                <Icon
-                  style={styles.IconOw}
-                  size={24}
-                  color={theme.colors.light}
-                  name={'MaterialCommunityIcons/trending-up'}
-                />
-                <Text style={[styles.TextcI, { color: theme.colors.light }]}>
-                  {'When supply <(less) demand, the price increases.\n'}
+                <Text style={[styles.TextaF, { color: theme.colors.light }]}>
+                  {
+                    'Both coins and tokens are cryptocurrency, but coins have their own blockchain, where tokens are run on another chain. Tokens can be turned into coins with adequate resources.\n'
+                  }
                 </Text>
               </View>
             </SwiperItem>
 
-            <SwiperItem style={styles.SwiperItemj8}>
+            <SwiperItem style={styles.SwiperItemGf}>
               <Image
-                style={styles.ImageR6}
+                style={styles.ImageIs}
                 source={{
                   uri: 'https://static.draftbit.com/images/placeholder-image.png',
                 }}
                 resizeMode={'cover'}
               />
-              <Text style={[styles.TextL2, { color: theme.colors.light }]}>
-                {'Types of Goods'}
+              <Text style={[styles.Texty0, { color: theme.colors.light }]}>
+                {'What Are Crypto Coins'}
               </Text>
 
-              <View style={styles.View_7i} pointerEvents={'auto'}>
+              <View style={styles.ViewV1} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.IconGA}
+                  style={styles.Icontz}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.Textjv, { color: theme.colors.light }]}>
+                <Text style={[styles.Text_9O, { color: theme.colors.light }]}>
                   {
-                    'Increase in income leads to an increase in demand for Normal Goods.\n'
+                    'Coins are like virtual money, used to buy both internet and real-life stuff.\n'
                   }
                 </Text>
               </View>
 
-              <View style={styles.Viewx5} pointerEvents={'auto'}>
+              <View style={styles.Viewqf} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.Icon_6P}
+                  style={styles.IconRx}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.TextNb, { color: theme.colors.light }]}>
+                <Text style={[styles.TexteB, { color: theme.colors.light }]}>
                   {
-                    'When income rises, people spend a higher percentage of their income on Luxury Goods. Ex. HD TVs, Jewelry, are bought by people with disposable income\n'
+                    'Stable Coins have a value based on the value of a government currency, exchange-traded commodities(ETFs), or another cryptocurrency.\n'
                   }
                 </Text>
               </View>
 
-              <View style={styles.View_7K} pointerEvents={'auto'}>
+              <View style={styles.Viewdb} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.IconZB}
+                  style={styles.Icon_5a}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.Text_0u, { color: theme.colors.light }]}>
+                <Text style={[styles.TextL4, { color: theme.colors.light }]}>
                   {
-                    'Increased income leads to less demand for Inferior Goods. Ex. Can of soup, fast food, instant noodles\n'
+                    'Examples of Coins: Ethereum, XRP, Polkadot, Litecoin, Binance Coin, EOS, Tezos, Monero, NEM, ZCash, Dash, Dogecoin'
                   }
                 </Text>
               </View>
             </SwiperItem>
 
-            <SwiperItem style={styles.SwiperItemuh}>
+            <SwiperItem style={styles.SwiperItemNh}>
               <Image
-                style={styles.ImageDZ}
+                style={styles.Imageld}
                 source={{
                   uri: 'https://static.draftbit.com/images/placeholder-image.png',
                 }}
                 resizeMode={'cover'}
               />
-              <Text style={[styles.Textec, { color: theme.colors.light }]}>
-                {'Inflation'}
+              <Text style={[styles.Text_0c, { color: theme.colors.light }]}>
+                {'What Are Crypto Tokens'}
               </Text>
 
-              <View style={styles.Viewnu} pointerEvents={'auto'}>
+              <View style={styles.ViewOR} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.Iconbd}
+                  style={styles.IconK3}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.Textfu, { color: theme.colors.light }]}>
+                <Text style={[styles.Text_9Q, { color: theme.colors.light }]}>
                   {
-                    'When the average price of virtually everything consumers buy goes up.\n'
+                    'Tokens give users property rights, the ability to own a piece of the internet.\n'
                   }
                 </Text>
               </View>
 
-              <View style={styles.Viewq2} pointerEvents={'auto'}>
+              <View style={styles.Viewl0} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.Iconit}
+                  style={styles.IconVQ}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.Textad, { color: theme.colors.light }]}>
+                <Text style={[styles.TextDq, { color: theme.colors.light }]}>
                   {
-                    'Demand-Pull: When demand for goods/services exceeds production capacity.\n'
+                    'Wrapped Tokens: A token that represents a cryptocurrency from another blockchain or token standard; the wrapped token can be used on certain non-native blockchains and later redeemed for the original cryptocurrency.\n'
                   }
                 </Text>
               </View>
 
-              <View style={styles.Viewyz} pointerEvents={'auto'}>
+              <View style={styles.ViewO9} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.IconCT}
+                  style={styles.Icon_92}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.Text_2M, { color: theme.colors.light }]}>
-                  {'Cost-Push: When production costs increase prices.'}
-                </Text>
-              </View>
-
-              <View style={styles.Viewat} pointerEvents={'auto'}>
-                <Icon
-                  style={styles.Icons3}
-                  size={24}
-                  color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
-                />
-                <Text style={[styles.TextAD, { color: theme.colors.light }]}>
+                <Text style={[styles.TextuV, { color: theme.colors.light }]}>
                   {
-                    'Built-In: When prices rise, wages rise too, in order to maintain living costs.'
+                    'Examples of Tokens: Utility Tokens, Security Tokens, Asset Tokens, Stablecoins, Payment Tokens, Equity Tokens and Non-Fungible Tokens (NFTs)'
                   }
                 </Text>
               </View>
             </SwiperItem>
 
-            <SwiperItem style={styles.SwiperItemlg}>
-              <Image
-                style={styles.ImageMH}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
-                resizeMode={'cover'}
-              />
-              <Text style={[styles.TextTv, { color: theme.colors.light }]}>
-                {'Elasticity'}
+            <SwiperItem style={styles.SwiperItemIN}>
+              <Text style={[styles.TextCE, { color: theme.colors.light }]}>
+                {'Airdrop'}
               </Text>
 
-              <View style={styles.ViewV0} pointerEvents={'auto'}>
+              <View style={styles.ViewRU} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.Iconzc}
+                  style={styles.IconDI}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.TextnA, { color: theme.colors.light }]}>
+                <Text style={[styles.TextNB, { color: theme.colors.light }]}>
                   {
-                    'The measure of how much demand for a good changes when the price increases or decreases.\n'
+                    'A distribution of a cryptocurrency token or coin, usually for free, to numerous wallet addresses. Airdrops are a way of gaining attention, building goodwill and incentivizing adoption.\n'
                   }
                 </Text>
               </View>
 
-              <View style={styles.ViewcT} pointerEvents={'auto'}>
+              <Text style={[styles.Textcp, { color: theme.colors.light }]}>
+                {'Staking'}
+              </Text>
+
+              <View style={styles.Viewqo} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.IconQb}
+                  style={styles.IconNz}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.Textyo, { color: theme.colors.light }]}>
+                <Text style={[styles.TextMC, { color: theme.colors.light }]}>
                   {
-                    'When the demand doesn’t change as much the good is Inelastic.\n'
+                    'A way of earning rewards for holding certain cryptocurrencies.'
                   }
                 </Text>
               </View>
 
-              <View style={styles.ViewWs} pointerEvents={'auto'}>
+              <Text style={[styles.TextaB, { color: theme.colors.light }]}>
+                {'Burning'}
+              </Text>
+
+              <View style={styles.View_3J} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.Iconeb}
+                  style={styles.IconC5}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.TextAh, { color: theme.colors.light }]}>
+                <Text style={[styles.TextnE, { color: theme.colors.light }]}>
+                  {'Removing coins/tokens from the available supply.'}
+                </Text>
+              </View>
+
+              <Text style={[styles.Text_8f, { color: theme.colors.light }]}>
+                {'ICO (Initial Coin Offering)'}
+              </Text>
+
+              <View style={styles.View_4p} pointerEvents={'auto'}>
+                <Icon
+                  style={styles.IconXH}
+                  size={24}
+                  color={theme.colors.light}
+                  name={'FontAwesome/dot-circle-o'}
+                />
+                <Text style={[styles.Textkb, { color: theme.colors.light }]}>
                   {
-                    'When the demand changes due to price, the product is known as Elastic.'
+                    'Initial Coin Offerings are a method of raising funds for a new crypto project. '
                   }
+                </Text>
+              </View>
+
+              <View style={styles.View_7c} pointerEvents={'auto'}>
+                <Icon
+                  style={styles.IconmO}
+                  size={24}
+                  color={theme.colors.light}
+                  name={'FontAwesome/dot-circle-o'}
+                />
+                <Text style={[styles.Text_1d, { color: theme.colors.light }]}>
+                  {
+                    'It is the cryptocurrency equivalent of an Initial Public Offering (IPO).'
+                  }
+                </Text>
+              </View>
+
+              <View style={styles.Viewzb} pointerEvents={'auto'}>
+                <Icon
+                  style={styles.IcontJ}
+                  size={24}
+                  color={theme.colors.light}
+                  name={'FontAwesome/dot-circle-o'}
+                />
+                <Text style={[styles.TextPx, { color: theme.colors.light }]}>
+                  {'Always do research before investing in a new project.'}
                 </Text>
               </View>
             </SwiperItem>
 
-            <SwiperItem style={styles.SwiperItemiv}>
-              <Image
-                style={styles.ImageDj}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
-                resizeMode={'cover'}
-              />
-              <Text style={[styles.TextD9, { color: theme.colors.light }]}>
-                {'Opportunity Cost and Scarcity'}
-              </Text>
-
-              <View style={styles.ViewU8} pointerEvents={'auto'}>
-                <Icon
-                  style={styles.Icon_3V}
-                  size={24}
-                  color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
-                />
-                <Text style={[styles.Textux, { color: theme.colors.light }]}>
-                  {
-                    'In most economics, the theory is that people have more wants than can be fulfilled. The loss of potential gain from other alternatives when one alternative is chosen is called its opportunity cost.\n'
-                  }
-                </Text>
-              </View>
-
-              <View style={styles.ViewpP} pointerEvents={'auto'}>
-                <Icon
-                  style={styles.IconnV}
-                  size={24}
-                  color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
-                />
-                <Text style={[styles.TextbO, { color: theme.colors.light }]}>
-                  {
-                    'Another major assumption of economics is Scarcity, or the idea that there aren’t enough resources to give everyone what they want.\n'
-                  }
-                </Text>
-              </View>
-            </SwiperItem>
-
-            <SwiperItem style={styles.SwiperItemB3}>
-              <Image
-                style={styles.ImagehS}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
-                resizeMode={'cover'}
-              />
-              <Text style={[styles.TextRO, { color: theme.colors.light }]}>
-                {'Bear vs Bull Markets'}
-              </Text>
-
-              <View style={styles.Viewwz} pointerEvents={'auto'}>
-                <Icon
-                  style={styles.IconA7}
-                  size={24}
-                  color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
-                />
-                <Text style={[styles.Textb1, { color: theme.colors.light }]}>
-                  {
-                    'Bull markets are when people are excited about the market and investments generally rise.\n'
-                  }
-                </Text>
-              </View>
-
-              <View style={styles.ViewLf} pointerEvents={'auto'}>
-                <Icon
-                  style={styles.Iconaw}
-                  size={24}
-                  color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
-                />
-                <Text style={[styles.TextAl, { color: theme.colors.light }]}>
-                  {
-                    'Bear markets are the opposite of bull markets, where the investment sentiment is low and investments generally decrease.\n'
-                  }
-                </Text>
-              </View>
-            </SwiperItem>
-
-            <SwiperItem style={styles.SwiperItemN7}>
-              <Text style={[styles.Textke, { color: theme.colors.light }]}>
+            <SwiperItem style={styles.SwiperItem_1y}>
+              <Text style={[styles.TextcU, { color: theme.colors.light }]}>
                 {'Sources'}
               </Text>
 
-              <View style={styles.ViewkV} pointerEvents={'auto'}>
+              <View style={styles.ViewdH} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.IconR1}
+                  style={styles.Iconwv}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
@@ -435,20 +375,20 @@ const EconomicsBasicsScreen = props => {
                   onPress={() => {
                     try {
                       Linking.openURL(
-                        'https://teachers.stjohns.k12.fl.us/keefe-t/files/2014/11/Economics-for-Dummies.pdf'
+                        'https://www.ledger.com/academy/basic-basics/about-crypto/what-is-cryptocurrency '
                       );
                     } catch (err) {
                       console.error(err);
                     }
                   }}
                   style={{ color: theme.colors.primary }}
-                  title={'St. Johns: Economics for K-12'}
+                  title={'Ledger Explains Cryptocurrency'}
                 />
               </View>
 
-              <View style={styles.Viewjg} pointerEvents={'auto'}>
+              <View style={styles.Viewx9} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.Iconqr}
+                  style={styles.IconxZ}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
@@ -457,36 +397,80 @@ const EconomicsBasicsScreen = props => {
                   onPress={() => {
                     try {
                       Linking.openURL(
-                        'https://faculty.washington.edu/cnelson/Chap01.pdf'
+                        'https://www.oswego.edu/cts/basics-about-cryptocurrency'
                       );
                     } catch (err) {
                       console.error(err);
                     }
                   }}
                   style={{ color: theme.colors.primary }}
-                  title={'Washington University'}
+                  title={'State University of New York on Cryptocurrency'}
+                />
+              </View>
+
+              <View style={styles.ViewhD} pointerEvents={'auto'}>
+                <Icon
+                  style={styles.IconFo}
+                  size={24}
+                  color={theme.colors.light}
+                  name={'FontAwesome/dot-circle-o'}
+                />
+                <Link
+                  onPress={() => {
+                    try {
+                      Linking.openURL(
+                        'https://online.stanford.edu/future-for-cryptocurrency '
+                      );
+                    } catch (err) {
+                      console.error(err);
+                    }
+                  }}
+                  style={{ color: theme.colors.primary }}
+                  title={'Stanford on the Future of Cryptocurrency'}
+                />
+              </View>
+
+              <View style={styles.ViewEa} pointerEvents={'auto'}>
+                <Icon
+                  style={styles.IconWX}
+                  size={24}
+                  color={theme.colors.light}
+                  name={'FontAwesome/dot-circle-o'}
+                />
+                <Link
+                  onPress={() => {
+                    try {
+                      Linking.openURL(
+                        'https://www.investopedia.com/terms/i/initial-coin-offering-ico.asp#toc-what-is-an-initial-coin-offering-ico'
+                      );
+                    } catch (err) {
+                      console.error(err);
+                    }
+                  }}
+                  style={{ color: theme.colors.primary }}
+                  title={'Investopedia Defines ICOs'}
                 />
               </View>
             </SwiperItem>
           </Swiper>
 
-          <View style={styles.Viewoa} pointerEvents={'auto'}>
+          <View style={styles.ViewsY} pointerEvents={'auto'}>
             <ButtonSolid
               onPress={() => {
                 try {
-                  navigation.navigate('Web30Screen');
+                  navigation.navigate('DefiScreen');
                 } catch (err) {
                   console.error(err);
                 }
               }}
               style={[
-                styles.ButtonSolidtx,
+                styles.ButtonSolidYR,
                 {
                   backgroundColor: theme.colors.secondary,
                   color: theme.colors.primary,
                 },
               ]}
-              title={'Next Up:\nThe New Internet'}
+              title={'Next Up:\nDecentralized Finance'}
             />
           </View>
         </ScrollView>
@@ -496,33 +480,33 @@ const EconomicsBasicsScreen = props => {
 };
 
 const styles = StyleSheet.create({
-  ButtonSolid_7Z: {
+  ButtonSolidXd: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
     textAlign: 'center',
   },
-  ButtonSolidXi: {
+  ButtonSolidjI: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
-  ViewVz: {
+  ViewCa: {
     alignSelf: 'flex-end',
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '100%',
   },
-  Imagez9: {
+  ImagebN: {
     width: 75,
     height: 75,
   },
-  ViewFu: {
+  ViewUa: {
     alignItems: 'center',
   },
-  Texty3: {
+  TextWk: {
     fontSize: 24,
     fontFamily: 'RobotoCondensed_400Regular',
   },
-  ViewTK: {
+  Views6: {
     paddingTop: 16,
     paddingBottom: 16,
     width: 230,
@@ -533,349 +517,313 @@ const styles = StyleSheet.create({
     marginTop: 12,
     marginBottom: 24,
   },
-  Imaget1: {
+  ImageUd: {
     width: '100%',
     height: 200,
   },
-  Text_5g: {
+  TextC0: {
     marginTop: 12,
     marginBottom: 12,
     fontFamily: 'RobotoCondensed_400Regular',
     fontSize: 18,
   },
-  Icon_4t: {
+  Icon_3N: {
     right: 8,
   },
-  Textlr: {
+  TextjN: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
-  Viewn5: {
+  Viewkn: {
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 6,
   },
-  IconD3: {
+  Icon_2E: {
     right: 8,
   },
-  TextYe: {
+  Textm5: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
-  ViewBz: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: 6,
-    marginBottom: 6,
-  },
-  IconQ3: {
-    right: 8,
-  },
-  Textxg: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-  },
-  ViewAn: {
+  Viewsh: {
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 6,
     marginBottom: 6,
   },
-  IconOw: {
+  Icongw: {
     right: 8,
   },
-  TextcI: {
+  TextaF: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
-  ViewnJ: {
+  View_92: {
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 6,
     marginBottom: 6,
   },
-  SwiperItemfo: {
+  SwiperItemzS: {
     paddingLeft: 16,
     paddingRight: 16,
   },
-  ImageR6: {
+  ImageIs: {
     width: '100%',
     height: 200,
   },
-  TextL2: {
+  Texty0: {
     marginTop: 12,
     marginBottom: 12,
     fontFamily: 'RobotoCondensed_400Regular',
     fontSize: 18,
   },
-  IconGA: {
+  Icontz: {
     right: 8,
   },
-  Textjv: {
+  Text_9O: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
-  View_7i: {
+  ViewV1: {
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 6,
   },
-  Icon_6P: {
+  IconRx: {
     right: 8,
   },
-  TextNb: {
+  TexteB: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
-  Viewx5: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: 6,
-    marginBottom: 6,
-  },
-  IconZB: {
-    right: 8,
-  },
-  Text_0u: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-  },
-  View_7K: {
+  Viewqf: {
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 6,
     marginBottom: 6,
   },
-  SwiperItemj8: {
+  Icon_5a: {
+    right: 8,
+  },
+  TextL4: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
+  Viewdb: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 6,
+    marginBottom: 6,
+  },
+  SwiperItemGf: {
     paddingLeft: 16,
     paddingRight: 16,
   },
-  ImageDZ: {
+  Imageld: {
     width: '100%',
     height: 200,
   },
-  Textec: {
+  Text_0c: {
     marginTop: 12,
     marginBottom: 12,
     fontFamily: 'RobotoCondensed_400Regular',
     fontSize: 18,
   },
-  Iconbd: {
+  IconK3: {
     right: 8,
   },
-  Textfu: {
+  Text_9Q: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
-  Viewnu: {
+  ViewOR: {
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 6,
   },
-  Iconit: {
+  IconVQ: {
     right: 8,
   },
-  Textad: {
+  TextDq: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
-  Viewq2: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: 6,
-    marginBottom: 6,
-  },
-  IconCT: {
-    right: 8,
-  },
-  Text_2M: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-  },
-  Viewyz: {
+  Viewl0: {
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 6,
     marginBottom: 6,
   },
-  Icons3: {
+  Icon_92: {
     right: 8,
   },
-  TextAD: {
+  TextuV: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
-  Viewat: {
+  ViewO9: {
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 6,
     marginBottom: 6,
   },
-  SwiperItemuh: {
+  SwiperItemNh: {
     paddingLeft: 16,
     paddingRight: 16,
   },
-  ImageMH: {
+  TextCE: {
+    marginTop: 12,
+    marginBottom: 12,
+    fontFamily: 'RobotoCondensed_400Regular',
+    fontSize: 18,
+  },
+  IconDI: {
+    right: 8,
+  },
+  TextNB: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
+  ViewRU: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 6,
+  },
+  Textcp: {
+    marginTop: 12,
+    marginBottom: 12,
+    fontFamily: 'RobotoCondensed_400Regular',
+    fontSize: 18,
+  },
+  IconNz: {
+    right: 8,
+  },
+  TextMC: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
+  Viewqo: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 6,
+    marginBottom: 6,
+  },
+  TextaB: {
+    marginTop: 12,
+    marginBottom: 12,
+    fontFamily: 'RobotoCondensed_400Regular',
+    fontSize: 18,
+  },
+  IconC5: {
+    right: 8,
+  },
+  TextnE: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
+  View_3J: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 6,
+    marginBottom: 6,
+  },
+  Text_8f: {
+    marginTop: 12,
+    marginBottom: 12,
+    fontFamily: 'RobotoCondensed_400Regular',
+    fontSize: 18,
+  },
+  IconXH: {
+    right: 8,
+  },
+  Textkb: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
+  View_4p: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 6,
+    marginBottom: 6,
+  },
+  IconmO: {
+    right: 8,
+  },
+  Text_1d: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
+  View_7c: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 6,
+    marginBottom: 6,
+  },
+  IcontJ: {
+    right: 8,
+  },
+  TextPx: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
+  Viewzb: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 6,
+    marginBottom: 6,
+  },
+  SwiperItemIN: {
+    paddingLeft: 16,
+    paddingRight: 16,
+  },
+  TextcU: {
+    marginBottom: 12,
+    fontFamily: 'RobotoCondensed_400Regular',
+    fontSize: 18,
+  },
+  Iconwv: {
+    right: 8,
+  },
+  ViewdH: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 6,
+  },
+  IconxZ: {
+    right: 8,
+  },
+  Viewx9: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 6,
+  },
+  IconFo: {
+    right: 8,
+  },
+  ViewhD: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 6,
+  },
+  IconWX: {
+    right: 8,
+  },
+  ViewEa: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 6,
+  },
+  SwiperItem_1y: {
+    paddingLeft: 16,
+    paddingRight: 16,
+  },
+  SwiperkU: {
     width: '100%',
-    height: 200,
+    height: 465,
   },
-  TextTv: {
-    marginTop: 12,
-    marginBottom: 12,
-    fontFamily: 'RobotoCondensed_400Regular',
-    fontSize: 18,
-  },
-  Iconzc: {
-    right: 8,
-  },
-  TextnA: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-  },
-  ViewV0: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 6,
-  },
-  IconQb: {
-    right: 8,
-  },
-  Textyo: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-  },
-  ViewcT: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: 6,
-    marginBottom: 6,
-  },
-  Iconeb: {
-    right: 8,
-  },
-  TextAh: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-  },
-  ViewWs: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: 6,
-    marginBottom: 6,
-  },
-  SwiperItemlg: {
-    paddingLeft: 16,
-    paddingRight: 16,
-  },
-  ImageDj: {
-    width: '100%',
-    height: 200,
-  },
-  TextD9: {
-    marginTop: 12,
-    marginBottom: 12,
-    fontFamily: 'RobotoCondensed_400Regular',
-    fontSize: 18,
-  },
-  Icon_3V: {
-    right: 8,
-  },
-  Textux: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-  },
-  ViewU8: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 6,
-  },
-  IconnV: {
-    right: 8,
-  },
-  TextbO: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-  },
-  ViewpP: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: 6,
-    marginBottom: 6,
-  },
-  SwiperItemiv: {
-    paddingLeft: 16,
-    paddingRight: 16,
-  },
-  ImagehS: {
-    width: '100%',
-    height: 200,
-  },
-  TextRO: {
-    marginTop: 12,
-    marginBottom: 12,
-    fontFamily: 'RobotoCondensed_400Regular',
-    fontSize: 18,
-  },
-  IconA7: {
-    right: 8,
-  },
-  Textb1: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-  },
-  Viewwz: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 6,
-  },
-  Iconaw: {
-    right: 8,
-  },
-  TextAl: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-  },
-  ViewLf: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: 6,
-    marginBottom: 6,
-  },
-  SwiperItemB3: {
-    paddingLeft: 16,
-    paddingRight: 16,
-  },
-  Textke: {
-    marginTop: 12,
-    marginBottom: 12,
-    fontFamily: 'RobotoCondensed_400Regular',
-    fontSize: 18,
-  },
-  IconR1: {
-    right: 8,
-  },
-  ViewkV: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 6,
-  },
-  Iconqr: {
-    right: 8,
-  },
-  Viewjg: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 6,
-  },
-  SwiperItemN7: {
-    paddingLeft: 16,
-    paddingRight: 16,
-  },
-  Swiper_1S: {
-    width: '100%',
-    height: 450,
-  },
-  ButtonSolidtx: {
+  ButtonSolidYR: {
     borderRadius: 12,
     fontFamily: 'System',
     fontWeight: '700',
@@ -883,13 +831,13 @@ const styles = StyleSheet.create({
     width: 192,
     height: 60,
   },
-  Viewoa: {
+  ViewsY: {
     alignSelf: 'center',
   },
-  LinearGradient_31: {
+  LinearGradientyK: {
     width: '100%',
     height: '100%',
   },
 });
 
-export default withTheme(EconomicsBasicsScreen);
+export default withTheme(CryptocurrencyScreen);

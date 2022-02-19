@@ -11,13 +11,18 @@ import LinkingConfiguration from './LinkingConfiguration.js';
 import ArtistScreen from './screens/ArtistScreen';
 import AvoidingScamsScreen from './screens/AvoidingScamsScreen';
 import BlockchainScreen from './screens/BlockchainScreen';
+import BurnoutScreen from './screens/BurnoutScreen';
 import CollectorScreen from './screens/CollectorScreen';
+import CryptocurrencyScreen from './screens/CryptocurrencyScreen';
 import DAOsScreen from './screens/DAOsScreen';
+import DappsScreen from './screens/DappsScreen';
+import DefiScreen from './screens/DefiScreen';
 import EconomicsBasicsScreen from './screens/EconomicsBasicsScreen';
 import FeedbackScreen from './screens/FeedbackScreen';
 import InvestorScreen from './screens/InvestorScreen';
 import MetaverseScreen from './screens/MetaverseScreen';
 import NFTsScreen from './screens/NFTsScreen';
+import TaxesScreen from './screens/TaxesScreen';
 import UniversalScreen from './screens/UniversalScreen';
 import WalletsScreen from './screens/WalletsScreen';
 import Web30Screen from './screens/Web30Screen';
@@ -195,6 +200,31 @@ export default function RootAppNavigator() {
           name="NFTsScreen"
           component={NFTsScreen}
           options={{ title: 'NFTs' }}
+        />
+        <Stack.Screen
+          name="DappsScreen"
+          component={DappsScreen}
+          options={{ title: 'Dapps' }}
+        />
+        <Stack.Screen
+          name="BurnoutScreen"
+          component={BurnoutScreen}
+          options={{ title: 'Burnout' }}
+        />
+        <Stack.Screen
+          name="CryptocurrencyScreen"
+          component={CryptocurrencyScreen}
+          options={{ title: 'Cryptocurrency' }}
+        />
+        <Stack.Screen
+          name="DefiScreen"
+          component={DefiScreen}
+          options={{ title: 'Defi' }}
+        />
+        <Stack.Screen
+          name="TaxesScreen"
+          component={TaxesScreen}
+          options={{ title: 'Taxes' }}
         />
         <Stack.Screen
           name="BottomTabNavigator"

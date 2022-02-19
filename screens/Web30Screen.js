@@ -151,13 +151,6 @@ const Web30Screen = props => {
             </SwiperItem>
 
             <SwiperItem style={styles.SwiperItemNQ}>
-              <Image
-                style={styles.Image_66}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
-                resizeMode={'cover'}
-              />
               <Text style={[styles.TextDR, { color: theme.colors.light }]}>
                 {'Sources'}
               </Text>
@@ -322,10 +315,6 @@ const styles = StyleSheet.create({
   SwiperItemdN: {
     paddingLeft: 16,
     paddingRight: 16,
-  },
-  Image_66: {
-    width: '100%',
-    height: 200,
   },
   TextDR: {
     marginTop: 12,

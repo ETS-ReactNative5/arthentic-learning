@@ -13,20 +13,20 @@ import {
 import * as Linking from 'expo-linking';
 import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 
-const NFTsScreen = props => {
+const DappsScreen = props => {
   const { theme } = props;
   const { navigation } = props;
 
   return (
     <ScreenContainer>
       <LinearGradient
-        style={styles.LinearGradiento9}
+        style={styles.LinearGradient_9b}
         endY={100}
         endX={100}
         color1={theme.colors.background}
         color2={theme.colors.lightInverse}
       >
-        <View style={styles.ViewbC} pointerEvents={'auto'}>
+        <View style={styles.View_5A} pointerEvents={'auto'}>
           <ButtonSolid
             onPress={() => {
               try {
@@ -38,7 +38,7 @@ const NFTsScreen = props => {
               }
             }}
             style={[
-              styles.ButtonSolidbU,
+              styles.ButtonSolidB3,
               {
                 color: theme.colors.light,
                 backgroundColor: theme.colors.mediumInverse,
@@ -56,7 +56,7 @@ const NFTsScreen = props => {
               }
             }}
             style={[
-              styles.ButtonSolidD6,
+              styles.ButtonSolid_8m,
               {
                 color: theme.colors.light,
                 borderRadius: 12,
@@ -67,9 +67,9 @@ const NFTsScreen = props => {
           />
         </View>
 
-        <View style={styles.View_23} pointerEvents={'auto'}>
+        <View style={styles.View_2y} pointerEvents={'auto'}>
           <Image
-            style={styles.Image_5U}
+            style={styles.ImageP5}
             source={Images.TransparentLogoMark}
             resizeMode={'cover'}
           />
@@ -77,211 +77,196 @@ const NFTsScreen = props => {
 
         <View
           style={[
-            styles.ViewhY,
+            styles.View_9q,
             { backgroundColor: theme.colors.lightInverse, borderRadius: 12 },
           ]}
           pointerEvents={'auto'}
         >
-          <Text style={[styles.TextVZ, { color: theme.colors.surface }]}>
-            {'Content in Web3'}
+          <Text style={[styles.TextOB, { color: theme.colors.surface }]}>
+            {'Decentralized Apps'}
           </Text>
         </View>
 
         <ScrollView showsVerticalScrollIndicator={false} bounces={true}>
           <Swiper
-            style={styles.Swiper_8m}
+            style={styles.SwiperCe}
             dotActiveColor={theme.colors.primary}
             dotsTouchable={true}
             dotColor={theme.colors.background}
             loop={true}
           >
-            <SwiperItem style={styles.SwiperItemVu}>
+            <SwiperItem style={styles.SwiperItem_4S}>
               <Image
-                style={styles.Image_77}
+                style={styles.ImageKV}
                 source={{
                   uri: 'https://static.draftbit.com/images/placeholder-image.png',
                 }}
                 resizeMode={'cover'}
               />
-              <Text style={[styles.Text_7k, { color: theme.colors.light }]}>
-                {'The NFT, AKA Non-Fungible Token'}
+              <Text style={[styles.TextmY, { color: theme.colors.light }]}>
+                {'DApps, Entering a World of Trust'}
               </Text>
 
-              <View style={styles.ViewLL} pointerEvents={'auto'}>
+              <View style={styles.ViewDZ} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.IcongX}
+                  style={styles.IconmP}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.TextGX, { color: theme.colors.light }]}>
+                <Text style={[styles.Textt6, { color: theme.colors.light }]}>
                   {
-                    'Non-Fungible Tokens are how artists will sell their work in the future. A direct line to support content creation.\n'
+                    'Decentralized Applications, as the name suggests, are the backbone of web3. With the ability to interact with the system using only a crypto wallet, several new types of apps have sprung up.\n'
                   }
                 </Text>
               </View>
 
-              <View style={styles.ViewkH} pointerEvents={'auto'}>
+              <View style={styles.Viewww} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.Iconpa}
-                  size={24}
-                  color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
-                />
-                <Text style={[styles.Text_74, { color: theme.colors.light }]}>
-                  {
-                    'Reasons people buy NFTs: \nArt Appreciation\nStatus Symbol\nMake Money\nSupport Content Creation\nJoin a Community\n'
-                  }
-                </Text>
-              </View>
-
-              <View style={styles.Viewy4} pointerEvents={'auto'}>
-                <Icon
-                  style={styles.IconEP}
+                  style={styles.Iconjk}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
                 <Text style={[styles.TextFR, { color: theme.colors.light }]}>
                   {
-                    'NFTs represent the proof of ownership of a digital piece of content, which can be tied to benefits and  physical assets.'
+                    'Types of DApps: Play-to-Earn Games, Finances, Social Media, etc.\n'
+                  }
+                </Text>
+              </View>
+
+              <View style={styles.View_9w} pointerEvents={'auto'}>
+                <Icon
+                  style={styles.Iconun}
+                  size={24}
+                  color={theme.colors.light}
+                  name={'FontAwesome/dot-circle-o'}
+                />
+                <Text style={[styles.Textdz, { color: theme.colors.light }]}>
+                  {
+                    'Remember: The transfer of control and decision-making from a centralized entity (individual, organization, or group thereof) to a distributed network is Decentralization.'
                   }
                 </Text>
               </View>
             </SwiperItem>
 
-            <SwiperItem style={styles.SwiperItemXZ}>
+            <SwiperItem style={styles.SwiperItemWo}>
               <Image
-                style={styles.Imagek4}
+                style={styles.Image_1o}
                 source={{
                   uri: 'https://static.draftbit.com/images/placeholder-image.png',
                 }}
                 resizeMode={'cover'}
               />
-              <Text style={[styles.TextY0, { color: theme.colors.light }]}>
-                {'NFT Terms'}
+              <Text style={[styles.TextBL, { color: theme.colors.light }]}>
+                {'Play-to-Earn Games'}
               </Text>
 
-              <View style={styles.Viewbp} pointerEvents={'auto'}>
+              <View style={styles.ViewJn} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.IconFV}
+                  style={styles.IconUa}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.Textcl, { color: theme.colors.light }]}>
+                <Text style={[styles.Textpi, { color: theme.colors.light }]}>
                   {
-                    'NFT Collections usually revolve around a community project with a mutual goal. The artwork usually looks similar and can contain any number of pieces from 2 to a million.\n'
+                    'While traditional games offer no value for completing a game, dApp games can give users a stream of revenue to play the game.\n'
                   }
                 </Text>
               </View>
 
-              <View style={styles.Viewi9} pointerEvents={'auto'}>
+              <View style={styles.ViewJ9} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.Iconx8}
-                  size={24}
-                  color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
-                />
-                <Text style={[styles.TextNu, { color: theme.colors.light }]}>
-                  {
-                    'Generative Art is art that in whole or in part has been created with the use of an autonomous system. By using a certain smart contract, artists can make 1000s of NFTs with a small fraction of the work.'
-                  }
-                </Text>
-              </View>
-
-              <View style={styles.View_88} pointerEvents={'auto'}>
-                <Icon
-                  style={styles.IconwG}
-                  size={24}
-                  color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
-                />
-                <Text style={[styles.Textlm, { color: theme.colors.light }]}>
-                  {
-                    'Floor Price is the lowest amount of money you are able to spend to become a member of an NFT project.'
-                  }
-                </Text>
-              </View>
-            </SwiperItem>
-
-            <SwiperItem style={styles.SwiperItemxD}>
-              <Image
-                style={styles.ImagegK}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
-                resizeMode={'cover'}
-              />
-              <Text style={[styles.Textr4, { color: theme.colors.light }]}>
-                {'How to Buy an NFT'}
-              </Text>
-
-              <View style={styles.View_3s} pointerEvents={'auto'}>
-                <Icon
-                  style={styles.Iconj8}
-                  size={24}
-                  color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
-                />
-                <Text style={[styles.Textuk, { color: theme.colors.light }]}>
-                  {
-                    'Pick an NFT marketplace, set up a compatible wallet & add some compatible coin to buy the NFT with\n'
-                  }
-                </Text>
-              </View>
-
-              <View style={styles.ViewTz} pointerEvents={'auto'}>
-                <Icon
-                  style={styles.IconMU}
-                  size={24}
-                  color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
-                />
-                <Text style={[styles.Text_8g, { color: theme.colors.light }]}>
-                  {
-                    'Pick an NFT, be sure to research and check for reports of scams'
-                  }
-                </Text>
-              </View>
-
-              <View style={styles.ViewfK} pointerEvents={'auto'}>
-                <Icon
-                  style={styles.Iconpi}
-                  size={24}
-                  color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
-                />
-                <Text style={[styles.TextKb, { color: theme.colors.light }]}>
-                  {
-                    'In addition to the price of the NFT, you’ll have to pay a transaction fee to write your ownership of the NFT onto the blockchain.'
-                  }
-                </Text>
-              </View>
-
-              <View style={styles.ViewrG} pointerEvents={'auto'}>
-                <Icon
-                  style={styles.IconQE}
+                  style={styles.Iconwa}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
                 <Text style={[styles.TextaJ, { color: theme.colors.light }]}>
                   {
-                    'If you’re using the NFT in a DApp, follow their instructions to connect and use your NFT.'
+                    'Most of these games will payout rewards in a combination of NFTs and in-game cryptocurrency and can be traded/sold to other players or external traders.'
                   }
                 </Text>
               </View>
             </SwiperItem>
 
-            <SwiperItem style={styles.SwiperItembf}>
-              <Text style={[styles.TextOw, { color: theme.colors.light }]}>
-                {'Sources'}
+            <SwiperItem style={styles.SwiperItemJN}>
+              <Image
+                style={styles.ImageXm}
+                source={{
+                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
+                }}
+                resizeMode={'cover'}
+              />
+              <Text style={[styles.Textus, { color: theme.colors.light }]}>
+                {'Finances'}
               </Text>
 
-              <View style={styles.ViewDb} pointerEvents={'auto'}>
+              <View style={styles.View_2c} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.Iconi6}
+                  style={styles.Icon_6V}
+                  size={24}
+                  color={theme.colors.light}
+                  name={'FontAwesome/dot-circle-o'}
+                />
+                <Text style={[styles.TextUT, { color: theme.colors.light }]}>
+                  {
+                    'Traditional financial applications require a slew of middlemen to complete a transaction.\n'
+                  }
+                </Text>
+              </View>
+
+              <View style={styles.Viewp8} pointerEvents={'auto'}>
+                <Icon
+                  style={styles.IconUT}
+                  size={24}
+                  color={theme.colors.light}
+                  name={'FontAwesome/dot-circle-o'}
+                />
+                <Text style={[styles.Textav, { color: theme.colors.light }]}>
+                  {
+                    'Under Decentralized Finance, the lenders and borrowers can connect directly and securely.'
+                  }
+                </Text>
+              </View>
+            </SwiperItem>
+
+            <SwiperItem style={styles.SwiperItemBB}>
+              <Image
+                style={styles.Imagenz}
+                source={{
+                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
+                }}
+                resizeMode={'cover'}
+              />
+              <Text style={[styles.TextB5, { color: theme.colors.light }]}>
+                {'Social Media'}
+              </Text>
+
+              <View style={styles.ViewkC} pointerEvents={'auto'}>
+                <Icon
+                  style={styles.IconMB}
+                  size={24}
+                  color={theme.colors.light}
+                  name={'FontAwesome/dot-circle-o'}
+                />
+                <Text style={[styles.TextLw, { color: theme.colors.light }]}>
+                  {
+                    'While current social media can be censored and geared towards a political bias, the decentralized model allows the community to remain in control\n'
+                  }
+                </Text>
+              </View>
+            </SwiperItem>
+
+            <SwiperItem style={styles.SwiperItemRS}>
+              <Text style={[styles.TextoL, { color: theme.colors.light }]}>
+                {'Find Some DApps'}
+              </Text>
+
+              <View style={styles.ViewLK} pointerEvents={'auto'}>
+                <Icon
+                  style={styles.Iconc5}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
@@ -289,21 +274,19 @@ const NFTsScreen = props => {
                 <Link
                   onPress={() => {
                     try {
-                      Linking.openURL(
-                        'https://www.csail.mit.edu/news/nfts-explained'
-                      );
+                      Linking.openURL('https://ethereum.org/en/dapps/ ');
                     } catch (err) {
                       console.error(err);
                     }
                   }}
                   style={{ color: theme.colors.primary }}
-                  title={'MIT explains NFTs'}
+                  title={'Ethereum DApps'}
                 />
               </View>
 
-              <View style={styles.ViewWV} pointerEvents={'auto'}>
+              <View style={styles.View_9G} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.IconLh}
+                  style={styles.Icon_1v}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
@@ -311,21 +294,19 @@ const NFTsScreen = props => {
                 <Link
                   onPress={() => {
                     try {
-                      Linking.openURL(
-                        'https://www.nfi.edu/non-fungible-token/'
-                      );
+                      Linking.openURL('https://solana.com/ecosystem \n');
                     } catch (err) {
                       console.error(err);
                     }
                   }}
                   style={{ color: theme.colors.primary }}
-                  title={'Nashville Film Institute on NFTs'}
+                  title={'Solana DApps'}
                 />
               </View>
 
-              <View style={styles.Viewj0} pointerEvents={'auto'}>
+              <View style={styles.ViewoH} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.IconPk}
+                  style={styles.IconPA}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
@@ -334,36 +315,53 @@ const NFTsScreen = props => {
                   onPress={() => {
                     try {
                       Linking.openURL(
-                        'https://nftexplained.io/best-nft-marketplaces/'
+                        'https://polygon.technology/ecosystem \n'
                       );
                     } catch (err) {
                       console.error(err);
                     }
                   }}
                   style={{ color: theme.colors.primary }}
-                  title={'(Unofficial) List of NFT Marketplaces'}
+                  title={'Polygon DApps'}
                 />
               </View>
             </SwiperItem>
           </Swiper>
 
-          <View style={styles.ViewhM} pointerEvents={'auto'}>
+          <View style={styles.ViewVp} pointerEvents={'auto'}>
             <ButtonSolid
               onPress={() => {
                 try {
-                  navigation.navigate('DappsScreen');
+                  navigation.navigate('CryptocurrencyScreen');
                 } catch (err) {
                   console.error(err);
                 }
               }}
               style={[
-                styles.ButtonSolid_1E,
+                styles.ButtonSolidrX,
                 {
                   backgroundColor: theme.colors.secondary,
                   color: theme.colors.primary,
                 },
               ]}
-              title={'Next Up:\nInteracting with the New Internet'}
+              title={'For Collectors:\nCryptocurrency'}
+            />
+            <ButtonSolid
+              onPress={() => {
+                try {
+                  navigation.navigate('BurnoutScreen');
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+              style={[
+                styles.ButtonSolidkD,
+                {
+                  backgroundColor: theme.colors.secondary,
+                  color: theme.colors.primary,
+                },
+              ]}
+              title={'For Artists:\nStress Management'}
             />
           </View>
         </ScrollView>
@@ -373,33 +371,33 @@ const NFTsScreen = props => {
 };
 
 const styles = StyleSheet.create({
-  ButtonSolidbU: {
+  ButtonSolidB3: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
     textAlign: 'center',
   },
-  ButtonSolidD6: {
+  ButtonSolid_8m: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
-  ViewbC: {
+  View_5A: {
     alignSelf: 'flex-end',
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '100%',
   },
-  Image_5U: {
+  ImageP5: {
     width: 75,
     height: 75,
   },
-  View_23: {
+  View_2y: {
     alignItems: 'center',
   },
-  TextVZ: {
+  TextOB: {
     fontSize: 24,
     fontFamily: 'RobotoCondensed_400Regular',
   },
-  ViewhY: {
+  View_9q: {
     paddingTop: 16,
     paddingBottom: 16,
     width: 230,
@@ -410,228 +408,226 @@ const styles = StyleSheet.create({
     marginTop: 12,
     marginBottom: 24,
   },
-  Image_77: {
+  ImageKV: {
     width: '100%',
     height: 200,
   },
-  Text_7k: {
+  TextmY: {
     marginTop: 12,
     marginBottom: 12,
     fontFamily: 'RobotoCondensed_400Regular',
     fontSize: 18,
   },
-  IcongX: {
+  IconmP: {
     right: 8,
   },
-  TextGX: {
+  Textt6: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
-  ViewLL: {
+  ViewDZ: {
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 6,
   },
-  Iconpa: {
-    right: 8,
-  },
-  Text_74: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-  },
-  ViewkH: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: 6,
-    marginBottom: 6,
-  },
-  IconEP: {
+  Iconjk: {
     right: 8,
   },
   TextFR: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
-  Viewy4: {
+  Viewww: {
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 6,
     marginBottom: 6,
   },
-  SwiperItemVu: {
+  Iconun: {
+    right: 8,
+  },
+  Textdz: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
+  View_9w: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 6,
+    marginBottom: 6,
+  },
+  SwiperItem_4S: {
     paddingLeft: 16,
     paddingRight: 16,
   },
-  Imagek4: {
+  Image_1o: {
     width: '100%',
     height: 200,
   },
-  TextY0: {
+  TextBL: {
     marginTop: 12,
     marginBottom: 12,
     fontFamily: 'RobotoCondensed_400Regular',
     fontSize: 18,
   },
-  IconFV: {
+  IconUa: {
     right: 8,
   },
-  Textcl: {
+  Textpi: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
-  Viewbp: {
+  ViewJn: {
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 6,
   },
-  Iconx8: {
-    right: 8,
-  },
-  TextNu: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-  },
-  Viewi9: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: 6,
-    marginBottom: 6,
-  },
-  IconwG: {
-    right: 8,
-  },
-  Textlm: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-  },
-  View_88: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: 6,
-    marginBottom: 6,
-  },
-  SwiperItemXZ: {
-    paddingLeft: 16,
-    paddingRight: 16,
-  },
-  ImagegK: {
-    width: '100%',
-    height: 200,
-  },
-  Textr4: {
-    marginTop: 12,
-    marginBottom: 12,
-    fontFamily: 'RobotoCondensed_400Regular',
-    fontSize: 18,
-  },
-  Iconj8: {
-    right: 8,
-  },
-  Textuk: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-  },
-  View_3s: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 6,
-  },
-  IconMU: {
-    right: 8,
-  },
-  Text_8g: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-  },
-  ViewTz: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: 6,
-    marginBottom: 6,
-  },
-  Iconpi: {
-    right: 8,
-  },
-  TextKb: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-  },
-  ViewfK: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: 6,
-    marginBottom: 6,
-  },
-  IconQE: {
+  Iconwa: {
     right: 8,
   },
   TextaJ: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
-  ViewrG: {
+  ViewJ9: {
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 6,
     marginBottom: 6,
   },
-  SwiperItemxD: {
+  SwiperItemWo: {
     paddingLeft: 16,
     paddingRight: 16,
   },
-  TextOw: {
+  ImageXm: {
+    width: '100%',
+    height: 200,
+  },
+  Textus: {
     marginTop: 12,
     marginBottom: 12,
     fontFamily: 'RobotoCondensed_400Regular',
     fontSize: 18,
   },
-  Iconi6: {
+  Icon_6V: {
     right: 8,
   },
-  ViewDb: {
+  TextUT: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
+  View_2c: {
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 6,
   },
-  IconLh: {
+  IconUT: {
     right: 8,
   },
-  ViewWV: {
+  Textav: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
+  Viewp8: {
     flexDirection: 'row',
     alignItems: 'center',
+    marginTop: 6,
     marginBottom: 6,
   },
-  IconPk: {
-    right: 8,
-  },
-  Viewj0: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 6,
-  },
-  SwiperItembf: {
+  SwiperItemJN: {
     paddingLeft: 16,
     paddingRight: 16,
   },
-  Swiper_8m: {
+  Imagenz: {
+    width: '100%',
+    height: 200,
+  },
+  TextB5: {
+    marginTop: 12,
+    marginBottom: 12,
+    fontFamily: 'RobotoCondensed_400Regular',
+    fontSize: 18,
+  },
+  IconMB: {
+    right: 8,
+  },
+  TextLw: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
+  ViewkC: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 6,
+  },
+  SwiperItemBB: {
+    paddingLeft: 16,
+    paddingRight: 16,
+  },
+  TextoL: {
+    marginTop: 12,
+    marginBottom: 12,
+    fontFamily: 'RobotoCondensed_400Regular',
+    fontSize: 18,
+  },
+  Iconc5: {
+    right: 8,
+  },
+  ViewLK: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 6,
+  },
+  Icon_1v: {
+    right: 8,
+  },
+  View_9G: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 6,
+  },
+  IconPA: {
+    right: 8,
+  },
+  ViewoH: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 6,
+  },
+  SwiperItemRS: {
+    paddingLeft: 16,
+    paddingRight: 16,
+  },
+  SwiperCe: {
     width: '100%',
     height: 450,
   },
-  ButtonSolid_1E: {
+  ButtonSolidrX: {
     borderRadius: 12,
     fontFamily: 'System',
     fontWeight: '700',
     textAlign: 'center',
-    width: 192,
+    width: 170,
     height: 60,
   },
-  ViewhM: {
-    alignSelf: 'center',
+  ButtonSolidkD: {
+    borderRadius: 12,
+    fontFamily: 'System',
+    fontWeight: '700',
+    textAlign: 'center',
+    width: 170,
+    height: 60,
   },
-  LinearGradiento9: {
+  ViewVp: {
+    alignSelf: 'center',
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    width: '100%',
+  },
+  LinearGradient_9b: {
     width: '100%',
     height: '100%',
   },
 });
 
-export default withTheme(NFTsScreen);
+export default withTheme(DappsScreen);

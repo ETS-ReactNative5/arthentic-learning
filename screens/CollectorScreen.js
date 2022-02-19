@@ -67,7 +67,15 @@ const CollectorScreen = props => {
 
         <View style={styles.ViewOo} pointerEvents={'auto'}>
           <View style={styles.ViewtV} pointerEvents={'auto'}>
-            <Touchable>
+            <Touchable
+              onPress={() => {
+                try {
+                  navigation.navigate('NFTsScreen');
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+            >
               <View style={styles.ViewTy} pointerEvents={'auto'}>
                 <Circle size={80} bgColor={theme.colors.secondary}>
                   <Circle size={70} bgColor={theme.colors.divider}>
@@ -87,7 +95,15 @@ const CollectorScreen = props => {
           </View>
 
           <View style={styles.ViewKZ} pointerEvents={'auto'}>
-            <Touchable>
+            <Touchable
+              onPress={() => {
+                try {
+                  navigation.navigate('DappsScreen');
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+            >
               <View style={styles.ViewLl} pointerEvents={'auto'}>
                 <Circle size={80} bgColor={theme.colors.secondary}>
                   <Circle size={70} bgColor={theme.colors.divider}>
@@ -105,7 +121,15 @@ const CollectorScreen = props => {
               </View>
             </Touchable>
 
-            <Touchable>
+            <Touchable
+              onPress={() => {
+                try {
+                  navigation.navigate('CryptocurrencyScreen');
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+            >
               <View style={styles.Viewda} pointerEvents={'auto'}>
                 <Circle size={80} bgColor={theme.colors.secondary}>
                   <Circle size={70} bgColor={theme.colors.divider}>

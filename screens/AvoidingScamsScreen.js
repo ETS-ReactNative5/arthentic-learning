@@ -382,7 +382,7 @@ const AvoidingScamsScreen = props => {
             <ButtonSolid
               onPress={() => {
                 try {
-                  navigation.navigate('DAOsScreen');
+                  navigation.navigate('FeedbackScreen');
                 } catch (err) {
                   console.error(err);
                 }

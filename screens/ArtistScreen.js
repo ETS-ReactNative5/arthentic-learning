@@ -93,7 +93,15 @@ const ArtistScreen = props => {
               </View>
             </Touchable>
 
-            <Touchable>
+            <Touchable
+              onPress={() => {
+                try {
+                  navigation.navigate('NFTsScreen');
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+            >
               <View style={styles.ViewUj} pointerEvents={'auto'}>
                 <Circle size={80} bgColor={theme.colors.secondary}>
                   <Circle size={70} bgColor={theme.colors.divider}>
@@ -113,7 +121,15 @@ const ArtistScreen = props => {
           </View>
 
           <View style={styles.Viewfx} pointerEvents={'auto'}>
-            <Touchable>
+            <Touchable
+              onPress={() => {
+                try {
+                  navigation.navigate('DappsScreen');
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+            >
               <View style={styles.View_8a} pointerEvents={'auto'}>
                 <Circle size={80} bgColor={theme.colors.secondary}>
                   <Circle size={70} bgColor={theme.colors.divider}>
@@ -131,7 +147,15 @@ const ArtistScreen = props => {
               </View>
             </Touchable>
 
-            <Touchable>
+            <Touchable
+              onPress={() => {
+                try {
+                  navigation.navigate('BurnoutScreen');
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+            >
               <View style={styles.ViewAa} pointerEvents={'auto'}>
                 <Circle size={80} bgColor={theme.colors.secondary}>
                   <Circle size={70} bgColor={theme.colors.divider}>

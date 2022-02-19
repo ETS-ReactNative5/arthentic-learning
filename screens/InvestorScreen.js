@@ -66,28 +66,16 @@ const InvestorScreen = props => {
         </View>
 
         <View style={styles.View_5Y} pointerEvents={'auto'}>
-          <View style={styles.Viewxs} pointerEvents={'auto'}>
-            <Touchable>
-              <View style={styles.ViewpV} pointerEvents={'auto'}>
-                <Circle size={80} bgColor={theme.colors.secondary}>
-                  <Circle size={70} bgColor={theme.colors.divider}>
-                    <Icon
-                      size={32}
-                      color={theme.colors.primary}
-                      name={'MaterialCommunityIcons/bank-remove'}
-                    />
-                  </Circle>
-                </Circle>
-
-                <Text style={[styles.TextoZ, { color: theme.colors.light }]}>
-                  {'Decentralized\nFinance'}
-                </Text>
-              </View>
-            </Touchable>
-          </View>
-
           <View style={styles.View_5m} pointerEvents={'auto'}>
-            <Touchable>
+            <Touchable
+              onPress={() => {
+                try {
+                  navigation.navigate('CryptocurrencyScreen');
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+            >
               <View style={styles.VieweQ} pointerEvents={'auto'}>
                 <Circle size={80} bgColor={theme.colors.secondary}>
                   <Circle size={70} bgColor={theme.colors.divider}>
@@ -105,11 +93,47 @@ const InvestorScreen = props => {
               </View>
             </Touchable>
           </View>
+
+          <View style={styles.Viewxs} pointerEvents={'auto'}>
+            <Touchable
+              onPress={() => {
+                try {
+                  navigation.navigate('DefiScreen');
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+            >
+              <View style={styles.ViewpV} pointerEvents={'auto'}>
+                <Circle size={80} bgColor={theme.colors.secondary}>
+                  <Circle size={70} bgColor={theme.colors.divider}>
+                    <Icon
+                      size={32}
+                      color={theme.colors.primary}
+                      name={'MaterialCommunityIcons/bank-remove'}
+                    />
+                  </Circle>
+                </Circle>
+
+                <Text style={[styles.TextoZ, { color: theme.colors.light }]}>
+                  {'Decentralized\nFinance'}
+                </Text>
+              </View>
+            </Touchable>
+          </View>
         </View>
 
         <View pointerEvents={'auto'}>
           <View style={styles.View_8o} pointerEvents={'auto'}>
-            <Touchable>
+            <Touchable
+              onPress={() => {
+                try {
+                  navigation.navigate('TaxesScreen');
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+            >
               <View style={styles.ViewLb} pointerEvents={'auto'}>
                 <Circle size={80} bgColor={theme.colors.secondary}>
                   <Circle size={70} bgColor={theme.colors.divider}>
@@ -163,20 +187,6 @@ const styles = StyleSheet.create({
     marginTop: 12,
     marginBottom: 24,
   },
-  TextoZ: {
-    fontSize: 12,
-    fontFamily: 'Roboto_400Regular',
-    textAlign: 'center',
-  },
-  ViewpV: {
-    alignItems: 'center',
-    marginTop: 6,
-    marginBottom: 6,
-  },
-  Viewxs: {
-    alignItems: 'center',
-    justifyContent: 'space-evenly',
-  },
   Textmu: {
     fontSize: 12,
     fontFamily: 'Roboto_400Regular',
@@ -188,6 +198,20 @@ const styles = StyleSheet.create({
     marginBottom: 6,
   },
   View_5m: {
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+  },
+  TextoZ: {
+    fontSize: 12,
+    fontFamily: 'Roboto_400Regular',
+    textAlign: 'center',
+  },
+  ViewpV: {
+    alignItems: 'center',
+    marginTop: 6,
+    marginBottom: 6,
+  },
+  Viewxs: {
     alignItems: 'center',
     justifyContent: 'space-evenly',
   },

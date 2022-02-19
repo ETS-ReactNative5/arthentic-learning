@@ -13,32 +13,32 @@ import {
 import * as Linking from 'expo-linking';
 import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 
-const MetaverseScreen = props => {
+const TaxesScreen = props => {
   const { theme } = props;
   const { navigation } = props;
 
   return (
     <ScreenContainer>
       <LinearGradient
-        style={styles.LinearGradientWr}
+        style={styles.LinearGradientxc}
         endY={100}
         endX={100}
         color1={theme.colors.background}
         color2={theme.colors.lightInverse}
       >
-        <View style={styles.ViewkT} pointerEvents={'auto'}>
+        <View style={styles.View_4n} pointerEvents={'auto'}>
           <ButtonSolid
             onPress={() => {
               try {
                 navigation.navigate('BottomTabNavigator', {
-                  screen: 'ArtistScreen',
+                  screen: 'InvestorScreen',
                 });
               } catch (err) {
                 console.error(err);
               }
             }}
             style={[
-              styles.ButtonSolidOr,
+              styles.ButtonSolidNq,
               {
                 color: theme.colors.light,
                 backgroundColor: theme.colors.mediumInverse,
@@ -56,7 +56,7 @@ const MetaverseScreen = props => {
               }
             }}
             style={[
-              styles.ButtonSolidph,
+              styles.ButtonSolidCx,
               {
                 color: theme.colors.light,
                 borderRadius: 12,
@@ -67,9 +67,9 @@ const MetaverseScreen = props => {
           />
         </View>
 
-        <View style={styles.View_8F} pointerEvents={'auto'}>
+        <View style={styles.ViewSI} pointerEvents={'auto'}>
           <Image
-            style={styles.Image_1W}
+            style={styles.ImageWM}
             source={Images.TransparentLogoMark}
             resizeMode={'cover'}
           />
@@ -77,87 +77,101 @@ const MetaverseScreen = props => {
 
         <View
           style={[
-            styles.ViewhN,
+            styles.ViewJK,
             { backgroundColor: theme.colors.lightInverse, borderRadius: 12 },
           ]}
           pointerEvents={'auto'}
         >
-          <Text style={[styles.TextFB, { color: theme.colors.surface }]}>
-            {'Enter the Metaverse'}
+          <Text style={[styles.Text_66, { color: theme.colors.surface }]}>
+            {'US Crypto Tax Laws'}
           </Text>
         </View>
 
         <ScrollView showsVerticalScrollIndicator={false} bounces={true}>
           <Swiper
-            style={styles.SwiperQO}
+            style={styles.SwiperTk}
             dotActiveColor={theme.colors.primary}
             dotsTouchable={true}
             dotColor={theme.colors.background}
             loop={true}
           >
-            <SwiperItem style={styles.SwiperItemjF}>
+            <SwiperItem style={styles.SwiperItem_6Z}>
               <Image
-                style={styles.Image_11}
+                style={styles.Image_7a}
                 source={{
                   uri: 'https://static.draftbit.com/images/placeholder-image.png',
                 }}
                 resizeMode={'cover'}
               />
-              <Text style={[styles.TextyR, { color: theme.colors.light }]}>
-                {'The Internet Just Got a Playground'}
+              <Text style={[styles.TextaX, { color: theme.colors.light }]}>
+                {'So You Made a Bunch of Money with Crypto?'}
               </Text>
 
-              <View style={styles.ViewbW} pointerEvents={'auto'}>
+              <View style={styles.ViewsV} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.Iconsv}
+                  style={styles.IconP8}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.TextvU, { color: theme.colors.light }]}>
+                <Text style={[styles.TextDi, { color: theme.colors.light }]}>
                   {
-                    'Virtual reality worlds where users will interact with the new internet(web3).\n'
+                    'Capital Gains Tax is the tax on the profit gained from a trade.\n'
                   }
                 </Text>
               </View>
 
-              <View style={styles.ViewIb} pointerEvents={'auto'}>
+              <View style={styles.ViewS1} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.Iconkq}
+                  style={styles.IconrU}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.TextU6, { color: theme.colors.light }]}>
+                <Text style={[styles.TextbN, { color: theme.colors.light }]}>
                   {
-                    'Many companies are trying to build their version of the metaverse right now. In the future, the best metaverses will connect to each other.\n'
+                    'In the US, you’re charged a tax on the gains you made in a crypto trade once the money turns back into dollars. \n'
                   }
                 </Text>
               </View>
 
-              <View style={styles.View_0N} pointerEvents={'auto'}>
+              <View style={styles.Viewbo} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.IconzB}
+                  style={styles.IcongP}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.TextPv, { color: theme.colors.light }]}>
+                <Text style={[styles.Textiv, { color: theme.colors.light }]}>
                   {
-                    'As a brand new medium for interaction, there will be plenty of opportunity to innovate. For example, companies are exploring virtual real estate, shops, video games, concerts, art galleries, etc.'
+                    'Tax can also be charged for converting one crypto to another when profiting.'
+                  }
+                </Text>
+              </View>
+
+              <View style={styles.View_9Z} pointerEvents={'auto'}>
+                <Icon
+                  style={styles.IconB3}
+                  size={24}
+                  color={theme.colors.light}
+                  name={'FontAwesome/dot-circle-o'}
+                />
+                <Text style={[styles.TextCl, { color: theme.colors.light }]}>
+                  {
+                    'Note: Buying and holding crypto in a wallet isn’t taxable until changing it to another currency. '
                   }
                 </Text>
               </View>
             </SwiperItem>
 
-            <SwiperItem style={styles.SwiperItemeJ}>
-              <Text style={[styles.TextUo, { color: theme.colors.light }]}>
+            <SwiperItem style={styles.SwiperItem_0W}>
+              <Text style={[styles.TextOv, { color: theme.colors.light }]}>
                 {'Sources'}
               </Text>
 
-              <View style={styles.Viewda} pointerEvents={'auto'}>
+              <View style={styles.ViewbX} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.Iconx6}
+                  style={styles.IconU9}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
@@ -166,20 +180,20 @@ const MetaverseScreen = props => {
                   onPress={() => {
                     try {
                       Linking.openURL(
-                        'https://www.wired.com/story/what-is-the-metaverse/'
+                        'https://www.investopedia.com/terms/c/capital_gains_tax.asp'
                       );
                     } catch (err) {
                       console.error(err);
                     }
                   }}
                   style={{ color: theme.colors.primary }}
-                  title={'Wired Article on the Metaverse'}
+                  title={'Capital Gains Defined by Investopedia'}
                 />
               </View>
 
-              <View style={styles.ViewHo} pointerEvents={'auto'}>
+              <View style={styles.Viewnk} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.Icon_3b}
+                  style={styles.IconrT}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
@@ -188,36 +202,58 @@ const MetaverseScreen = props => {
                   onPress={() => {
                     try {
                       Linking.openURL(
-                        'https://www.npr.org/2022/02/17/1081508190/ok-i-guess-well-talk-about-the-metaverse'
+                        'https://www.coinbase.com/learn/crypto-basics/understanding-crypto-taxes '
                       );
                     } catch (err) {
                       console.error(err);
                     }
                   }}
                   style={{ color: theme.colors.primary }}
-                  title={'NPR Article on Metaverse'}
+                  title={'Coinbase Explains Crypto Taxes'}
+                />
+              </View>
+
+              <View style={styles.ViewbE} pointerEvents={'auto'}>
+                <Icon
+                  style={styles.IconcI}
+                  size={24}
+                  color={theme.colors.light}
+                  name={'FontAwesome/dot-circle-o'}
+                />
+                <Link
+                  onPress={() => {
+                    try {
+                      Linking.openURL(
+                        'https://www.irs.gov/pub/irs-utl/2018ntf-bitcoin-cryptocurrency-an-introduction-and-tax-consequences.pdf '
+                      );
+                    } catch (err) {
+                      console.error(err);
+                    }
+                  }}
+                  style={{ color: theme.colors.primary }}
+                  title={'IRS on Crypto Taxes'}
                 />
               </View>
             </SwiperItem>
           </Swiper>
 
-          <View style={styles.ViewKm} pointerEvents={'auto'}>
+          <View style={styles.ViewGY} pointerEvents={'auto'}>
             <ButtonSolid
               onPress={() => {
                 try {
-                  navigation.navigate('NFTsScreen');
+                  navigation.navigate('FeedbackScreen');
                 } catch (err) {
                   console.error(err);
                 }
               }}
               style={[
-                styles.ButtonSolidWo,
+                styles.ButtonSolidao,
                 {
                   backgroundColor: theme.colors.secondary,
                   color: theme.colors.primary,
                 },
               ]}
-              title={'Next Up:\nMaking Your Web3 Content'}
+              title={'Next Up:\nComing Soon'}
             />
           </View>
         </ScrollView>
@@ -227,33 +263,33 @@ const MetaverseScreen = props => {
 };
 
 const styles = StyleSheet.create({
-  ButtonSolidOr: {
+  ButtonSolidNq: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
     textAlign: 'center',
   },
-  ButtonSolidph: {
+  ButtonSolidCx: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
-  ViewkT: {
+  View_4n: {
     alignSelf: 'flex-end',
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '100%',
   },
-  Image_1W: {
+  ImageWM: {
     width: 75,
     height: 75,
   },
-  View_8F: {
+  ViewSI: {
     alignItems: 'center',
   },
-  TextFB: {
+  Text_66: {
     fontSize: 24,
     fontFamily: 'RobotoCondensed_400Regular',
   },
-  ViewhN: {
+  ViewJK: {
     paddingTop: 16,
     paddingBottom: 16,
     width: 230,
@@ -264,89 +300,110 @@ const styles = StyleSheet.create({
     marginTop: 12,
     marginBottom: 24,
   },
-  Image_11: {
+  Image_7a: {
     width: '100%',
     height: 200,
   },
-  TextyR: {
+  TextaX: {
     marginTop: 12,
     marginBottom: 12,
     fontFamily: 'RobotoCondensed_400Regular',
     fontSize: 18,
   },
-  Iconsv: {
+  IconP8: {
     right: 8,
   },
-  TextvU: {
+  TextDi: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
-  ViewbW: {
+  ViewsV: {
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 6,
   },
-  Iconkq: {
+  IconrU: {
     right: 8,
   },
-  TextU6: {
+  TextbN: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
-  ViewIb: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: 6,
-    marginBottom: 6,
-  },
-  IconzB: {
-    right: 8,
-  },
-  TextPv: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-  },
-  View_0N: {
+  ViewS1: {
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 6,
     marginBottom: 6,
   },
-  SwiperItemjF: {
+  IcongP: {
+    right: 8,
+  },
+  Textiv: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
+  Viewbo: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 6,
+    marginBottom: 6,
+  },
+  IconB3: {
+    right: 8,
+  },
+  TextCl: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
+  View_9Z: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 6,
+    marginBottom: 6,
+  },
+  SwiperItem_6Z: {
     paddingLeft: 16,
     paddingRight: 16,
   },
-  TextUo: {
+  TextOv: {
     marginTop: 12,
     marginBottom: 12,
     fontFamily: 'RobotoCondensed_400Regular',
     fontSize: 18,
   },
-  Iconx6: {
+  IconU9: {
     right: 8,
   },
-  Viewda: {
+  ViewbX: {
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 6,
   },
-  Icon_3b: {
+  IconrT: {
     right: 8,
   },
-  ViewHo: {
+  Viewnk: {
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 6,
   },
-  SwiperItemeJ: {
+  IconcI: {
+    right: 8,
+  },
+  ViewbE: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 6,
+  },
+  SwiperItem_0W: {
     paddingLeft: 16,
     paddingRight: 16,
   },
-  SwiperQO: {
+  SwiperTk: {
     width: '100%',
     height: 450,
   },
-  ButtonSolidWo: {
+  ButtonSolidao: {
     borderRadius: 12,
     fontFamily: 'System',
     fontWeight: '700',
@@ -354,13 +411,13 @@ const styles = StyleSheet.create({
     width: 192,
     height: 60,
   },
-  ViewKm: {
+  ViewGY: {
     alignSelf: 'center',
   },
-  LinearGradientWr: {
+  LinearGradientxc: {
     width: '100%',
     height: '100%',
   },
 });
 
-export default withTheme(MetaverseScreen);
+export default withTheme(TaxesScreen);
