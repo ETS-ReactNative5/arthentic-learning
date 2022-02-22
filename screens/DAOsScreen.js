@@ -31,7 +31,7 @@ const DAOsScreen = props => {
             onPress={() => {
               try {
                 navigation.navigate('BottomTabNavigator', {
-                  screen: 'UniversalScreen',
+                  screen: 'CryptoBasicsScreen',
                 });
               } catch (err) {
                 console.error(err);
@@ -95,61 +95,6 @@ const DAOsScreen = props => {
             dotColor={theme.colors.background}
             loop={true}
           >
-            <SwiperItem style={styles.SwiperItem_9J}>
-              <Image
-                style={styles.Image_4a}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
-                resizeMode={'cover'}
-              />
-              <Text style={[styles.Textw9, { color: theme.colors.light }]}>
-                {'Decentralization'}
-              </Text>
-
-              <View style={styles.View_2M} pointerEvents={'auto'}>
-                <Icon
-                  style={styles.IconpX}
-                  size={24}
-                  color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
-                />
-                <Text style={[styles.TextQ1, { color: theme.colors.light }]}>
-                  {
-                    'Most organizations have a single authority to maintain and govern their systems, known as Centralization.\n'
-                  }
-                </Text>
-              </View>
-
-              <View style={styles.ViewC3} pointerEvents={'auto'}>
-                <Icon
-                  style={styles.Iconnj}
-                  size={24}
-                  color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
-                />
-                <Text style={[styles.TextGc, { color: theme.colors.light }]}>
-                  {
-                    'The transfer of control and decision-making from a centralized entity (individual, organization, or group thereof) to a distributed network is Decentralization.\n'
-                  }
-                </Text>
-              </View>
-
-              <View style={styles.Viewjy} pointerEvents={'auto'}>
-                <Icon
-                  style={styles.Icony4}
-                  size={24}
-                  color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
-                />
-                <Text style={[styles.TextbR, { color: theme.colors.light }]}>
-                  {
-                    'With more direct ownership, people will have to rely on less middlemen in this next version of the internet.'
-                  }
-                </Text>
-              </View>
-            </SwiperItem>
-
             <SwiperItem style={styles.SwiperItem_7g}>
               <Image
                 style={styles.Imagece}
@@ -200,6 +145,61 @@ const DAOsScreen = props => {
                 <Text style={[styles.Texthn, { color: theme.colors.light }]}>
                   {
                     'Key aspects of a DAO allow a flattened hierarchy compared to corporations, a grassroots nature, transparency, and community based around the globe.'
+                  }
+                </Text>
+              </View>
+            </SwiperItem>
+
+            <SwiperItem style={styles.SwiperItem_9J}>
+              <Image
+                style={styles.Image_4a}
+                source={{
+                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
+                }}
+                resizeMode={'cover'}
+              />
+              <Text style={[styles.Textw9, { color: theme.colors.light }]}>
+                {'Decentralization'}
+              </Text>
+
+              <View style={styles.View_2M} pointerEvents={'auto'}>
+                <Icon
+                  style={styles.IconpX}
+                  size={24}
+                  color={theme.colors.light}
+                  name={'FontAwesome/dot-circle-o'}
+                />
+                <Text style={[styles.TextQ1, { color: theme.colors.light }]}>
+                  {
+                    'Most organizations have a single authority to maintain and govern their systems, known as Centralization.\n'
+                  }
+                </Text>
+              </View>
+
+              <View style={styles.ViewC3} pointerEvents={'auto'}>
+                <Icon
+                  style={styles.Iconnj}
+                  size={24}
+                  color={theme.colors.light}
+                  name={'FontAwesome/dot-circle-o'}
+                />
+                <Text style={[styles.TextGc, { color: theme.colors.light }]}>
+                  {
+                    'The transfer of control and decision-making from a centralized entity (individual, organization, or group thereof) to a distributed network is Decentralization.\n'
+                  }
+                </Text>
+              </View>
+
+              <View style={styles.Viewjy} pointerEvents={'auto'}>
+                <Icon
+                  style={styles.Icony4}
+                  size={24}
+                  color={theme.colors.light}
+                  name={'FontAwesome/dot-circle-o'}
+                />
+                <Text style={[styles.TextbR, { color: theme.colors.light }]}>
+                  {
+                    'With more direct ownership, people will have to rely on less middlemen in this next version of the internet.'
                   }
                 </Text>
               </View>
@@ -363,58 +363,6 @@ const styles = StyleSheet.create({
     marginTop: 12,
     marginBottom: 24,
   },
-  Image_4a: {
-    width: '100%',
-    height: 200,
-  },
-  Textw9: {
-    marginTop: 12,
-    marginBottom: 12,
-    fontFamily: 'RobotoCondensed_400Regular',
-    fontSize: 18,
-  },
-  IconpX: {
-    right: 8,
-  },
-  TextQ1: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-  },
-  View_2M: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 6,
-  },
-  Iconnj: {
-    right: 8,
-  },
-  TextGc: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-  },
-  ViewC3: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: 6,
-    marginBottom: 6,
-  },
-  Icony4: {
-    right: 8,
-  },
-  TextbR: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-  },
-  Viewjy: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: 6,
-    marginBottom: 6,
-  },
-  SwiperItem_9J: {
-    paddingLeft: 16,
-    paddingRight: 16,
-  },
   Imagece: {
     width: '100%',
     height: 200,
@@ -464,6 +412,58 @@ const styles = StyleSheet.create({
     marginBottom: 6,
   },
   SwiperItem_7g: {
+    paddingLeft: 16,
+    paddingRight: 16,
+  },
+  Image_4a: {
+    width: '100%',
+    height: 200,
+  },
+  Textw9: {
+    marginTop: 12,
+    marginBottom: 12,
+    fontFamily: 'RobotoCondensed_400Regular',
+    fontSize: 18,
+  },
+  IconpX: {
+    right: 8,
+  },
+  TextQ1: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
+  View_2M: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 6,
+  },
+  Iconnj: {
+    right: 8,
+  },
+  TextGc: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
+  ViewC3: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 6,
+    marginBottom: 6,
+  },
+  Icony4: {
+    right: 8,
+  },
+  TextbR: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
+  Viewjy: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 6,
+    marginBottom: 6,
+  },
+  SwiperItem_9J: {
     paddingLeft: 16,
     paddingRight: 16,
   },

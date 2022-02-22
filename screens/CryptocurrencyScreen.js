@@ -94,7 +94,6 @@ const CryptocurrencyScreen = props => {
             dotsTouchable={true}
             dotColor={theme.colors.background}
             loop={true}
-            from={4}
           >
             <SwiperItem style={styles.SwiperItemzS}>
               <Image

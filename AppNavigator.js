@@ -13,19 +13,23 @@ import AvoidingScamsScreen from './screens/AvoidingScamsScreen';
 import BlockchainScreen from './screens/BlockchainScreen';
 import BurnoutScreen from './screens/BurnoutScreen';
 import CollectorScreen from './screens/CollectorScreen';
+import CryptoBasicsScreen from './screens/CryptoBasicsScreen';
 import CryptocurrencyScreen from './screens/CryptocurrencyScreen';
 import DAOsScreen from './screens/DAOsScreen';
 import DappsScreen from './screens/DappsScreen';
 import DefiScreen from './screens/DefiScreen';
 import EconomicsBasicsScreen from './screens/EconomicsBasicsScreen';
 import FeedbackScreen from './screens/FeedbackScreen';
+import HomeScreen from './screens/HomeScreen';
 import InvestorScreen from './screens/InvestorScreen';
 import MetaverseScreen from './screens/MetaverseScreen';
 import NFTsScreen from './screens/NFTsScreen';
 import TaxesScreen from './screens/TaxesScreen';
-import UniversalScreen from './screens/UniversalScreen';
 import WalletsScreen from './screens/WalletsScreen';
+import Web1Screen from './screens/Web1Screen';
+import Web2Screen from './screens/Web2Screen';
 import Web30Screen from './screens/Web30Screen';
+import Web3Screen from './screens/Web3Screen';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -87,10 +91,10 @@ function BottomTabNavigator() {
       }}
     >
       <Tab.Screen
-        name="UniversalScreen"
-        component={UniversalScreen}
+        name="CryptoBasicsScreen"
+        component={CryptoBasicsScreen}
         options={{
-          title: 'Universal',
+          title: 'Crypto Basics',
           tabBarIcon: ({ focused, color }) => (
             <Icon
               name="Ionicons/library-sharp"
@@ -151,7 +155,7 @@ export default function RootAppNavigator() {
     <NavigationContainer linking={LinkingConfiguration}>
       <Stack.Navigator
         headerMode="none"
-        initialRouteName="BottomTabNavigator"
+        initialRouteName="HomeScreen"
         screenOptions={{
           animationEnabled: true,
         }}
@@ -225,6 +229,26 @@ export default function RootAppNavigator() {
           name="TaxesScreen"
           component={TaxesScreen}
           options={{ title: 'Taxes' }}
+        />
+        <Stack.Screen
+          name="HomeScreen"
+          component={HomeScreen}
+          options={{ title: 'Home' }}
+        />
+        <Stack.Screen
+          name="Web1Screen"
+          component={Web1Screen}
+          options={{ title: 'Web1' }}
+        />
+        <Stack.Screen
+          name="Web2Screen"
+          component={Web2Screen}
+          options={{ title: 'Web2' }}
+        />
+        <Stack.Screen
+          name="Web3Screen"
+          component={Web3Screen}
+          options={{ title: 'Web3' }}
         />
         <Stack.Screen
           name="BottomTabNavigator"

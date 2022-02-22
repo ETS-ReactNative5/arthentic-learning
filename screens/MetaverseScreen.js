@@ -217,7 +217,7 @@ const MetaverseScreen = props => {
                   color: theme.colors.primary,
                 },
               ]}
-              title={'Next Up:\nMaking Your Web3 Content'}
+              title={'Next Up:\nWallets, Your Account for Everything'}
             />
           </View>
         </ScrollView>

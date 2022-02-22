@@ -31,7 +31,7 @@ const NFTsScreen = props => {
             onPress={() => {
               try {
                 navigation.navigate('BottomTabNavigator', {
-                  screen: 'UniversalScreen',
+                  screen: 'CryptoBasicsScreen',
                 });
               } catch (err) {
                 console.error(err);
@@ -104,7 +104,7 @@ const NFTsScreen = props => {
                 resizeMode={'cover'}
               />
               <Text style={[styles.Text_7k, { color: theme.colors.light }]}>
-                {'The NFT, AKA Non-Fungible Token'}
+                {'The NFT (Non-Fungible Token)'}
               </Text>
 
               <View style={styles.ViewLL} pointerEvents={'auto'}>

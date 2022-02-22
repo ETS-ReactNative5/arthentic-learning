@@ -16,6 +16,7 @@ export default {
     mediumInverse: 'rgb(107, 53, 181)',
     lightInverse: 'rgb(116, 64, 188)',
     background_2: 'rgb(116, 64, 188)',
+    yellow: 'rgb(254, 223, 147)',
   },
   typography: {
     headline1: {

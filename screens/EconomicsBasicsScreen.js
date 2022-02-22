@@ -31,7 +31,7 @@ const EconomicsBasicsScreen = props => {
             onPress={() => {
               try {
                 navigation.navigate('BottomTabNavigator', {
-                  screen: 'UniversalScreen',
+                  screen: 'CryptoBasicsScreen',
                 });
               } catch (err) {
                 console.error(err);
