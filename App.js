@@ -74,7 +74,6 @@ const App = () => {
     Roboto_700Bold,
     Roboto_700Bold,
     Roboto_700Bold,
-    Roboto_700Bold,
   });
 
   if (!isReady || !fontsLoaded) {

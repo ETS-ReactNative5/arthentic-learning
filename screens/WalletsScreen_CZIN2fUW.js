@@ -21,8 +21,8 @@ const WalletsScreen_CZIN2fUW = props => {
         style={styles.LinearGradientxZ}
         endY={100}
         endX={100}
-        color1={theme.colors.secondary}
-        color2={theme.colors.mediumInverse}
+        color1={theme.colors.mediumInverse}
+        color2={theme.colors.secondary}
       >
         <View style={styles.Viewk9} pointerEvents={'auto'}>
           <ButtonSolid
@@ -58,29 +58,19 @@ const WalletsScreen_CZIN2fUW = props => {
           bounces={true}
         >
           <Text style={[styles.TextvX, { color: theme.colors.light }]}>
-            {'The Wallet is everything about your personal'}
+            {'The Web3 Wallet is everything about your personal'}
           </Text>
 
           <Text style={[styles.TextFs, { color: theme.colors.primary }]}>
             {'Identity'}
           </Text>
 
-          <View style={styles.ViewrO} pointerEvents={'auto'}>
-            <View style={styles.ViewOs} pointerEvents={'auto'}>
-              <Text style={[styles.Text_1E, { color: theme.colors.light }]}>
-                {'A Web3 Wallet is a tool for '}
-              </Text>
-
-              <Text style={[styles.Textjk, { color: theme.colors.light }]}>
-                {'accessing '}
-              </Text>
-            </View>
-
-            <View style={styles.View_0M} pointerEvents={'auto'}>
-              <Text style={[styles.Textpc, { color: theme.colors.light }]}>
-                {'and we want to show you exactly how, starting with:'}
-              </Text>
-            </View>
+          <View style={styles.View_0M} pointerEvents={'auto'}>
+            <Text style={[styles.Textpc, { color: theme.colors.light }]}>
+              {
+                'A Wallet is a tool for accessing the Web3 economy (DeFi, Blockchain, NFTs, DApps, Airdrops, etc.). You can store digital assets securely without needing to trust a third party.'
+              }
+            </Text>
           </View>
 
           <View style={styles.ViewcM} pointerEvents={'auto'}>
@@ -303,30 +293,13 @@ const styles = StyleSheet.create({
     marginTop: 12,
     marginBottom: 24,
   },
-  Text_1E: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 14,
-    textAlign: 'center',
-  },
-  Textjk: {
-    fontFamily: 'Roboto_700Bold',
-    fontSize: 14,
-    textAlign: 'center',
-  },
-  ViewOs: {
-    flexDirection: 'row',
-  },
   Textpc: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 14,
   },
   View_0M: {
     flexDirection: 'row',
-  },
-  ViewrO: {
-    paddingLeft: 24,
-    paddingRight: 24,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   TextCO: {
     fontFamily: 'RobotoCondensed_700Bold',

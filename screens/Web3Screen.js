@@ -8,7 +8,7 @@ import {
   ScreenContainer,
   withTheme,
 } from '@draftbit/ui';
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 const Web3Screen = props => {
   const { theme } = props;
@@ -51,7 +51,11 @@ const Web3Screen = props => {
           />
         </View>
 
-        <View style={styles.ViewAN} pointerEvents={'auto'}>
+        <ScrollView
+          contentContainerStyle={styles.ScrollViewFpContent}
+          showsVerticalScrollIndicator={true}
+          bounces={true}
+        >
           <Text style={[styles.TextHZ, { color: theme.colors.light }]}>
             {'The New Internet is all about letting people have'}
           </Text>
@@ -163,7 +167,7 @@ const Web3Screen = props => {
             ]}
             title={'The Metaverse'}
           />
-        </View>
+        </ScrollView>
       </LinearGradient>
     </ScreenContainer>
   );
@@ -313,12 +317,12 @@ const styles = StyleSheet.create({
     marginTop: 24,
     marginBottom: 24,
   },
-  ViewAN: {
-    alignItems: 'center',
-    marginLeft: 18,
-    marginRight: 18,
+  ScrollViewFpContent: {
     paddingTop: 32,
     paddingBottom: 32,
+    marginLeft: 18,
+    marginRight: 18,
+    alignItems: 'center',
   },
   LinearGradientvo: {
     width: '100%',

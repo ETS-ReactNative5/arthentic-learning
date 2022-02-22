@@ -10,7 +10,7 @@ import {
   Touchable,
   withTheme,
 } from '@draftbit/ui';
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 const HomeScreen = props => {
   const { theme } = props;
@@ -54,123 +54,125 @@ const HomeScreen = props => {
           />
         </View>
 
-        <View style={styles.ViewOe} pointerEvents={'auto'}>
-          <ButtonSolid
-            onPress={() => {
-              try {
-                navigation.navigate('Web1Screen');
-              } catch (err) {
-                console.error(err);
-              }
-            }}
-            style={[
-              styles.ButtonSolidDb,
-              {
-                backgroundColor: theme.colors.mediumInverse,
-                color: theme.colors.medium,
-              },
-            ]}
-            title={'A New Internet is Here!'}
-          />
-          <ButtonSolid
-            onPress={() => {
-              try {
-                navigation.navigate('MetaverseScreen');
-              } catch (err) {
-                console.error(err);
-              }
-            }}
-            style={[
-              styles.ButtonSolid_1s,
-              {
-                backgroundColor: theme.colors.mediumInverse,
-                color: theme.colors.medium,
-              },
-            ]}
-            title={'Intro to the Metaverse'}
-          />
-          <ButtonSolid
-            onPress={() => {
-              try {
-                navigation.navigate('WalletsScreen_CZIN2fUW');
-              } catch (err) {
-                console.error(err);
-              }
-            }}
-            style={[
-              styles.ButtonSolidAM,
-              {
-                backgroundColor: theme.colors.mediumInverse,
-                color: theme.colors.medium,
-              },
-            ]}
-            title={'Accessing Web3\n(Wallets)'}
-          />
-        </View>
-
-        <View style={styles.Viewyh} pointerEvents={'auto'}>
-          <View style={styles.Viewba} pointerEvents={'auto'}>
-            <Touchable>
-              <View style={styles.Viewls} pointerEvents={'auto'}>
-                <Circle size={80} bgColor={theme.colors.secondary}>
-                  <Circle size={70} bgColor={theme.colors.divider}>
-                    <Icon
-                      size={32}
-                      color={theme.colors.primary}
-                      name={'FontAwesome/paint-brush'}
-                    />
-                  </Circle>
-                </Circle>
-
-                <Text style={[styles.TextOD, { color: theme.colors.light }]}>
-                  {'Artists'}
-                </Text>
-              </View>
-            </Touchable>
+        <ScrollView showsVerticalScrollIndicator={true} bounces={true}>
+          <View style={styles.ViewOe} pointerEvents={'auto'}>
+            <ButtonSolid
+              onPress={() => {
+                try {
+                  navigation.navigate('Web1Screen');
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+              style={[
+                styles.ButtonSolidDb,
+                {
+                  backgroundColor: theme.colors.mediumInverse,
+                  color: theme.colors.medium,
+                },
+              ]}
+              title={'A New Internet is Here!'}
+            />
+            <ButtonSolid
+              onPress={() => {
+                try {
+                  navigation.navigate('MetaverseScreen');
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+              style={[
+                styles.ButtonSolid_1s,
+                {
+                  backgroundColor: theme.colors.mediumInverse,
+                  color: theme.colors.medium,
+                },
+              ]}
+              title={'Intro to the Metaverse'}
+            />
+            <ButtonSolid
+              onPress={() => {
+                try {
+                  navigation.navigate('WalletsScreen_CZIN2fUW');
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+              style={[
+                styles.ButtonSolidAM,
+                {
+                  backgroundColor: theme.colors.mediumInverse,
+                  color: theme.colors.medium,
+                },
+              ]}
+              title={'Accessing Web3\n(Wallets)'}
+            />
           </View>
-          <Spacer top={0} right={16} bottom={0} left={16} />
-          <View style={styles.ViewLV} pointerEvents={'auto'}>
-            <Touchable>
-              <View style={styles.Viewtl} pointerEvents={'auto'}>
-                <Circle size={80} bgColor={theme.colors.secondary}>
-                  <Circle size={70} bgColor={theme.colors.divider}>
-                    <Icon
-                      size={32}
-                      color={theme.colors.primary}
-                      name={'Foundation/bitcoin-circle'}
-                    />
+
+          <View style={styles.Viewyh} pointerEvents={'auto'}>
+            <View style={styles.Viewba} pointerEvents={'auto'}>
+              <Touchable>
+                <View style={styles.Viewls} pointerEvents={'auto'}>
+                  <Circle size={80} bgColor={theme.colors.secondary}>
+                    <Circle size={70} bgColor={theme.colors.divider}>
+                      <Icon
+                        size={32}
+                        color={theme.colors.primary}
+                        name={'FontAwesome/paint-brush'}
+                      />
+                    </Circle>
                   </Circle>
-                </Circle>
 
-                <Text style={[styles.TextXE, { color: theme.colors.light }]}>
-                  {'Investors'}
-                </Text>
-              </View>
-            </Touchable>
-          </View>
-        </View>
-
-        <View pointerEvents={'auto'}>
-          <View style={styles.ViewyN} pointerEvents={'auto'}>
-            <Touchable>
-              <View style={styles.View_1i} pointerEvents={'auto'}>
-                <Circle size={80} bgColor={theme.colors.secondary}>
-                  <Circle size={70} bgColor={theme.colors.divider}>
-                    <Icon
-                      size={32}
-                      color={theme.colors.primary}
-                      name={'FontAwesome/group'}
-                    />
+                  <Text style={[styles.TextOD, { color: theme.colors.light }]}>
+                    {'Artists'}
+                  </Text>
+                </View>
+              </Touchable>
+            </View>
+            <Spacer top={0} right={16} bottom={0} left={16} />
+            <View style={styles.ViewLV} pointerEvents={'auto'}>
+              <Touchable>
+                <View style={styles.Viewtl} pointerEvents={'auto'}>
+                  <Circle size={80} bgColor={theme.colors.secondary}>
+                    <Circle size={70} bgColor={theme.colors.divider}>
+                      <Icon
+                        size={32}
+                        color={theme.colors.primary}
+                        name={'Foundation/bitcoin-circle'}
+                      />
+                    </Circle>
                   </Circle>
-                </Circle>
 
-                <Text style={[styles.TextrU, { color: theme.colors.light }]}>
-                  {'Collectors'}
-                </Text>
-              </View>
-            </Touchable>
+                  <Text style={[styles.TextXE, { color: theme.colors.light }]}>
+                    {'Investors'}
+                  </Text>
+                </View>
+              </Touchable>
+            </View>
           </View>
-        </View>
+
+          <View pointerEvents={'auto'}>
+            <View style={styles.ViewyN} pointerEvents={'auto'}>
+              <Touchable>
+                <View style={styles.View_1i} pointerEvents={'auto'}>
+                  <Circle size={80} bgColor={theme.colors.secondary}>
+                    <Circle size={70} bgColor={theme.colors.divider}>
+                      <Icon
+                        size={32}
+                        color={theme.colors.primary}
+                        name={'FontAwesome/group'}
+                      />
+                    </Circle>
+                  </Circle>
+
+                  <Text style={[styles.TextrU, { color: theme.colors.light }]}>
+                    {'Collectors'}
+                  </Text>
+                </View>
+              </Touchable>
+            </View>
+          </View>
+        </ScrollView>
       </LinearGradient>
     </ScreenContainer>
   );

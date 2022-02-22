@@ -9,7 +9,7 @@ import {
   Touchable,
   withTheme,
 } from '@draftbit/ui';
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 const Web1Screen = props => {
   const { theme } = props;
@@ -58,7 +58,11 @@ const Web1Screen = props => {
           />
         </View>
 
-        <View style={styles.ViewUG} pointerEvents={'auto'}>
+        <ScrollView
+          contentContainerStyle={styles.ScrollView_7qContent}
+          showsVerticalScrollIndicator={true}
+          bounces={true}
+        >
           <Text style={[styles.Textac, { color: theme.colors.mediumInverse }]}>
             {'When the internet first came out, the main function was'}
           </Text>
@@ -180,7 +184,7 @@ const Web1Screen = props => {
             ]}
             title={"But This Wouldn't Last..."}
           />
-        </View>
+        </ScrollView>
       </LinearGradient>
     </ScreenContainer>
   );
@@ -337,12 +341,12 @@ const styles = StyleSheet.create({
     marginTop: 24,
     marginBottom: 24,
   },
-  ViewUG: {
-    alignItems: 'center',
-    marginLeft: 18,
-    marginRight: 18,
+  ScrollView_7qContent: {
     paddingTop: 32,
     paddingBottom: 32,
+    marginLeft: 18,
+    marginRight: 18,
+    alignItems: 'center',
   },
   LinearGradient_1L: {
     width: '100%',

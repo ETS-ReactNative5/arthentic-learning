@@ -7,7 +7,7 @@ import {
   TextField,
   withTheme,
 } from '@draftbit/ui';
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 const FeedbackScreen = props => {
   const { theme } = props;
@@ -54,102 +54,107 @@ const FeedbackScreen = props => {
           />
         </View>
 
-        <View
-          style={[
-            styles.View_1Z,
-            { backgroundColor: theme.colors.lightInverse, borderRadius: 12 },
-          ]}
-          pointerEvents={'auto'}
-        >
-          <Text style={[styles.TextGi, { color: theme.colors.surface }]}>
-            {'Feedback'}
-          </Text>
-        </View>
+        <ScrollView showsVerticalScrollIndicator={true} bounces={true}>
+          <View
+            style={[
+              styles.View_1Z,
+              { backgroundColor: theme.colors.lightInverse, borderRadius: 12 },
+            ]}
+            pointerEvents={'auto'}
+          >
+            <Text style={[styles.TextGi, { color: theme.colors.surface }]}>
+              {'Feedback'}
+            </Text>
+          </View>
 
-        <View style={styles.Viewvw} pointerEvents={'auto'}>
-          <TextField
-            onChangeText={textFieldValue => {
-              try {
-                setTextFieldValue(textFieldValue);
-              } catch (err) {
-                console.error(err);
+          <View style={styles.Viewvw} pointerEvents={'auto'}>
+            <TextField
+              onChangeText={newStyledTextFieldValue => {
+                const textFieldValue = newStyledTextFieldValue;
+                try {
+                  setTextFieldValue(textFieldValue);
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+              style={[
+                styles.TextFieldEL,
+                {
+                  color: theme.colors.background,
+                  borderRadius: 12,
+                  borderColor: theme.colors.background,
+                  backgroundColor: theme.colors.medium,
+                },
+              ]}
+              placeholder={'Name'}
+              type={'solid'}
+              value={textFieldValue}
+              placeholderTextColor={theme.colors.background}
+            />
+            <TextField
+              onChangeText={newStyledTextFieldValue => {
+                const textFieldValue = newStyledTextFieldValue;
+                try {
+                  setTextFieldValue(textFieldValue);
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+              style={[
+                styles.TextFieldEi,
+                {
+                  color: theme.colors.background,
+                  backgroundColor: theme.colors.medium,
+                  borderRadius: 12,
+                  borderColor: theme.colors.background,
+                },
+              ]}
+              placeholder={'IG/Twitter'}
+              type={'solid'}
+              value={textFieldValue}
+              placeholderTextColor={theme.colors.background}
+            />
+            <TextField
+              onChangeText={newStyledTextAreaValue => {
+                const textAreaValue = newStyledTextAreaValue;
+                try {
+                  setTextAreaValue(textAreaValue);
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+              style={[
+                styles.TextFieldWp,
+                {
+                  backgroundColor: theme.colors.medium,
+                  color: theme.colors.background,
+                  borderColor: theme.colors.background,
+                },
+              ]}
+              placeholder={
+                'How can we improve? Is there anything we got wrong? Do you need help with setting up an NFT or DAO? Anything we didn’t think of?'
               }
-            }}
-            style={[
-              styles.TextFieldEL,
-              {
-                color: theme.colors.background,
-                borderRadius: 12,
-                borderColor: theme.colors.background,
-                backgroundColor: theme.colors.medium,
-              },
-            ]}
-            placeholder={'Name'}
-            type={'solid'}
-            value={textFieldValue}
-            placeholderTextColor={theme.colors.background}
-          />
-          <TextField
-            onChangeText={textFieldValue => {
-              try {
-                setTextFieldValue(textFieldValue);
-              } catch (err) {
-                console.error(err);
-              }
-            }}
-            style={[
-              styles.TextFieldEi,
-              {
-                color: theme.colors.background,
-                backgroundColor: theme.colors.medium,
-                borderRadius: 12,
-                borderColor: theme.colors.background,
-              },
-            ]}
-            placeholder={'IG/Twitter'}
-            type={'solid'}
-            value={textFieldValue}
-            placeholderTextColor={theme.colors.background}
-          />
-          <TextField
-            onChangeText={textAreaValue => {
-              try {
-                setTextAreaValue(textAreaValue);
-              } catch (err) {
-                console.error(err);
-              }
-            }}
-            style={[
-              styles.TextFieldWp,
-              {
-                backgroundColor: theme.colors.medium,
-                color: theme.colors.background,
-                borderColor: theme.colors.background,
-              },
-            ]}
-            placeholder={
-              'How can we improve? Is there anything we got wrong? Do you need help with setting up an NFT or DAO? Anything we didn’t think of?'
-            }
-            type={'solid'}
-            multiline={true}
-            numberOfLines={6}
-            value={textAreaValue}
-            placeholderTextColor={theme.colors.background}
-          />
-        </View>
+              type={'solid'}
+              multiline={true}
+              numberOfLines={6}
+              value={textAreaValue}
+              placeholderTextColor={theme.colors.background}
+            />
+          </View>
 
-        <View style={styles.Viewjm} pointerEvents={'auto'}>
-          <ButtonSolid
-            style={[
-              styles.ButtonSolidbW,
-              {
-                backgroundColor: theme.colors.secondary,
-                color: theme.colors.primary,
-              },
-            ]}
-            title={'Thank You For Letting Us Know!'}
-          />
-        </View>
+          <View style={styles.Viewjm} pointerEvents={'auto'}>
+            <ButtonSolid
+              style={[
+                styles.ButtonSolidbW,
+                {
+                  backgroundColor: theme.colors.secondary,
+                  color: theme.colors.primary,
+                },
+              ]}
+              title={'Thank You For Letting Us Know!'}
+            />
+          </View>
+        </ScrollView>
       </LinearGradient>
     </ScreenContainer>
   );

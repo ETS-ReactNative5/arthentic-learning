@@ -8,7 +8,7 @@ import {
   Touchable,
   withTheme,
 } from '@draftbit/ui';
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 const Web2Screen = props => {
   const { theme } = props;
@@ -71,7 +71,11 @@ const Web2Screen = props => {
           />
         </View>
 
-        <View style={styles.Viewua} pointerEvents={'auto'}>
+        <ScrollView
+          contentContainerStyle={styles.ScrollViewCLContent}
+          showsVerticalScrollIndicator={true}
+          bounces={true}
+        >
           <Text style={[styles.TextZd, { color: theme.colors.mediumInverse }]}>
             {
               "Big companies started working on the 'current' internet, which allowed"
@@ -296,7 +300,7 @@ const Web2Screen = props => {
             ]}
             title={'So People Built Their Own Internet...'}
           />
-        </View>
+        </ScrollView>
       </LinearGradient>
     </ScreenContainer>
   );
@@ -526,12 +530,12 @@ const styles = StyleSheet.create({
     marginTop: 24,
     marginBottom: 24,
   },
-  Viewua: {
-    alignItems: 'center',
-    marginLeft: 18,
-    marginRight: 18,
+  ScrollViewCLContent: {
     paddingTop: 32,
     paddingBottom: 32,
+    marginLeft: 18,
+    marginRight: 18,
+    alignItems: 'center',
   },
   LinearGradientl7: {
     width: '100%',
