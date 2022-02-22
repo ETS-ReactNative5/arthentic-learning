@@ -27,7 +27,7 @@ const Web3Screen = props => {
           <ButtonSolid
             onPress={() => {
               try {
-                navigation.navigate('RootNavigator');
+                navigation.navigate('HomeScreen');
               } catch (err) {
                 console.error(err);
               }
@@ -39,7 +39,7 @@ const Web3Screen = props => {
                 color: theme.colors.background,
               },
             ]}
-            title={'Back to Menu'}
+            title={'Back Home'}
           />
         </View>
 
@@ -150,6 +150,13 @@ const Web3Screen = props => {
             </View>
           </View>
           <ButtonOutline
+            onPress={() => {
+              try {
+                navigation.navigate('MetaverseScreen');
+              } catch (err) {
+                console.error(err);
+              }
+            }}
             style={[
               styles.ButtonOutlineHH,
               { backgroundColor: theme.colors.secondary },

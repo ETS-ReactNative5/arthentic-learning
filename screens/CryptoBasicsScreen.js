@@ -178,7 +178,7 @@ const CryptoBasicsScreen = props => {
             <Touchable
               onPress={() => {
                 try {
-                  navigation.navigate('WalletsScreen');
+                  navigation.navigate('WalletOldScreen');
                 } catch (err) {
                   console.error(err);
                 }

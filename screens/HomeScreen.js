@@ -6,6 +6,7 @@ import {
   Icon,
   LinearGradient,
   ScreenContainer,
+  Spacer,
   Touchable,
   withTheme,
 } from '@draftbit/ui';
@@ -72,6 +73,13 @@ const HomeScreen = props => {
             title={'A New Internet is Here!'}
           />
           <ButtonSolid
+            onPress={() => {
+              try {
+                navigation.navigate('MetaverseScreen');
+              } catch (err) {
+                console.error(err);
+              }
+            }}
             style={[
               styles.ButtonSolid_1s,
               {
@@ -82,6 +90,13 @@ const HomeScreen = props => {
             title={'Intro to the Metaverse'}
           />
           <ButtonSolid
+            onPress={() => {
+              try {
+                navigation.navigate('WalletsScreen_CZIN2fUW');
+              } catch (err) {
+                console.error(err);
+              }
+            }}
             style={[
               styles.ButtonSolidAM,
               {
@@ -95,15 +110,7 @@ const HomeScreen = props => {
 
         <View style={styles.Viewyh} pointerEvents={'auto'}>
           <View style={styles.Viewba} pointerEvents={'auto'}>
-            <Touchable
-              onPress={() => {
-                try {
-                  navigation.navigate('CryptocurrencyScreen');
-                } catch (err) {
-                  console.error(err);
-                }
-              }}
-            >
+            <Touchable>
               <View style={styles.Viewls} pointerEvents={'auto'}>
                 <Circle size={80} bgColor={theme.colors.secondary}>
                   <Circle size={70} bgColor={theme.colors.divider}>
@@ -121,17 +128,9 @@ const HomeScreen = props => {
               </View>
             </Touchable>
           </View>
-
+          <Spacer top={0} right={16} bottom={0} left={16} />
           <View style={styles.ViewLV} pointerEvents={'auto'}>
-            <Touchable
-              onPress={() => {
-                try {
-                  navigation.navigate('DefiScreen');
-                } catch (err) {
-                  console.error(err);
-                }
-              }}
-            >
+            <Touchable>
               <View style={styles.Viewtl} pointerEvents={'auto'}>
                 <Circle size={80} bgColor={theme.colors.secondary}>
                   <Circle size={70} bgColor={theme.colors.divider}>
@@ -153,15 +152,7 @@ const HomeScreen = props => {
 
         <View pointerEvents={'auto'}>
           <View style={styles.ViewyN} pointerEvents={'auto'}>
-            <Touchable
-              onPress={() => {
-                try {
-                  navigation.navigate('TaxesScreen');
-                } catch (err) {
-                  console.error(err);
-                }
-              }}
-            >
+            <Touchable>
               <View style={styles.View_1i} pointerEvents={'auto'}>
                 <Circle size={80} bgColor={theme.colors.secondary}>
                   <Circle size={70} bgColor={theme.colors.divider}>
@@ -187,8 +178,8 @@ const HomeScreen = props => {
 
 const styles = StyleSheet.create({
   ButtonSolid_6u: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
+    fontFamily: 'RobotoCondensed_700Bold',
+    fontSize: 14,
   },
   ViewET: {
     alignSelf: 'flex-end',

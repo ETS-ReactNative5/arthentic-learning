@@ -6,7 +6,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import theme from './themes/DraftbitTheme.js';
-import LinkingConfiguration from './LinkingConfiguration.js';
 
 import ArtistScreen from './screens/ArtistScreen';
 import AvoidingScamsScreen from './screens/AvoidingScamsScreen';
@@ -25,7 +24,8 @@ import InvestorScreen from './screens/InvestorScreen';
 import MetaverseScreen from './screens/MetaverseScreen';
 import NFTsScreen from './screens/NFTsScreen';
 import TaxesScreen from './screens/TaxesScreen';
-import WalletsScreen from './screens/WalletsScreen';
+import WalletOldScreen from './screens/WalletOldScreen';
+import WalletsScreen_CZIN2fUW from './screens/WalletsScreen_CZIN2fUW';
 import Web1Screen from './screens/Web1Screen';
 import Web2Screen from './screens/Web2Screen';
 import Web30Screen from './screens/Web30Screen';
@@ -73,86 +73,9 @@ function Placeholder() {
     </View>
   );
 }
-function BottomTabNavigator() {
-  return (
-    <Tab.Navigator
-      initialRouteName="UniversalScreen"
-      tabBarOptions={{
-        showLabel: true,
-        labelPosition: 'below-icon',
-        activeTintColor: theme.colors.background,
-        inactiveTintColor: theme.colors.surface,
-        activeBackgroundColor: theme.colors.medium,
-        inactiveBackgroundColor: theme.colors.background,
-        style: {
-          backgroundColor: theme.colors.lightInverse,
-          borderTopColor: theme.colors.lightInverse,
-        },
-      }}
-    >
-      <Tab.Screen
-        name="CryptoBasicsScreen"
-        component={CryptoBasicsScreen}
-        options={{
-          title: 'Crypto Basics',
-          tabBarIcon: ({ focused, color }) => (
-            <Icon
-              name="Ionicons/library-sharp"
-              size={25}
-              color={focused ? theme.colors.background : theme.colors.surface}
-            />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="CollectorScreen"
-        component={CollectorScreen}
-        options={{
-          title: 'Collector',
-          tabBarIcon: ({ focused, color }) => (
-            <Icon
-              name="FontAwesome/group"
-              size={25}
-              color={focused ? theme.colors.background : theme.colors.surface}
-            />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="InvestorScreen"
-        component={InvestorScreen}
-        options={{
-          title: 'Investor',
-          tabBarIcon: ({ focused, color }) => (
-            <Icon
-              name="FontAwesome/money"
-              size={25}
-              color={focused ? theme.colors.background : theme.colors.surface}
-            />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="ArtistScreen"
-        component={ArtistScreen}
-        options={{
-          title: 'Artist',
-          tabBarIcon: ({ focused, color }) => (
-            <Icon
-              name="FontAwesome/paint-brush"
-              size={25}
-              color={focused ? theme.colors.background : theme.colors.surface}
-            />
-          ),
-        }}
-      />
-    </Tab.Navigator>
-  );
-}
-
 export default function RootAppNavigator() {
   return (
-    <NavigationContainer linking={LinkingConfiguration}>
+    <NavigationContainer>
       <Stack.Navigator
         headerMode="none"
         initialRouteName="HomeScreen"
@@ -161,9 +84,29 @@ export default function RootAppNavigator() {
         }}
       >
         <Stack.Screen
+          name="CryptoBasicsScreen"
+          component={CryptoBasicsScreen}
+          options={{ title: 'Crypto Basics' }}
+        />
+        <Stack.Screen
           name="FeedbackScreen"
           component={FeedbackScreen}
           options={{ title: 'Feedback' }}
+        />
+        <Stack.Screen
+          name="ArtistScreen"
+          component={ArtistScreen}
+          options={{ title: 'Artist' }}
+        />
+        <Stack.Screen
+          name="CollectorScreen"
+          component={CollectorScreen}
+          options={{ title: 'Collector' }}
+        />
+        <Stack.Screen
+          name="InvestorScreen"
+          component={InvestorScreen}
+          options={{ title: 'Investor' }}
         />
         <Stack.Screen
           name="EconomicsBasicsScreen"
@@ -181,9 +124,9 @@ export default function RootAppNavigator() {
           options={{ title: 'Blockchain' }}
         />
         <Stack.Screen
-          name="WalletsScreen"
-          component={WalletsScreen}
-          options={{ title: 'Wallets' }}
+          name="WalletOldScreen"
+          component={WalletOldScreen}
+          options={{ title: 'Wallet_Old' }}
         />
         <Stack.Screen
           name="DAOsScreen"
@@ -251,8 +194,9 @@ export default function RootAppNavigator() {
           options={{ title: 'Web3' }}
         />
         <Stack.Screen
-          name="BottomTabNavigator"
-          component={BottomTabNavigator}
+          name="WalletsScreen_CZIN2fUW"
+          component={WalletsScreen_CZIN2fUW}
+          options={{ title: 'Wallets' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

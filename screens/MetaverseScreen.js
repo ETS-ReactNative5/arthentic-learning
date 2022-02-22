@@ -30,9 +30,7 @@ const MetaverseScreen = props => {
           <ButtonSolid
             onPress={() => {
               try {
-                navigation.navigate('BottomTabNavigator', {
-                  screen: 'ArtistScreen',
-                });
+                navigation.navigate('HomeScreen');
               } catch (err) {
                 console.error(err);
               }
@@ -45,25 +43,7 @@ const MetaverseScreen = props => {
                 borderRadius: 12,
               },
             ]}
-            title={'Back to\nLearning'}
-          />
-          <ButtonSolid
-            onPress={() => {
-              try {
-                navigation.navigate('FeedbackScreen');
-              } catch (err) {
-                console.error(err);
-              }
-            }}
-            style={[
-              styles.ButtonSolidph,
-              {
-                color: theme.colors.light,
-                borderRadius: 12,
-                backgroundColor: theme.colors.mediumInverse,
-              },
-            ]}
-            title={'Feedback'}
+            title={'Home'}
           />
         </View>
 
@@ -112,11 +92,11 @@ const MetaverseScreen = props => {
                   style={styles.Iconsv}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/virtual-reality'}
                 />
                 <Text style={[styles.TextvU, { color: theme.colors.light }]}>
                   {
-                    'Virtual reality worlds where users will interact with the new internet(web3).\n'
+                    'Virtual reality worlds are where users will interact with the new internet(web3).\n'
                   }
                 </Text>
               </View>
@@ -126,7 +106,7 @@ const MetaverseScreen = props => {
                   style={styles.Iconkq}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Ionicons/infinite'}
                 />
                 <Text style={[styles.TextU6, { color: theme.colors.light }]}>
                   {
@@ -140,7 +120,7 @@ const MetaverseScreen = props => {
                   style={styles.IconzB}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Foundation/social-game-center'}
                 />
                 <Text style={[styles.TextPv, { color: theme.colors.light }]}>
                   {
@@ -205,7 +185,7 @@ const MetaverseScreen = props => {
             <ButtonSolid
               onPress={() => {
                 try {
-                  navigation.navigate('NFTsScreen');
+                  navigation.navigate('WalletsScreen_CZIN2fUW');
                 } catch (err) {
                   console.error(err);
                 }
@@ -232,14 +212,10 @@ const styles = StyleSheet.create({
     fontSize: 12,
     textAlign: 'center',
   },
-  ButtonSolidph: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-  },
   ViewkT: {
     alignSelf: 'flex-end',
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'flex-end',
     width: '100%',
   },
   Image_1W: {

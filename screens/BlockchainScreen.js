@@ -30,9 +30,7 @@ const BlockchainScreen = props => {
           <ButtonSolid
             onPress={() => {
               try {
-                navigation.navigate('BottomTabNavigator', {
-                  screen: 'CryptoBasicsScreen',
-                });
+                navigation.navigate('RootNavigator');
               } catch (err) {
                 console.error(err);
               }
@@ -640,7 +638,7 @@ const BlockchainScreen = props => {
             <ButtonSolid
               onPress={() => {
                 try {
-                  navigation.navigate('WalletsScreen');
+                  navigation.navigate('WalletOldScreen');
                 } catch (err) {
                   console.error(err);
                 }
