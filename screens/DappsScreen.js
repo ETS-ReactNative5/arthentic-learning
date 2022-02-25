@@ -30,9 +30,7 @@ const DappsScreen = props => {
           <ButtonSolid
             onPress={() => {
               try {
-                navigation.navigate('BottomTabNavigator', {
-                  screen: 'CryptoBasicsScreen',
-                });
+                navigation.goBack();
               } catch (err) {
                 console.error(err);
               }

@@ -9,7 +9,7 @@ import {
   Touchable,
   withTheme,
 } from '@draftbit/ui';
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 const CryptoBasicsScreen = props => {
   const { theme } = props;
@@ -65,195 +65,197 @@ const CryptoBasicsScreen = props => {
           </Text>
         </View>
 
-        <View style={styles.View_9m} pointerEvents={'auto'}>
-          <Touchable
-            onPress={() => {
-              try {
-                navigation.navigate('NFTsScreen');
-              } catch (err) {
-                console.error(err);
-              }
-            }}
-          >
-            <View style={styles.ViewAe} pointerEvents={'auto'}>
-              <Circle size={80} bgColor={theme.colors.secondary}>
-                <Circle size={70} bgColor={theme.colors.divider}>
-                  <Icon
-                    size={32}
-                    color={theme.colors.primary}
-                    name={'MaterialCommunityIcons/lightbulb-group'}
-                  />
+        <ScrollView showsVerticalScrollIndicator={true} bounces={true}>
+          <View style={styles.View_9m} pointerEvents={'auto'}>
+            <Touchable
+              onPress={() => {
+                try {
+                  navigation.navigate('NFTsScreen');
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+            >
+              <View style={styles.ViewAe} pointerEvents={'auto'}>
+                <Circle size={80} bgColor={theme.colors.secondary}>
+                  <Circle size={70} bgColor={theme.colors.divider}>
+                    <Icon
+                      size={32}
+                      color={theme.colors.primary}
+                      name={'MaterialCommunityIcons/lightbulb-group'}
+                    />
+                  </Circle>
                 </Circle>
-              </Circle>
 
-              <Text style={[styles.Textb8, { color: theme.colors.light }]}>
-                {'The Low-Down \non NFTs'}
-              </Text>
+                <Text style={[styles.Textb8, { color: theme.colors.light }]}>
+                  {'The Low-Down \non NFTs'}
+                </Text>
+              </View>
+            </Touchable>
+          </View>
+
+          <View style={styles.Viewwv} pointerEvents={'auto'}>
+            <View style={styles.ViewPC} pointerEvents={'auto'}>
+              <Touchable
+                onPress={() => {
+                  try {
+                    navigation.navigate('EconomicsBasicsScreen');
+                  } catch (err) {
+                    console.error(err);
+                  }
+                }}
+              >
+                <View style={styles.ViewF7} pointerEvents={'auto'}>
+                  <Circle size={80} bgColor={theme.colors.secondary}>
+                    <Circle size={70} bgColor={theme.colors.divider}>
+                      <Icon
+                        size={32}
+                        color={theme.colors.primary}
+                        name={'Entypo/line-graph'}
+                      />
+                    </Circle>
+                  </Circle>
+
+                  <Text style={[styles.TextK1, { color: theme.colors.light }]}>
+                    {'Economics Basics\n'}
+                  </Text>
+                </View>
+              </Touchable>
+
+              <Touchable
+                onPress={() => {
+                  try {
+                    navigation.navigate('Web30Screen');
+                  } catch (err) {
+                    console.error(err);
+                  }
+                }}
+              >
+                <View style={styles.ViewFe} pointerEvents={'auto'}>
+                  <Circle size={80} bgColor={theme.colors.secondary}>
+                    <Circle size={70} bgColor={theme.colors.divider}>
+                      <Icon
+                        size={32}
+                        color={theme.colors.primary}
+                        name={'MaterialCommunityIcons/spider-web'}
+                      />
+                    </Circle>
+                  </Circle>
+
+                  <Text style={[styles.Textav, { color: theme.colors.light }]}>
+                    {'Web 3.0'}
+                  </Text>
+                </View>
+              </Touchable>
+
+              <Touchable
+                onPress={() => {
+                  try {
+                    navigation.navigate('BlockchainScreen');
+                  } catch (err) {
+                    console.error(err);
+                  }
+                }}
+              >
+                <View style={styles.ViewWU} pointerEvents={'auto'}>
+                  <Circle size={80} bgColor={theme.colors.secondary}>
+                    <Circle size={70} bgColor={theme.colors.divider}>
+                      <Icon
+                        size={32}
+                        color={theme.colors.primary}
+                        name={'MaterialCommunityIcons/semantic-web'}
+                      />
+                    </Circle>
+                  </Circle>
+
+                  <Text style={[styles.Textfc, { color: theme.colors.light }]}>
+                    {'Blockchain'}
+                  </Text>
+                </View>
+              </Touchable>
             </View>
-          </Touchable>
-        </View>
 
-        <View style={styles.Viewwv} pointerEvents={'auto'}>
-          <View style={styles.ViewPC} pointerEvents={'auto'}>
-            <Touchable
-              onPress={() => {
-                try {
-                  navigation.navigate('EconomicsBasicsScreen');
-                } catch (err) {
-                  console.error(err);
-                }
-              }}
-            >
-              <View style={styles.ViewF7} pointerEvents={'auto'}>
-                <Circle size={80} bgColor={theme.colors.secondary}>
-                  <Circle size={70} bgColor={theme.colors.divider}>
-                    <Icon
-                      size={32}
-                      color={theme.colors.primary}
-                      name={'Entypo/line-graph'}
-                    />
+            <View style={styles.Viewya} pointerEvents={'auto'}>
+              <Touchable
+                onPress={() => {
+                  try {
+                    navigation.navigate('WalletOldScreen');
+                  } catch (err) {
+                    console.error(err);
+                  }
+                }}
+              >
+                <View style={styles.ViewTe} pointerEvents={'auto'}>
+                  <Circle size={80} bgColor={theme.colors.secondary}>
+                    <Circle size={70} bgColor={theme.colors.divider}>
+                      <Icon
+                        size={32}
+                        color={theme.colors.primary}
+                        name={'Ionicons/wallet-outline'}
+                      />
+                    </Circle>
                   </Circle>
-                </Circle>
 
-                <Text style={[styles.TextK1, { color: theme.colors.light }]}>
-                  {'Economics Basics\n'}
-                </Text>
-              </View>
-            </Touchable>
+                  <Text style={[styles.TextV3, { color: theme.colors.light }]}>
+                    {'Crypto Wallets'}
+                  </Text>
+                </View>
+              </Touchable>
 
-            <Touchable
-              onPress={() => {
-                try {
-                  navigation.navigate('Web30Screen');
-                } catch (err) {
-                  console.error(err);
-                }
-              }}
-            >
-              <View style={styles.ViewFe} pointerEvents={'auto'}>
-                <Circle size={80} bgColor={theme.colors.secondary}>
-                  <Circle size={70} bgColor={theme.colors.divider}>
-                    <Icon
-                      size={32}
-                      color={theme.colors.primary}
-                      name={'MaterialCommunityIcons/spider-web'}
-                    />
+              <Touchable
+                onPress={() => {
+                  try {
+                    navigation.navigate('DAOsScreen');
+                  } catch (err) {
+                    console.error(err);
+                  }
+                }}
+              >
+                <View style={styles.Viewhj} pointerEvents={'auto'}>
+                  <Circle size={80} bgColor={theme.colors.secondary}>
+                    <Circle size={70} bgColor={theme.colors.divider}>
+                      <Icon
+                        size={32}
+                        color={theme.colors.primary}
+                        name={'Ionicons/md-disc-outline'}
+                      />
+                    </Circle>
                   </Circle>
-                </Circle>
 
-                <Text style={[styles.Textav, { color: theme.colors.light }]}>
-                  {'Web 3.0'}
-                </Text>
-              </View>
-            </Touchable>
+                  <Text style={[styles.Textmk, { color: theme.colors.light }]}>
+                    {'Intro to DAOs'}
+                  </Text>
+                </View>
+              </Touchable>
 
-            <Touchable
-              onPress={() => {
-                try {
-                  navigation.navigate('BlockchainScreen');
-                } catch (err) {
-                  console.error(err);
-                }
-              }}
-            >
-              <View style={styles.ViewWU} pointerEvents={'auto'}>
-                <Circle size={80} bgColor={theme.colors.secondary}>
-                  <Circle size={70} bgColor={theme.colors.divider}>
-                    <Icon
-                      size={32}
-                      color={theme.colors.primary}
-                      name={'MaterialCommunityIcons/semantic-web'}
-                    />
+              <Touchable
+                onPress={() => {
+                  try {
+                    navigation.navigate('AvoidingScamsScreen');
+                  } catch (err) {
+                    console.error(err);
+                  }
+                }}
+              >
+                <View style={styles.ViewkL} pointerEvents={'auto'}>
+                  <Circle size={80} bgColor={theme.colors.secondary}>
+                    <Circle size={70} bgColor={theme.colors.divider}>
+                      <Icon
+                        size={32}
+                        color={theme.colors.primary}
+                        name={'MaterialCommunityIcons/security'}
+                      />
+                    </Circle>
                   </Circle>
-                </Circle>
 
-                <Text style={[styles.Textfc, { color: theme.colors.light }]}>
-                  {'Blockchain'}
-                </Text>
-              </View>
-            </Touchable>
+                  <Text style={[styles.Textid, { color: theme.colors.light }]}>
+                    {'Avoiding Scams'}
+                  </Text>
+                </View>
+              </Touchable>
+            </View>
           </View>
-
-          <View style={styles.Viewya} pointerEvents={'auto'}>
-            <Touchable
-              onPress={() => {
-                try {
-                  navigation.navigate('WalletOldScreen');
-                } catch (err) {
-                  console.error(err);
-                }
-              }}
-            >
-              <View style={styles.ViewTe} pointerEvents={'auto'}>
-                <Circle size={80} bgColor={theme.colors.secondary}>
-                  <Circle size={70} bgColor={theme.colors.divider}>
-                    <Icon
-                      size={32}
-                      color={theme.colors.primary}
-                      name={'Ionicons/wallet-outline'}
-                    />
-                  </Circle>
-                </Circle>
-
-                <Text style={[styles.TextV3, { color: theme.colors.light }]}>
-                  {'Crypto Wallets'}
-                </Text>
-              </View>
-            </Touchable>
-
-            <Touchable
-              onPress={() => {
-                try {
-                  navigation.navigate('DAOsScreen');
-                } catch (err) {
-                  console.error(err);
-                }
-              }}
-            >
-              <View style={styles.Viewhj} pointerEvents={'auto'}>
-                <Circle size={80} bgColor={theme.colors.secondary}>
-                  <Circle size={70} bgColor={theme.colors.divider}>
-                    <Icon
-                      size={32}
-                      color={theme.colors.primary}
-                      name={'Ionicons/md-disc-outline'}
-                    />
-                  </Circle>
-                </Circle>
-
-                <Text style={[styles.Textmk, { color: theme.colors.light }]}>
-                  {'Intro to DAOs'}
-                </Text>
-              </View>
-            </Touchable>
-
-            <Touchable
-              onPress={() => {
-                try {
-                  navigation.navigate('AvoidingScamsScreen');
-                } catch (err) {
-                  console.error(err);
-                }
-              }}
-            >
-              <View style={styles.ViewkL} pointerEvents={'auto'}>
-                <Circle size={80} bgColor={theme.colors.secondary}>
-                  <Circle size={70} bgColor={theme.colors.divider}>
-                    <Icon
-                      size={32}
-                      color={theme.colors.primary}
-                      name={'MaterialCommunityIcons/security'}
-                    />
-                  </Circle>
-                </Circle>
-
-                <Text style={[styles.Textid, { color: theme.colors.light }]}>
-                  {'Avoiding Scams'}
-                </Text>
-              </View>
-            </Touchable>
-          </View>
-        </View>
+        </ScrollView>
       </LinearGradient>
     </ScreenContainer>
   );

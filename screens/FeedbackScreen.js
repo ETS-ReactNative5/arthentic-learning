@@ -109,7 +109,7 @@ const FeedbackScreen = props => {
                   borderColor: theme.colors.background,
                 },
               ]}
-              placeholder={'IG/Twitter'}
+              placeholder={'IG/Twitter/Email'}
               type={'solid'}
               value={textFieldValue}
               placeholderTextColor={theme.colors.background}

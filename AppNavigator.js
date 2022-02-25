@@ -7,11 +7,13 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import theme from './themes/DraftbitTheme.js';
 
-import ArtistScreen from './screens/ArtistScreen';
+import ArtistMenuScreen from './screens/ArtistMenuScreen';
+import ArtistsScreen from './screens/ArtistsScreen';
 import AvoidingScamsScreen from './screens/AvoidingScamsScreen';
 import BlockchainScreen from './screens/BlockchainScreen';
 import BurnoutScreen from './screens/BurnoutScreen';
-import CollectorScreen from './screens/CollectorScreen';
+import CollectorMenuScreen from './screens/CollectorMenuScreen';
+import CollectorsScreen from './screens/CollectorsScreen';
 import CryptoBasicsScreen from './screens/CryptoBasicsScreen';
 import CryptocurrencyScreen from './screens/CryptocurrencyScreen';
 import DAOsScreen from './screens/DAOsScreen';
@@ -20,7 +22,8 @@ import DefiScreen from './screens/DefiScreen';
 import EconomicsBasicsScreen from './screens/EconomicsBasicsScreen';
 import FeedbackScreen from './screens/FeedbackScreen';
 import HomeScreen from './screens/HomeScreen';
-import InvestorScreen from './screens/InvestorScreen';
+import InvestorMenuScreen from './screens/InvestorMenuScreen';
+import InvestorsScreen from './screens/InvestorsScreen';
 import MetaverseScreen from './screens/MetaverseScreen';
 import NFTsScreen from './screens/NFTsScreen';
 import TaxesScreen from './screens/TaxesScreen';
@@ -94,19 +97,19 @@ export default function RootAppNavigator() {
           options={{ title: 'Feedback' }}
         />
         <Stack.Screen
-          name="ArtistScreen"
-          component={ArtistScreen}
-          options={{ title: 'Artist' }}
+          name="ArtistMenuScreen"
+          component={ArtistMenuScreen}
+          options={{ title: 'Artist Menu' }}
         />
         <Stack.Screen
-          name="CollectorScreen"
-          component={CollectorScreen}
-          options={{ title: 'Collector' }}
+          name="CollectorMenuScreen"
+          component={CollectorMenuScreen}
+          options={{ title: 'Collector Menu' }}
         />
         <Stack.Screen
-          name="InvestorScreen"
-          component={InvestorScreen}
-          options={{ title: 'Investor' }}
+          name="InvestorMenuScreen"
+          component={InvestorMenuScreen}
+          options={{ title: 'Investor Menu' }}
         />
         <Stack.Screen
           name="EconomicsBasicsScreen"
@@ -197,6 +200,21 @@ export default function RootAppNavigator() {
           name="WalletsScreen_CZIN2fUW"
           component={WalletsScreen_CZIN2fUW}
           options={{ title: 'Wallets' }}
+        />
+        <Stack.Screen
+          name="ArtistsScreen"
+          component={ArtistsScreen}
+          options={{ title: 'Artists' }}
+        />
+        <Stack.Screen
+          name="CollectorsScreen"
+          component={CollectorsScreen}
+          options={{ title: 'Collectors' }}
+        />
+        <Stack.Screen
+          name="InvestorsScreen"
+          component={InvestorsScreen}
+          options={{ title: 'Investors' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

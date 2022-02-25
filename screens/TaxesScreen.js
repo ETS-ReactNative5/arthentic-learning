@@ -30,9 +30,7 @@ const TaxesScreen = props => {
           <ButtonSolid
             onPress={() => {
               try {
-                navigation.navigate('BottomTabNavigator', {
-                  screen: 'InvestorScreen',
-                });
+                navigation.navigate('InvestorMenuScreen');
               } catch (err) {
                 console.error(err);
               }
@@ -236,26 +234,6 @@ const TaxesScreen = props => {
               </View>
             </SwiperItem>
           </Swiper>
-
-          <View style={styles.ViewGY} pointerEvents={'auto'}>
-            <ButtonSolid
-              onPress={() => {
-                try {
-                  navigation.navigate('FeedbackScreen');
-                } catch (err) {
-                  console.error(err);
-                }
-              }}
-              style={[
-                styles.ButtonSolidao,
-                {
-                  backgroundColor: theme.colors.secondary,
-                  color: theme.colors.primary,
-                },
-              ]}
-              title={'Next Up:\nComing Soon'}
-            />
-          </View>
         </ScrollView>
       </LinearGradient>
     </ScreenContainer>
@@ -402,17 +380,6 @@ const styles = StyleSheet.create({
   SwiperTk: {
     width: '100%',
     height: 450,
-  },
-  ButtonSolidao: {
-    borderRadius: 12,
-    fontFamily: 'System',
-    fontWeight: '700',
-    textAlign: 'center',
-    width: 192,
-    height: 60,
-  },
-  ViewGY: {
-    alignSelf: 'center',
   },
   LinearGradientxc: {
     width: '100%',

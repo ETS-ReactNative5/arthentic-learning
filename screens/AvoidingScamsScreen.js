@@ -28,9 +28,7 @@ const AvoidingScamsScreen = props => {
           <ButtonSolid
             onPress={() => {
               try {
-                navigation.navigate('BottomTabNavigator', {
-                  screen: 'CryptoBasicsScreen',
-                });
+                navigation.navigate('CryptoBasicsScreen');
               } catch (err) {
                 console.error(err);
               }
@@ -113,7 +111,7 @@ const AvoidingScamsScreen = props => {
                   style={styles.Iconr6}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Entypo/dot-single'}
                 />
                 <Text style={[styles.TextRB, { color: theme.colors.light }]}>
                   {
@@ -141,7 +139,7 @@ const AvoidingScamsScreen = props => {
                   style={styles.IconVY}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Entypo/dot-single'}
                 />
                 <Text style={[styles.Textwd, { color: theme.colors.light }]}>
                   {
@@ -169,7 +167,7 @@ const AvoidingScamsScreen = props => {
                   style={styles.IconMX}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Entypo/dot-single'}
                 />
                 <Text style={[styles.Text_79, { color: theme.colors.light }]}>
                   {
@@ -183,7 +181,7 @@ const AvoidingScamsScreen = props => {
                   style={styles.IconhZ}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Entypo/dot-single'}
                 />
                 <Text style={[styles.TextwO, { color: theme.colors.light }]}>
                   {
@@ -213,7 +211,7 @@ const AvoidingScamsScreen = props => {
                   style={styles.IconDu}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Entypo/dot-single'}
                 />
                 <Text style={[styles.Textkr, { color: theme.colors.light }]}>
                   {
@@ -227,7 +225,7 @@ const AvoidingScamsScreen = props => {
                   style={styles.IconYQ}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Entypo/dot-single'}
                 />
                 <Text style={[styles.TextKm, { color: theme.colors.light }]}>
                   {
@@ -255,7 +253,7 @@ const AvoidingScamsScreen = props => {
                   style={styles.IconYq}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Entypo/dot-single'}
                 />
                 <Text style={[styles.TextUs, { color: theme.colors.light }]}>
                   {
@@ -283,7 +281,7 @@ const AvoidingScamsScreen = props => {
                   style={styles.Icon_3e}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Entypo/dot-single'}
                 />
                 <Text style={[styles.Text_1q, { color: theme.colors.light }]}>
                   {
@@ -355,7 +353,7 @@ const AvoidingScamsScreen = props => {
                   style={styles.Iconi2}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Entypo/dot-single'}
                 />
                 <Text style={[styles.Text_5B, { color: theme.colors.light }]}>
                   {
@@ -369,7 +367,7 @@ const AvoidingScamsScreen = props => {
                   style={styles.Iconc2}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Entypo/dot-single'}
                 />
                 <Text style={[styles.Textzu, { color: theme.colors.light }]}>
                   {'Always do as much research as possible!'}
@@ -377,26 +375,6 @@ const AvoidingScamsScreen = props => {
               </View>
             </SwiperItem>
           </Swiper>
-
-          <View style={styles.ViewBN} pointerEvents={'auto'}>
-            <ButtonSolid
-              onPress={() => {
-                try {
-                  navigation.navigate('FeedbackScreen');
-                } catch (err) {
-                  console.error(err);
-                }
-              }}
-              style={[
-                styles.ButtonSolidoc,
-                {
-                  backgroundColor: theme.colors.secondary,
-                  color: theme.colors.primary,
-                },
-              ]}
-              title={'Next Up:\nComing Soon'}
-            />
-          </View>
         </ScrollView>
       </LinearGradient>
     </ScreenContainer>
@@ -716,17 +694,6 @@ const styles = StyleSheet.create({
   SwiperGC: {
     width: '100%',
     height: 450,
-  },
-  ButtonSolidoc: {
-    borderRadius: 12,
-    fontFamily: 'System',
-    fontWeight: '700',
-    textAlign: 'center',
-    width: 192,
-    height: 60,
-  },
-  ViewBN: {
-    alignSelf: 'center',
   },
   LinearGradientRc: {
     width: '100%',

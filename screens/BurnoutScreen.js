@@ -28,9 +28,7 @@ const BurnoutScreen = props => {
           <ButtonSolid
             onPress={() => {
               try {
-                navigation.navigate('BottomTabNavigator', {
-                  screen: 'ArtistScreen',
-                });
+                navigation.navigate('ArtistMenuScreen');
               } catch (err) {
                 console.error(err);
               }
@@ -172,26 +170,6 @@ const BurnoutScreen = props => {
               title={'National Institute of Mental Health on Stress'}
             />
           </View>
-
-          <View style={styles.ViewiB} pointerEvents={'auto'}>
-            <ButtonSolid
-              onPress={() => {
-                try {
-                  navigation.navigate('FeedbackScreen');
-                } catch (err) {
-                  console.error(err);
-                }
-              }}
-              style={[
-                styles.ButtonSolidam,
-                {
-                  backgroundColor: theme.colors.secondary,
-                  color: theme.colors.primary,
-                },
-              ]}
-              title={'Next Up:\nComing Soon'}
-            />
-          </View>
         </ScrollView>
       </LinearGradient>
     </ScreenContainer>
@@ -288,17 +266,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: 6,
     marginBottom: 6,
-  },
-  ButtonSolidam: {
-    borderRadius: 12,
-    fontFamily: 'System',
-    fontWeight: '700',
-    textAlign: 'center',
-    width: 192,
-    height: 60,
-  },
-  ViewiB: {
-    alignSelf: 'center',
   },
   ScrollViewCHContent: {
     paddingLeft: 16,

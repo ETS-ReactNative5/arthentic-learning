@@ -30,9 +30,7 @@ const DefiScreen = props => {
           <ButtonSolid
             onPress={() => {
               try {
-                navigation.navigate('BottomTabNavigator', {
-                  screen: 'InvestorScreen',
-                });
+                navigation.navigate('InvestorMenuScreen');
               } catch (err) {
                 console.error(err);
               }

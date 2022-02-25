@@ -30,7 +30,7 @@ const BlockchainScreen = props => {
           <ButtonSolid
             onPress={() => {
               try {
-                navigation.navigate('RootNavigator');
+                navigation.navigate('CryptoBasicsScreen');
               } catch (err) {
                 console.error(err);
               }
@@ -242,7 +242,7 @@ const BlockchainScreen = props => {
                   style={styles.Icon_0M}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Entypo/dot-single'}
                 />
                 <Text style={[styles.Textex, { color: theme.colors.light }]}>
                   {
@@ -270,7 +270,7 @@ const BlockchainScreen = props => {
                   style={styles.IconJl}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Entypo/dot-single'}
                 />
                 <Text style={[styles.Textzj, { color: theme.colors.light }]}>
                   {
@@ -318,7 +318,7 @@ const BlockchainScreen = props => {
                   style={styles.IconJE}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Entypo/dot-single'}
                 />
                 <Text style={[styles.TextFI, { color: theme.colors.light }]}>
                   {'PoC only works with a large amount of storage capacity. \n'}

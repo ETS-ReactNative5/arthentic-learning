@@ -30,7 +30,7 @@ const WalletOldScreen = props => {
           <ButtonSolid
             onPress={() => {
               try {
-                navigation.navigate('RootNavigator');
+                navigation.navigate('CryptoBasicsScreen');
               } catch (err) {
                 console.error(err);
               }

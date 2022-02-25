@@ -68,7 +68,7 @@ const HomeScreen = props => {
                 styles.ButtonSolidDb,
                 {
                   backgroundColor: theme.colors.mediumInverse,
-                  color: theme.colors.medium,
+                  color: theme.colors.primary,
                 },
               ]}
               title={'A New Internet is Here!'}
@@ -85,7 +85,7 @@ const HomeScreen = props => {
                 styles.ButtonSolid_1s,
                 {
                   backgroundColor: theme.colors.mediumInverse,
-                  color: theme.colors.medium,
+                  color: theme.colors.light,
                 },
               ]}
               title={'Intro to the Metaverse'}
@@ -102,7 +102,7 @@ const HomeScreen = props => {
                 styles.ButtonSolidAM,
                 {
                   backgroundColor: theme.colors.mediumInverse,
-                  color: theme.colors.medium,
+                  color: theme.colors.yellow,
                 },
               ]}
               title={'Accessing Web3\n(Wallets)'}
@@ -111,7 +111,15 @@ const HomeScreen = props => {
 
           <View style={styles.Viewyh} pointerEvents={'auto'}>
             <View style={styles.Viewba} pointerEvents={'auto'}>
-              <Touchable>
+              <Touchable
+                onPress={() => {
+                  try {
+                    navigation.navigate('ArtistsScreen');
+                  } catch (err) {
+                    console.error(err);
+                  }
+                }}
+              >
                 <View style={styles.Viewls} pointerEvents={'auto'}>
                   <Circle size={80} bgColor={theme.colors.secondary}>
                     <Circle size={70} bgColor={theme.colors.divider}>
@@ -131,7 +139,15 @@ const HomeScreen = props => {
             </View>
             <Spacer top={0} right={16} bottom={0} left={16} />
             <View style={styles.ViewLV} pointerEvents={'auto'}>
-              <Touchable>
+              <Touchable
+                onPress={() => {
+                  try {
+                    navigation.navigate('InvestorsScreen');
+                  } catch (err) {
+                    console.error(err);
+                  }
+                }}
+              >
                 <View style={styles.Viewtl} pointerEvents={'auto'}>
                   <Circle size={80} bgColor={theme.colors.secondary}>
                     <Circle size={70} bgColor={theme.colors.divider}>
@@ -153,7 +169,15 @@ const HomeScreen = props => {
 
           <View pointerEvents={'auto'}>
             <View style={styles.ViewyN} pointerEvents={'auto'}>
-              <Touchable>
+              <Touchable
+                onPress={() => {
+                  try {
+                    navigation.navigate('CollectorsScreen');
+                  } catch (err) {
+                    console.error(err);
+                  }
+                }}
+              >
                 <View style={styles.View_1i} pointerEvents={'auto'}>
                   <Circle size={80} bgColor={theme.colors.secondary}>
                     <Circle size={70} bgColor={theme.colors.divider}>

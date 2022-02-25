@@ -30,9 +30,7 @@ const Web30Screen = props => {
           <ButtonSolid
             onPress={() => {
               try {
-                navigation.navigate('BottomTabNavigator', {
-                  screen: 'CryptoBasicsScreen',
-                });
+                navigation.navigate('CryptoBasicsScreen');
               } catch (err) {
                 console.error(err);
               }

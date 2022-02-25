@@ -30,9 +30,7 @@ const CryptocurrencyScreen = props => {
           <ButtonSolid
             onPress={() => {
               try {
-                navigation.navigate('BottomTabNavigator', {
-                  screen: 'InvestorScreen',
-                });
+                navigation.goBack();
               } catch (err) {
                 console.error(err);
               }
