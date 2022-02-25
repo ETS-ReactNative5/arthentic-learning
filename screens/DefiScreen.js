@@ -30,24 +30,6 @@ const DefiScreen = props => {
           <ButtonSolid
             onPress={() => {
               try {
-                navigation.navigate('InvestorMenuScreen');
-              } catch (err) {
-                console.error(err);
-              }
-            }}
-            style={[
-              styles.ButtonSolidKR,
-              {
-                color: theme.colors.light,
-                backgroundColor: theme.colors.mediumInverse,
-                borderRadius: 12,
-              },
-            ]}
-            title={'Back to\nLearning'}
-          />
-          <ButtonSolid
-            onPress={() => {
-              try {
                 navigation.navigate('FeedbackScreen');
               } catch (err) {
                 console.error(err);
@@ -62,6 +44,24 @@ const DefiScreen = props => {
               },
             ]}
             title={'Feedback'}
+          />
+          <ButtonSolid
+            onPress={() => {
+              try {
+                navigation.navigate('InvestorMenuScreen');
+              } catch (err) {
+                console.error(err);
+              }
+            }}
+            style={[
+              styles.ButtonSolidKR,
+              {
+                color: theme.colors.light,
+                backgroundColor: theme.colors.mediumInverse,
+                borderRadius: 12,
+              },
+            ]}
+            title={'Back to\nLearning'}
           />
         </View>
 
@@ -466,14 +466,14 @@ const DefiScreen = props => {
 };
 
 const styles = StyleSheet.create({
+  ButtonSolidNV: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
   ButtonSolidKR: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
     textAlign: 'center',
-  },
-  ButtonSolidNV: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
   },
   ViewO6: {
     alignSelf: 'flex-end',

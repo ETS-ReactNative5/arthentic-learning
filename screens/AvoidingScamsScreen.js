@@ -28,24 +28,6 @@ const AvoidingScamsScreen = props => {
           <ButtonSolid
             onPress={() => {
               try {
-                navigation.navigate('CryptoBasicsScreen');
-              } catch (err) {
-                console.error(err);
-              }
-            }}
-            style={[
-              styles.ButtonSolid_1o,
-              {
-                color: theme.colors.light,
-                backgroundColor: theme.colors.mediumInverse,
-                borderRadius: 12,
-              },
-            ]}
-            title={'Back to\nLearning'}
-          />
-          <ButtonSolid
-            onPress={() => {
-              try {
                 navigation.navigate('FeedbackScreen');
               } catch (err) {
                 console.error(err);
@@ -60,6 +42,24 @@ const AvoidingScamsScreen = props => {
               },
             ]}
             title={'Feedback'}
+          />
+          <ButtonSolid
+            onPress={() => {
+              try {
+                navigation.navigate('CryptoBasicsScreen');
+              } catch (err) {
+                console.error(err);
+              }
+            }}
+            style={[
+              styles.ButtonSolid_1o,
+              {
+                color: theme.colors.light,
+                backgroundColor: theme.colors.mediumInverse,
+                borderRadius: 12,
+              },
+            ]}
+            title={'Back to\nLearning'}
           />
         </View>
 
@@ -382,14 +382,14 @@ const AvoidingScamsScreen = props => {
 };
 
 const styles = StyleSheet.create({
+  ButtonSolidZ2: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
   ButtonSolid_1o: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
     textAlign: 'center',
-  },
-  ButtonSolidZ2: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
   },
   Viewum: {
     alignSelf: 'flex-end',

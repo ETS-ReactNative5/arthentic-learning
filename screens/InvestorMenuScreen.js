@@ -34,7 +34,7 @@ const InvestorMenuScreen = props => {
               }
             }}
             style={[
-              styles.ButtonSolidke,
+              styles.ButtonSolidHm,
               {
                 color: theme.colors.light,
                 borderRadius: 12,
@@ -42,6 +42,24 @@ const InvestorMenuScreen = props => {
               },
             ]}
             title={'Feedback'}
+          />
+          <ButtonSolid
+            onPress={() => {
+              try {
+                navigation.navigate('HomeScreen');
+              } catch (err) {
+                console.error(err);
+              }
+            }}
+            style={[
+              styles.ButtonSolidke,
+              {
+                color: theme.colors.light,
+                borderRadius: 12,
+                backgroundColor: theme.colors.mediumInverse,
+              },
+            ]}
+            title={'Back Home'}
           />
         </View>
 
@@ -67,92 +85,6 @@ const InvestorMenuScreen = props => {
 
         <ScrollView showsVerticalScrollIndicator={true} bounces={true}>
           <View style={styles.View_5Y} pointerEvents={'auto'}>
-            <View style={styles.View_5m} pointerEvents={'auto'}>
-              <Touchable
-                onPress={() => {
-                  try {
-                    navigation.navigate('CryptocurrencyScreen');
-                  } catch (err) {
-                    console.error(err);
-                  }
-                }}
-              >
-                <View style={styles.VieweQ} pointerEvents={'auto'}>
-                  <Circle size={80} bgColor={theme.colors.secondary}>
-                    <Circle size={70} bgColor={theme.colors.divider}>
-                      <Icon
-                        size={32}
-                        color={theme.colors.primary}
-                        name={'Ionicons/logo-bitcoin'}
-                      />
-                    </Circle>
-                  </Circle>
-
-                  <Text style={[styles.Textmu, { color: theme.colors.light }]}>
-                    {'Cryptocurrency\nBreakdown'}
-                  </Text>
-                </View>
-              </Touchable>
-            </View>
-
-            <View style={styles.Viewxs} pointerEvents={'auto'}>
-              <Touchable
-                onPress={() => {
-                  try {
-                    navigation.navigate('DefiScreen');
-                  } catch (err) {
-                    console.error(err);
-                  }
-                }}
-              >
-                <View style={styles.ViewpV} pointerEvents={'auto'}>
-                  <Circle size={80} bgColor={theme.colors.secondary}>
-                    <Circle size={70} bgColor={theme.colors.divider}>
-                      <Icon
-                        size={32}
-                        color={theme.colors.primary}
-                        name={'MaterialCommunityIcons/bank-remove'}
-                      />
-                    </Circle>
-                  </Circle>
-
-                  <Text style={[styles.TextoZ, { color: theme.colors.light }]}>
-                    {'Decentralized\nFinance'}
-                  </Text>
-                </View>
-              </Touchable>
-            </View>
-          </View>
-
-          <View style={styles.ViewmL} pointerEvents={'auto'}>
-            <View style={styles.ViewJY} pointerEvents={'auto'}>
-              <Touchable
-                onPress={() => {
-                  try {
-                    navigation.navigate('TaxesScreen');
-                  } catch (err) {
-                    console.error(err);
-                  }
-                }}
-              >
-                <View style={styles.ViewK1} pointerEvents={'auto'}>
-                  <Circle size={80} bgColor={theme.colors.secondary}>
-                    <Circle size={70} bgColor={theme.colors.divider}>
-                      <Icon
-                        size={32}
-                        color={theme.colors.primary}
-                        name={'FontAwesome/balance-scale'}
-                      />
-                    </Circle>
-                  </Circle>
-
-                  <Text style={[styles.Textrg, { color: theme.colors.light }]}>
-                    {'US Crypto\nLaws'}
-                  </Text>
-                </View>
-              </Touchable>
-            </View>
-
             <View style={styles.ViewCd} pointerEvents={'auto'}>
               <Touchable
                 onPress={() => {
@@ -180,6 +112,92 @@ const InvestorMenuScreen = props => {
                 </View>
               </Touchable>
             </View>
+
+            <View style={styles.View_5m} pointerEvents={'auto'}>
+              <Touchable
+                onPress={() => {
+                  try {
+                    navigation.navigate('CryptocurrencyScreen');
+                  } catch (err) {
+                    console.error(err);
+                  }
+                }}
+              >
+                <View style={styles.VieweQ} pointerEvents={'auto'}>
+                  <Circle size={80} bgColor={theme.colors.secondary}>
+                    <Circle size={70} bgColor={theme.colors.divider}>
+                      <Icon
+                        size={32}
+                        color={theme.colors.primary}
+                        name={'Ionicons/logo-bitcoin'}
+                      />
+                    </Circle>
+                  </Circle>
+
+                  <Text style={[styles.Textmu, { color: theme.colors.light }]}>
+                    {'Cryptocurrency\nBreakdown'}
+                  </Text>
+                </View>
+              </Touchable>
+            </View>
+          </View>
+
+          <View style={styles.ViewmL} pointerEvents={'auto'}>
+            <View style={styles.Viewxs} pointerEvents={'auto'}>
+              <Touchable
+                onPress={() => {
+                  try {
+                    navigation.navigate('DefiScreen');
+                  } catch (err) {
+                    console.error(err);
+                  }
+                }}
+              >
+                <View style={styles.ViewpV} pointerEvents={'auto'}>
+                  <Circle size={80} bgColor={theme.colors.secondary}>
+                    <Circle size={70} bgColor={theme.colors.divider}>
+                      <Icon
+                        size={32}
+                        color={theme.colors.primary}
+                        name={'MaterialCommunityIcons/bank-remove'}
+                      />
+                    </Circle>
+                  </Circle>
+
+                  <Text style={[styles.TextoZ, { color: theme.colors.light }]}>
+                    {'Decentralized\nFinance'}
+                  </Text>
+                </View>
+              </Touchable>
+            </View>
+
+            <View style={styles.ViewJY} pointerEvents={'auto'}>
+              <Touchable
+                onPress={() => {
+                  try {
+                    navigation.navigate('TaxesScreen');
+                  } catch (err) {
+                    console.error(err);
+                  }
+                }}
+              >
+                <View style={styles.ViewK1} pointerEvents={'auto'}>
+                  <Circle size={80} bgColor={theme.colors.secondary}>
+                    <Circle size={70} bgColor={theme.colors.divider}>
+                      <Icon
+                        size={32}
+                        color={theme.colors.primary}
+                        name={'FontAwesome/balance-scale'}
+                      />
+                    </Circle>
+                  </Circle>
+
+                  <Text style={[styles.Textrg, { color: theme.colors.light }]}>
+                    {'US Crypto\nLaws'}
+                  </Text>
+                </View>
+              </Touchable>
+            </View>
           </View>
         </ScrollView>
       </LinearGradient>
@@ -188,12 +206,19 @@ const InvestorMenuScreen = props => {
 };
 
 const styles = StyleSheet.create({
+  ButtonSolidHm: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
   ButtonSolidke: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
   ViewG1: {
     alignSelf: 'flex-end',
+    width: '100%',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
   Imageig: {
     width: 75,
@@ -217,6 +242,20 @@ const styles = StyleSheet.create({
     marginTop: 12,
     marginBottom: 24,
   },
+  Textag: {
+    fontSize: 12,
+    fontFamily: 'Roboto_400Regular',
+    textAlign: 'center',
+  },
+  Viewgo: {
+    alignItems: 'center',
+    marginTop: 6,
+    marginBottom: 6,
+  },
+  ViewCd: {
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+  },
   Textmu: {
     fontSize: 12,
     fontFamily: 'Roboto_400Regular',
@@ -229,6 +268,10 @@ const styles = StyleSheet.create({
   },
   View_5m: {
     alignItems: 'center',
+    justifyContent: 'space-evenly',
+  },
+  View_5Y: {
+    flexDirection: 'row',
     justifyContent: 'space-evenly',
   },
   TextoZ: {
@@ -245,10 +288,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-evenly',
   },
-  View_5Y: {
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-  },
   Textrg: {
     fontSize: 12,
     fontFamily: 'Roboto_400Regular',
@@ -260,20 +299,6 @@ const styles = StyleSheet.create({
     marginBottom: 6,
   },
   ViewJY: {
-    alignItems: 'center',
-    justifyContent: 'space-evenly',
-  },
-  Textag: {
-    fontSize: 12,
-    fontFamily: 'Roboto_400Regular',
-    textAlign: 'center',
-  },
-  Viewgo: {
-    alignItems: 'center',
-    marginTop: 6,
-    marginBottom: 6,
-  },
-  ViewCd: {
     alignItems: 'center',
     justifyContent: 'space-evenly',
   },

@@ -34,7 +34,7 @@ const CollectorMenuScreen = props => {
               }
             }}
             style={[
-              styles.ButtonSolidsD,
+              styles.ButtonSolidaw,
               {
                 color: theme.colors.light,
                 borderRadius: 12,
@@ -42,6 +42,24 @@ const CollectorMenuScreen = props => {
               },
             ]}
             title={'Feedback'}
+          />
+          <ButtonSolid
+            onPress={() => {
+              try {
+                navigation.navigate('HomeScreen');
+              } catch (err) {
+                console.error(err);
+              }
+            }}
+            style={[
+              styles.ButtonSolidsD,
+              {
+                color: theme.colors.light,
+                borderRadius: 12,
+                backgroundColor: theme.colors.mediumInverse,
+              },
+            ]}
+            title={'Back Home'}
           />
         </View>
 
@@ -70,7 +88,7 @@ const CollectorMenuScreen = props => {
             <Touchable
               onPress={() => {
                 try {
-                  navigation.navigate('NFTsScreen');
+                  navigation.navigate('NFTsCollectorsScreen');
                 } catch (err) {
                   console.error(err);
                 }
@@ -124,7 +142,7 @@ const CollectorMenuScreen = props => {
             <Touchable
               onPress={() => {
                 try {
-                  navigation.navigate('CryptocurrencyScreen');
+                  navigation.navigate('CryptocurrencyCollectorsScreen');
                 } catch (err) {
                   console.error(err);
                 }
@@ -154,12 +172,20 @@ const CollectorMenuScreen = props => {
 };
 
 const styles = StyleSheet.create({
+  ButtonSolidaw: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
   ButtonSolidsD: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
   ViewiS: {
     alignSelf: 'flex-end',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: '100%',
   },
   ImagetM: {
     width: 75,
@@ -221,6 +247,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-evenly',
     flexDirection: 'row',
+    marginTop: 24,
   },
   LinearGradient_5w: {
     width: '100%',

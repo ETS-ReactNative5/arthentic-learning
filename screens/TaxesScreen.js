@@ -30,24 +30,6 @@ const TaxesScreen = props => {
           <ButtonSolid
             onPress={() => {
               try {
-                navigation.navigate('InvestorMenuScreen');
-              } catch (err) {
-                console.error(err);
-              }
-            }}
-            style={[
-              styles.ButtonSolidNq,
-              {
-                color: theme.colors.light,
-                backgroundColor: theme.colors.mediumInverse,
-                borderRadius: 12,
-              },
-            ]}
-            title={'Back to\nLearning'}
-          />
-          <ButtonSolid
-            onPress={() => {
-              try {
                 navigation.navigate('FeedbackScreen');
               } catch (err) {
                 console.error(err);
@@ -62,6 +44,24 @@ const TaxesScreen = props => {
               },
             ]}
             title={'Feedback'}
+          />
+          <ButtonSolid
+            onPress={() => {
+              try {
+                navigation.navigate('InvestorMenuScreen');
+              } catch (err) {
+                console.error(err);
+              }
+            }}
+            style={[
+              styles.ButtonSolidNq,
+              {
+                color: theme.colors.light,
+                backgroundColor: theme.colors.mediumInverse,
+                borderRadius: 12,
+              },
+            ]}
+            title={'Back to\nLearning'}
           />
         </View>
 
@@ -241,14 +241,14 @@ const TaxesScreen = props => {
 };
 
 const styles = StyleSheet.create({
+  ButtonSolidCx: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
   ButtonSolidNq: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
     textAlign: 'center',
-  },
-  ButtonSolidCx: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
   },
   View_4n: {
     alignSelf: 'flex-end',

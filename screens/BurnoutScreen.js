@@ -28,24 +28,6 @@ const BurnoutScreen = props => {
           <ButtonSolid
             onPress={() => {
               try {
-                navigation.navigate('ArtistMenuScreen');
-              } catch (err) {
-                console.error(err);
-              }
-            }}
-            style={[
-              styles.ButtonSolidV0,
-              {
-                color: theme.colors.light,
-                backgroundColor: theme.colors.mediumInverse,
-                borderRadius: 12,
-              },
-            ]}
-            title={'Back to\nLearning'}
-          />
-          <ButtonSolid
-            onPress={() => {
-              try {
                 navigation.navigate('FeedbackScreen');
               } catch (err) {
                 console.error(err);
@@ -60,6 +42,24 @@ const BurnoutScreen = props => {
               },
             ]}
             title={'Feedback'}
+          />
+          <ButtonSolid
+            onPress={() => {
+              try {
+                navigation.navigate('ArtistMenuScreen');
+              } catch (err) {
+                console.error(err);
+              }
+            }}
+            style={[
+              styles.ButtonSolidV0,
+              {
+                color: theme.colors.light,
+                backgroundColor: theme.colors.mediumInverse,
+                borderRadius: 12,
+              },
+            ]}
+            title={'Back to\nLearning'}
           />
         </View>
 
@@ -177,14 +177,14 @@ const BurnoutScreen = props => {
 };
 
 const styles = StyleSheet.create({
+  ButtonSolidNm: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
   ButtonSolidV0: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
     textAlign: 'center',
-  },
-  ButtonSolidNm: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
   },
   ViewCe: {
     alignSelf: 'flex-end',

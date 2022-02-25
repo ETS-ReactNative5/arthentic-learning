@@ -30,24 +30,6 @@ const WalletOldScreen = props => {
           <ButtonSolid
             onPress={() => {
               try {
-                navigation.navigate('CryptoBasicsScreen');
-              } catch (err) {
-                console.error(err);
-              }
-            }}
-            style={[
-              styles.ButtonSolidnA,
-              {
-                color: theme.colors.light,
-                backgroundColor: theme.colors.mediumInverse,
-                borderRadius: 12,
-              },
-            ]}
-            title={'Back to\nLearning'}
-          />
-          <ButtonSolid
-            onPress={() => {
-              try {
                 navigation.navigate('FeedbackScreen');
               } catch (err) {
                 console.error(err);
@@ -62,6 +44,24 @@ const WalletOldScreen = props => {
               },
             ]}
             title={'Feedback'}
+          />
+          <ButtonSolid
+            onPress={() => {
+              try {
+                navigation.navigate('CryptoBasicsScreen');
+              } catch (err) {
+                console.error(err);
+              }
+            }}
+            style={[
+              styles.ButtonSolidnA,
+              {
+                color: theme.colors.light,
+                backgroundColor: theme.colors.mediumInverse,
+                borderRadius: 12,
+              },
+            ]}
+            title={'Back to\nLearning'}
           />
         </View>
 
@@ -404,14 +404,14 @@ const WalletOldScreen = props => {
 };
 
 const styles = StyleSheet.create({
+  ButtonSolidhY: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
   ButtonSolidnA: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
     textAlign: 'center',
-  },
-  ButtonSolidhY: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
   },
   View_5L: {
     alignSelf: 'flex-end',

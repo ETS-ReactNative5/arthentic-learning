@@ -30,24 +30,6 @@ const CryptocurrencyScreen = props => {
           <ButtonSolid
             onPress={() => {
               try {
-                navigation.goBack();
-              } catch (err) {
-                console.error(err);
-              }
-            }}
-            style={[
-              styles.ButtonSolidXd,
-              {
-                color: theme.colors.light,
-                backgroundColor: theme.colors.mediumInverse,
-                borderRadius: 12,
-              },
-            ]}
-            title={'Back to\nLearning'}
-          />
-          <ButtonSolid
-            onPress={() => {
-              try {
                 navigation.navigate('FeedbackScreen');
               } catch (err) {
                 console.error(err);
@@ -62,6 +44,24 @@ const CryptocurrencyScreen = props => {
               },
             ]}
             title={'Feedback'}
+          />
+          <ButtonSolid
+            onPress={() => {
+              try {
+                navigation.navigate('InvestorsScreen');
+              } catch (err) {
+                console.error(err);
+              }
+            }}
+            style={[
+              styles.ButtonSolidXd,
+              {
+                color: theme.colors.light,
+                backgroundColor: theme.colors.mediumInverse,
+                borderRadius: 12,
+              },
+            ]}
+            title={'Back to\nLearning'}
           />
         </View>
 
@@ -477,14 +477,14 @@ const CryptocurrencyScreen = props => {
 };
 
 const styles = StyleSheet.create({
+  ButtonSolidjI: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
   ButtonSolidXd: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
     textAlign: 'center',
-  },
-  ButtonSolidjI: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
   },
   ViewCa: {
     alignSelf: 'flex-end',

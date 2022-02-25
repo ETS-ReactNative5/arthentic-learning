@@ -76,23 +76,6 @@ const HomeScreen = props => {
             <ButtonSolid
               onPress={() => {
                 try {
-                  navigation.navigate('MetaverseScreen');
-                } catch (err) {
-                  console.error(err);
-                }
-              }}
-              style={[
-                styles.ButtonSolid_1s,
-                {
-                  backgroundColor: theme.colors.mediumInverse,
-                  color: theme.colors.light,
-                },
-              ]}
-              title={'Intro to the Metaverse'}
-            />
-            <ButtonSolid
-              onPress={() => {
-                try {
                   navigation.navigate('WalletsScreen_CZIN2fUW');
                 } catch (err) {
                   console.error(err);
@@ -218,18 +201,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   ButtonSolidDb: {
-    borderRadius: 12,
-    fontFamily: 'RobotoCondensed_400Regular',
-    textAlign: 'center',
-    fontSize: 24,
-    marginTop: 24,
-    marginBottom: 24,
-    paddingTop: 12,
-    paddingBottom: 12,
-    paddingLeft: 12,
-    paddingRight: 12,
-  },
-  ButtonSolid_1s: {
     borderRadius: 12,
     fontFamily: 'RobotoCondensed_400Regular',
     textAlign: 'center',

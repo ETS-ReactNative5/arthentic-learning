@@ -273,7 +273,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   Viewk9: {
-    alignSelf: 'flex-end',
+    alignItems: 'flex-end',
   },
   Imagear: {
     width: 75,

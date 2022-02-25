@@ -167,7 +167,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   View_2m: {
-    alignSelf: 'flex-start',
+    alignItems: 'flex-end',
   },
   ImageTJ: {
     width: 75,

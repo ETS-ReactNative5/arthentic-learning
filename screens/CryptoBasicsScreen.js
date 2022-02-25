@@ -34,7 +34,7 @@ const CryptoBasicsScreen = props => {
               }
             }}
             style={[
-              styles.ButtonSolidYl,
+              styles.ButtonSolidGK,
               {
                 color: theme.colors.light,
                 borderRadius: 12,
@@ -42,6 +42,24 @@ const CryptoBasicsScreen = props => {
               },
             ]}
             title={'Feedback'}
+          />
+          <ButtonSolid
+            onPress={() => {
+              try {
+                navigation.navigate('InvestorMenuScreen');
+              } catch (err) {
+                console.error(err);
+              }
+            }}
+            style={[
+              styles.ButtonSolidYl,
+              {
+                color: theme.colors.light,
+                borderRadius: 12,
+                backgroundColor: theme.colors.mediumInverse,
+              },
+            ]}
+            title={'Back to\nLearning'}
           />
         </View>
 
@@ -262,12 +280,20 @@ const CryptoBasicsScreen = props => {
 };
 
 const styles = StyleSheet.create({
-  ButtonSolidYl: {
+  ButtonSolidGK: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
+  ButtonSolidYl: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+    textAlign: 'center',
+  },
   ViewWW: {
     alignSelf: 'flex-end',
+    flexDirection: 'row',
+    width: '100%',
+    justifyContent: 'space-between',
   },
   ImageTn: {
     width: 75,

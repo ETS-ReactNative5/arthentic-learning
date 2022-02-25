@@ -43,7 +43,7 @@ const MetaverseScreen = props => {
                 borderRadius: 12,
               },
             ]}
-            title={'Home'}
+            title={'Back Home'}
           />
         </View>
 
@@ -185,7 +185,7 @@ const MetaverseScreen = props => {
             <ButtonSolid
               onPress={() => {
                 try {
-                  navigation.navigate('WalletsScreen_CZIN2fUW');
+                  navigation.navigate('WalletOldScreen');
                 } catch (err) {
                   console.error(err);
                 }

@@ -34,7 +34,7 @@ const ArtistMenuScreen = props => {
               }
             }}
             style={[
-              styles.ButtonSolidn9,
+              styles.ButtonSolidpI,
               {
                 color: theme.colors.light,
                 borderRadius: 12,
@@ -42,6 +42,24 @@ const ArtistMenuScreen = props => {
               },
             ]}
             title={'Feedback'}
+          />
+          <ButtonSolid
+            onPress={() => {
+              try {
+                navigation.navigate('HomeScreen');
+              } catch (err) {
+                console.error(err);
+              }
+            }}
+            style={[
+              styles.ButtonSolidn9,
+              {
+                color: theme.colors.light,
+                borderRadius: 12,
+                backgroundColor: theme.colors.mediumInverse,
+              },
+            ]}
+            title={'Back Home'}
           />
         </View>
 
@@ -180,12 +198,19 @@ const ArtistMenuScreen = props => {
 };
 
 const styles = StyleSheet.create({
+  ButtonSolidpI: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
   ButtonSolidn9: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
   Vieweh: {
     alignSelf: 'flex-end',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '100%',
   },
   Imaged8: {
     width: 75,

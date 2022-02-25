@@ -13,20 +13,20 @@ import {
 import * as Linking from 'expo-linking';
 import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 
-const NFTsScreen = props => {
+const NFTsCollectorsScreen = props => {
   const { theme } = props;
   const { navigation } = props;
 
   return (
     <ScreenContainer>
       <LinearGradient
-        style={styles.LinearGradiento9}
+        style={styles.LinearGradientrw}
         endY={100}
         endX={100}
         color1={theme.colors.background}
         color2={theme.colors.lightInverse}
       >
-        <View style={styles.ViewbC} pointerEvents={'auto'}>
+        <View style={styles.Viewfe} pointerEvents={'auto'}>
           <ButtonSolid
             onPress={() => {
               try {
@@ -36,7 +36,7 @@ const NFTsScreen = props => {
               }
             }}
             style={[
-              styles.ButtonSolidD6,
+              styles.ButtonSolidVr,
               {
                 color: theme.colors.light,
                 borderRadius: 12,
@@ -48,13 +48,13 @@ const NFTsScreen = props => {
           <ButtonSolid
             onPress={() => {
               try {
-                navigation.navigate('ArtistMenuScreen');
+                navigation.navigate('CollectorMenuScreen');
               } catch (err) {
                 console.error(err);
               }
             }}
             style={[
-              styles.ButtonSolidbU,
+              styles.ButtonSolidBB,
               {
                 color: theme.colors.light,
                 backgroundColor: theme.colors.mediumInverse,
@@ -65,9 +65,9 @@ const NFTsScreen = props => {
           />
         </View>
 
-        <View style={styles.View_23} pointerEvents={'auto'}>
+        <View style={styles.ViewdU} pointerEvents={'auto'}>
           <Image
-            style={styles.Image_5U}
+            style={styles.Imagezu}
             source={Images.TransparentLogoMark}
             resizeMode={'cover'}
           />
@@ -75,72 +75,72 @@ const NFTsScreen = props => {
 
         <View
           style={[
-            styles.ViewhY,
+            styles.View_4c,
             { backgroundColor: theme.colors.lightInverse, borderRadius: 12 },
           ]}
           pointerEvents={'auto'}
         >
-          <Text style={[styles.TextVZ, { color: theme.colors.surface }]}>
+          <Text style={[styles.Text_2p, { color: theme.colors.surface }]}>
             {'Content in Web3'}
           </Text>
         </View>
 
         <ScrollView showsVerticalScrollIndicator={false} bounces={true}>
           <Swiper
-            style={styles.Swiper_8m}
+            style={styles.SwipertC}
             dotActiveColor={theme.colors.primary}
             dotsTouchable={true}
             dotColor={theme.colors.background}
             loop={true}
           >
-            <SwiperItem style={styles.SwiperItemVu}>
+            <SwiperItem style={styles.SwiperItemrV}>
               <Image
-                style={styles.Image_77}
+                style={styles.ImagefV}
                 source={{
                   uri: 'https://static.draftbit.com/images/placeholder-image.png',
                 }}
                 resizeMode={'cover'}
               />
-              <Text style={[styles.Text_7k, { color: theme.colors.light }]}>
+              <Text style={[styles.Textbk, { color: theme.colors.light }]}>
                 {'The NFT (Non-Fungible Token)'}
               </Text>
 
-              <View style={styles.ViewLL} pointerEvents={'auto'}>
+              <View style={styles.ViewAu} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.IcongX}
+                  style={styles.Icon_4x}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.TextGX, { color: theme.colors.light }]}>
+                <Text style={[styles.TextED, { color: theme.colors.light }]}>
                   {
                     'Non-Fungible Tokens are how artists will sell their work in the future. A direct line to support content creation.\n'
                   }
                 </Text>
               </View>
 
-              <View style={styles.ViewkH} pointerEvents={'auto'}>
+              <View style={styles.ViewCc} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.Iconpa}
+                  style={styles.Icon_0u}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.Text_74, { color: theme.colors.light }]}>
+                <Text style={[styles.TextpA, { color: theme.colors.light }]}>
                   {
                     'Reasons people buy NFTs: \nArt Appreciation\nStatus Symbol\nMake Money\nSupport Content Creation\nJoin a Community\n'
                   }
                 </Text>
               </View>
 
-              <View style={styles.Viewy4} pointerEvents={'auto'}>
+              <View style={styles.Viewvb} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.IconEP}
+                  style={styles.Icon_6I}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.TextFR, { color: theme.colors.light }]}>
+                <Text style={[styles.Text_4K, { color: theme.colors.light }]}>
                   {
                     'NFTs represent the proof of ownership of a digital piece of content, which can be tied to benefits and  physical assets.'
                   }
@@ -148,54 +148,54 @@ const NFTsScreen = props => {
               </View>
             </SwiperItem>
 
-            <SwiperItem style={styles.SwiperItemXZ}>
+            <SwiperItem style={styles.SwiperItemFj}>
               <Image
-                style={styles.Imagek4}
+                style={styles.ImageA5}
                 source={{
                   uri: 'https://static.draftbit.com/images/placeholder-image.png',
                 }}
                 resizeMode={'cover'}
               />
-              <Text style={[styles.TextY0, { color: theme.colors.light }]}>
+              <Text style={[styles.Textan, { color: theme.colors.light }]}>
                 {'NFT Terms'}
               </Text>
 
-              <View style={styles.Viewbp} pointerEvents={'auto'}>
+              <View style={styles.ViewZQ} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.IconFV}
+                  style={styles.Iconck}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.Textcl, { color: theme.colors.light }]}>
+                <Text style={[styles.TexttW, { color: theme.colors.light }]}>
                   {
                     'NFT Collections usually revolve around a community project with a mutual goal. The artwork usually looks similar and can contain any number of pieces from 2 to a million.\n'
                   }
                 </Text>
               </View>
 
-              <View style={styles.Viewi9} pointerEvents={'auto'}>
+              <View style={styles.Viewqm} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.Iconx8}
+                  style={styles.IconO5}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.TextNu, { color: theme.colors.light }]}>
+                <Text style={[styles.Texte0, { color: theme.colors.light }]}>
                   {
                     'Generative Art is art that in whole or in part has been created with the use of an autonomous system. By using a certain smart contract, artists can make 1000s of NFTs with a small fraction of the work.'
                   }
                 </Text>
               </View>
 
-              <View style={styles.View_88} pointerEvents={'auto'}>
+              <View style={styles.Viewmy} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.IconwG}
+                  style={styles.IcongL}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.Textlm, { color: theme.colors.light }]}>
+                <Text style={[styles.TextHv, { color: theme.colors.light }]}>
                   {
                     'Floor Price is the lowest amount of money you are able to spend to become a member of an NFT project.'
                   }
@@ -203,68 +203,68 @@ const NFTsScreen = props => {
               </View>
             </SwiperItem>
 
-            <SwiperItem style={styles.SwiperItemxD}>
+            <SwiperItem style={styles.SwiperItem_94}>
               <Image
-                style={styles.ImagegK}
+                style={styles.ImagexS}
                 source={{
                   uri: 'https://static.draftbit.com/images/placeholder-image.png',
                 }}
                 resizeMode={'cover'}
               />
-              <Text style={[styles.Textr4, { color: theme.colors.light }]}>
+              <Text style={[styles.TextxQ, { color: theme.colors.light }]}>
                 {'How to Buy an NFT'}
               </Text>
 
-              <View style={styles.View_3s} pointerEvents={'auto'}>
+              <View style={styles.ViewBm} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.Iconj8}
+                  style={styles.Icon_3C}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.Textuk, { color: theme.colors.light }]}>
+                <Text style={[styles.TextsR, { color: theme.colors.light }]}>
                   {
                     'Pick an NFT marketplace, set up a compatible wallet & add some compatible coin to buy the NFT with\n'
                   }
                 </Text>
               </View>
 
-              <View style={styles.ViewTz} pointerEvents={'auto'}>
+              <View style={styles.ViewGY} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.IconMU}
+                  style={styles.Icon_8K}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.Text_8g, { color: theme.colors.light }]}>
+                <Text style={[styles.TextE6, { color: theme.colors.light }]}>
                   {
                     'Pick an NFT, be sure to research and check for reports of scams'
                   }
                 </Text>
               </View>
 
-              <View style={styles.ViewfK} pointerEvents={'auto'}>
+              <View style={styles.ViewQQ} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.Iconpi}
+                  style={styles.IconjF}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.TextKb, { color: theme.colors.light }]}>
+                <Text style={[styles.TextRB, { color: theme.colors.light }]}>
                   {
                     'In addition to the price of the NFT, you’ll have to pay a transaction fee to write your ownership of the NFT onto the blockchain.'
                   }
                 </Text>
               </View>
 
-              <View style={styles.ViewrG} pointerEvents={'auto'}>
+              <View style={styles.Viewyx} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.IconQE}
+                  style={styles.Icon_0I}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
                 />
-                <Text style={[styles.TextaJ, { color: theme.colors.light }]}>
+                <Text style={[styles.TextIa, { color: theme.colors.light }]}>
                   {
                     'If you’re using the NFT in a DApp, follow their instructions to connect and use your NFT.'
                   }
@@ -272,14 +272,14 @@ const NFTsScreen = props => {
               </View>
             </SwiperItem>
 
-            <SwiperItem style={styles.SwiperItembf}>
-              <Text style={[styles.TextOw, { color: theme.colors.light }]}>
+            <SwiperItem style={styles.SwiperItemsb}>
+              <Text style={[styles.Texty3, { color: theme.colors.light }]}>
                 {'Sources'}
               </Text>
 
-              <View style={styles.ViewDb} pointerEvents={'auto'}>
+              <View style={styles.View_5s} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.Iconi6}
+                  style={styles.IconDt}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
@@ -299,9 +299,9 @@ const NFTsScreen = props => {
                 />
               </View>
 
-              <View style={styles.ViewWV} pointerEvents={'auto'}>
+              <View style={styles.ViewaB} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.IconLh}
+                  style={styles.IconEQ}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
@@ -321,9 +321,9 @@ const NFTsScreen = props => {
                 />
               </View>
 
-              <View style={styles.Viewj0} pointerEvents={'auto'}>
+              <View style={styles.ViewsM} pointerEvents={'auto'}>
                 <Icon
-                  style={styles.IconPk}
+                  style={styles.Iconz1}
                   size={24}
                   color={theme.colors.light}
                   name={'FontAwesome/dot-circle-o'}
@@ -345,7 +345,7 @@ const NFTsScreen = props => {
             </SwiperItem>
           </Swiper>
 
-          <View style={styles.ViewhM} pointerEvents={'auto'}>
+          <View style={styles.Viewmt} pointerEvents={'auto'}>
             <ButtonSolid
               onPress={() => {
                 try {
@@ -355,7 +355,7 @@ const NFTsScreen = props => {
                 }
               }}
               style={[
-                styles.ButtonSolid_1E,
+                styles.ButtonSolidDO,
                 {
                   backgroundColor: theme.colors.secondary,
                   color: theme.colors.primary,
@@ -371,33 +371,33 @@ const NFTsScreen = props => {
 };
 
 const styles = StyleSheet.create({
-  ButtonSolidD6: {
+  ButtonSolidVr: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
-  ButtonSolidbU: {
+  ButtonSolidBB: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
     textAlign: 'center',
   },
-  ViewbC: {
+  Viewfe: {
     alignSelf: 'flex-end',
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '100%',
   },
-  Image_5U: {
+  Imagezu: {
     width: 75,
     height: 75,
   },
-  View_23: {
+  ViewdU: {
     alignItems: 'center',
   },
-  TextVZ: {
+  Text_2p: {
     fontSize: 24,
     fontFamily: 'RobotoCondensed_400Regular',
   },
-  ViewhY: {
+  View_4c: {
     paddingTop: 16,
     paddingBottom: 16,
     width: 230,
@@ -408,214 +408,214 @@ const styles = StyleSheet.create({
     marginTop: 12,
     marginBottom: 24,
   },
-  Image_77: {
+  ImagefV: {
     width: '100%',
     height: 200,
   },
-  Text_7k: {
+  Textbk: {
     marginTop: 12,
     marginBottom: 12,
     fontFamily: 'RobotoCondensed_400Regular',
     fontSize: 18,
   },
-  IcongX: {
+  Icon_4x: {
     right: 8,
   },
-  TextGX: {
+  TextED: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
-  ViewLL: {
+  ViewAu: {
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 6,
   },
-  Iconpa: {
+  Icon_0u: {
     right: 8,
   },
-  Text_74: {
+  TextpA: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
-  ViewkH: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: 6,
-    marginBottom: 6,
-  },
-  IconEP: {
-    right: 8,
-  },
-  TextFR: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-  },
-  Viewy4: {
+  ViewCc: {
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 6,
     marginBottom: 6,
   },
-  SwiperItemVu: {
+  Icon_6I: {
+    right: 8,
+  },
+  Text_4K: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
+  Viewvb: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 6,
+    marginBottom: 6,
+  },
+  SwiperItemrV: {
     paddingLeft: 16,
     paddingRight: 16,
   },
-  Imagek4: {
+  ImageA5: {
     width: '100%',
     height: 200,
   },
-  TextY0: {
+  Textan: {
     marginTop: 12,
     marginBottom: 12,
     fontFamily: 'RobotoCondensed_400Regular',
     fontSize: 18,
   },
-  IconFV: {
+  Iconck: {
     right: 8,
   },
-  Textcl: {
+  TexttW: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
-  Viewbp: {
+  ViewZQ: {
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 6,
   },
-  Iconx8: {
+  IconO5: {
     right: 8,
   },
-  TextNu: {
+  Texte0: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
-  Viewi9: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: 6,
-    marginBottom: 6,
-  },
-  IconwG: {
-    right: 8,
-  },
-  Textlm: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-  },
-  View_88: {
+  Viewqm: {
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 6,
     marginBottom: 6,
   },
-  SwiperItemXZ: {
+  IcongL: {
+    right: 8,
+  },
+  TextHv: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
+  Viewmy: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 6,
+    marginBottom: 6,
+  },
+  SwiperItemFj: {
     paddingLeft: 16,
     paddingRight: 16,
   },
-  ImagegK: {
+  ImagexS: {
     width: '100%',
     height: 200,
   },
-  Textr4: {
+  TextxQ: {
     marginTop: 12,
     marginBottom: 12,
     fontFamily: 'RobotoCondensed_400Regular',
     fontSize: 18,
   },
-  Iconj8: {
+  Icon_3C: {
     right: 8,
   },
-  Textuk: {
+  TextsR: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
-  View_3s: {
+  ViewBm: {
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 6,
   },
-  IconMU: {
+  Icon_8K: {
     right: 8,
   },
-  Text_8g: {
+  TextE6: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
-  ViewTz: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: 6,
-    marginBottom: 6,
-  },
-  Iconpi: {
-    right: 8,
-  },
-  TextKb: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-  },
-  ViewfK: {
+  ViewGY: {
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 6,
     marginBottom: 6,
   },
-  IconQE: {
+  IconjF: {
     right: 8,
   },
-  TextaJ: {
+  TextRB: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
   },
-  ViewrG: {
+  ViewQQ: {
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 6,
     marginBottom: 6,
   },
-  SwiperItemxD: {
+  Icon_0I: {
+    right: 8,
+  },
+  TextIa: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
+  Viewyx: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 6,
+    marginBottom: 6,
+  },
+  SwiperItem_94: {
     paddingLeft: 16,
     paddingRight: 16,
   },
-  TextOw: {
+  Texty3: {
     marginTop: 12,
     marginBottom: 12,
     fontFamily: 'RobotoCondensed_400Regular',
     fontSize: 18,
   },
-  Iconi6: {
+  IconDt: {
     right: 8,
   },
-  ViewDb: {
+  View_5s: {
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 6,
   },
-  IconLh: {
+  IconEQ: {
     right: 8,
   },
-  ViewWV: {
+  ViewaB: {
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 6,
   },
-  IconPk: {
+  Iconz1: {
     right: 8,
   },
-  Viewj0: {
+  ViewsM: {
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 6,
   },
-  SwiperItembf: {
+  SwiperItemsb: {
     paddingLeft: 16,
     paddingRight: 16,
   },
-  Swiper_8m: {
+  SwipertC: {
     width: '100%',
     height: 450,
   },
-  ButtonSolid_1E: {
+  ButtonSolidDO: {
     borderRadius: 12,
     fontFamily: 'System',
     fontWeight: '700',
@@ -623,13 +623,13 @@ const styles = StyleSheet.create({
     width: 192,
     height: 60,
   },
-  ViewhM: {
+  Viewmt: {
     alignSelf: 'center',
   },
-  LinearGradiento9: {
+  LinearGradientrw: {
     width: '100%',
     height: '100%',
   },
 });
 
-export default withTheme(NFTsScreen);
+export default withTheme(NFTsCollectorsScreen);

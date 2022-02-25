@@ -30,24 +30,6 @@ const DappsScreen = props => {
           <ButtonSolid
             onPress={() => {
               try {
-                navigation.goBack();
-              } catch (err) {
-                console.error(err);
-              }
-            }}
-            style={[
-              styles.ButtonSolidB3,
-              {
-                color: theme.colors.light,
-                backgroundColor: theme.colors.mediumInverse,
-                borderRadius: 12,
-              },
-            ]}
-            title={'Back to\nLearning'}
-          />
-          <ButtonSolid
-            onPress={() => {
-              try {
                 navigation.navigate('FeedbackScreen');
               } catch (err) {
                 console.error(err);
@@ -62,6 +44,24 @@ const DappsScreen = props => {
               },
             ]}
             title={'Feedback'}
+          />
+          <ButtonSolid
+            onPress={() => {
+              try {
+                navigation.goBack();
+              } catch (err) {
+                console.error(err);
+              }
+            }}
+            style={[
+              styles.ButtonSolidB3,
+              {
+                color: theme.colors.light,
+                backgroundColor: theme.colors.mediumInverse,
+                borderRadius: 12,
+              },
+            ]}
+            title={'Go Back'}
           />
         </View>
 
@@ -369,14 +369,14 @@ const DappsScreen = props => {
 };
 
 const styles = StyleSheet.create({
+  ButtonSolid_8m: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
   ButtonSolidB3: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 12,
     textAlign: 'center',
-  },
-  ButtonSolid_8m: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
   },
   View_5A: {
     alignSelf: 'flex-end',

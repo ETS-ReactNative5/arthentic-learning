@@ -156,7 +156,7 @@ const Web3Screen = props => {
           <ButtonOutline
             onPress={() => {
               try {
-                navigation.navigate('MetaverseScreen');
+                navigation.navigate('WalletsScreen_CZIN2fUW');
               } catch (err) {
                 console.error(err);
               }
@@ -165,7 +165,7 @@ const Web3Screen = props => {
               styles.ButtonOutlineHH,
               { backgroundColor: theme.colors.secondary },
             ]}
-            title={'The Metaverse'}
+            title={'Web3 Wallets'}
           />
         </ScrollView>
       </LinearGradient>
