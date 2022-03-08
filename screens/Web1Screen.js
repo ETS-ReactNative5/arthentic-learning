@@ -44,7 +44,13 @@ const Web1Screen = props => {
               </View>
 
               <View style={styles.ViewRb} pointerEvents={'auto'}>
-                <Square size={30} bgColor={theme.colors.error} />
+                <Square size={30} bgColor={theme.colors.error}>
+                  <Icon
+                    name={'AntDesign/close'}
+                    size={24}
+                    color={theme.colors.mediumInverse}
+                  />
+                </Square>
               </View>
             </View>
           </Touchable>

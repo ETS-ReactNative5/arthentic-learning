@@ -26,7 +26,6 @@ import HomeScreen from './screens/HomeScreen';
 import InvestorMenuScreen from './screens/InvestorMenuScreen';
 import InvestorsScreen from './screens/InvestorsScreen';
 import MetaverseScreen from './screens/MetaverseScreen';
-import NFTsCollectorsScreen from './screens/NFTsCollectorsScreen';
 import NFTsScreen from './screens/NFTsScreen';
 import TaxesScreen from './screens/TaxesScreen';
 import WalletOldScreen from './screens/WalletOldScreen';
@@ -217,11 +216,6 @@ export default function RootAppNavigator() {
           name="InvestorsScreen"
           component={InvestorsScreen}
           options={{ title: 'Investors' }}
-        />
-        <Stack.Screen
-          name="NFTsCollectorsScreen"
-          component={NFTsCollectorsScreen}
-          options={{ title: 'NFTsCollectors' }}
         />
         <Stack.Screen
           name="CryptocurrencyCollectorsScreen"

@@ -90,9 +90,7 @@ const BurnoutScreen = props => {
         >
           <Image
             style={styles.Imageb9}
-            source={{
-              uri: 'https://static.draftbit.com/images/placeholder-image.png',
-            }}
+            source={Images.Burnout19201080Px}
             resizeMode={'cover'}
           />
           <Text style={[styles.TextYf, { color: theme.colors.light }]}>
@@ -104,7 +102,7 @@ const BurnoutScreen = props => {
               style={styles.Icon_30}
               size={24}
               color={theme.colors.light}
-              name={'FontAwesome/dot-circle-o'}
+              name={'Ionicons/ios-bonfire'}
             />
             <Text style={[styles.TextNl, { color: theme.colors.light }]}>
               {
@@ -118,7 +116,7 @@ const BurnoutScreen = props => {
               style={styles.Icontw}
               size={24}
               color={theme.colors.light}
-              name={'FontAwesome/dot-circle-o'}
+              name={'MaterialIcons/healing'}
             />
             <Text style={[styles.TextW8, { color: theme.colors.light }]}>
               {
@@ -132,7 +130,7 @@ const BurnoutScreen = props => {
               style={styles.Icona5}
               size={24}
               color={theme.colors.light}
-              name={'FontAwesome/dot-circle-o'}
+              name={'Entypo/music'}
             />
             <Link
               onPress={() => {
@@ -154,7 +152,7 @@ const BurnoutScreen = props => {
               style={styles.Icon_1a}
               size={24}
               color={theme.colors.light}
-              name={'FontAwesome/dot-circle-o'}
+              name={'FontAwesome/hospital-o'}
             />
             <Link
               onPress={() => {

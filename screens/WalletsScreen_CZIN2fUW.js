@@ -72,7 +72,11 @@ const WalletsScreen_CZIN2fUW = props => {
               }
             </Text>
           </View>
-
+          <Image
+            style={styles.Image_0T}
+            source={Images.SeedPhrase}
+            resizeMode={'contain'}
+          />
           <View style={styles.ViewcM} pointerEvents={'auto'}>
             <View pointerEvents={'auto'}>
               <Text style={[styles.TextCO, { color: theme.colors.light }]}>
@@ -260,6 +264,26 @@ const WalletsScreen_CZIN2fUW = props => {
               />
             </View>
           </View>
+
+          <View style={styles.ViewVK} pointerEvents={'auto'}>
+            <ButtonSolid
+              onPress={() => {
+                try {
+                  navigation.navigate('WalletOldScreen');
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+              style={[
+                styles.ButtonSolidGP,
+                {
+                  backgroundColor: theme.colors.secondary,
+                  color: theme.colors.primary,
+                },
+              ]}
+              title={'More Info On\nWallets'}
+            />
+          </View>
         </ScrollView>
       </LinearGradient>
     </ScreenContainer>
@@ -300,6 +324,10 @@ const styles = StyleSheet.create({
   View_0M: {
     flexDirection: 'row',
     marginBottom: 24,
+  },
+  Image_0T: {
+    width: '100%',
+    height: 250,
   },
   TextCO: {
     fontFamily: 'RobotoCondensed_700Bold',
@@ -423,6 +451,19 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 6,
+  },
+  ButtonSolidGP: {
+    borderRadius: 12,
+    fontFamily: 'System',
+    fontWeight: '700',
+    textAlign: 'center',
+    width: 192,
+    height: 60,
+  },
+  ViewVK: {
+    alignSelf: 'center',
+    top: 2,
+    marginTop: 24,
   },
   ScrollView_0GContent: {
     marginLeft: 18,

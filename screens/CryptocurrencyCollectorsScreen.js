@@ -96,9 +96,7 @@ const CryptocurrencyCollectorsScreen = props => {
             <SwiperItem style={styles.SwiperItemeY}>
               <Image
                 style={styles.ImageMn}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
+                source={Images.Scarcity}
                 resizeMode={'cover'}
               />
               <Text style={[styles.Textmn, { color: theme.colors.light }]}>
@@ -110,7 +108,7 @@ const CryptocurrencyCollectorsScreen = props => {
                   style={styles.IconMg}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/shape-oval-plus'}
                 />
                 <Text style={[styles.Text_4o, { color: theme.colors.light }]}>
                   {
@@ -124,7 +122,7 @@ const CryptocurrencyCollectorsScreen = props => {
                   style={styles.Iconbz}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'FontAwesome/chain'}
                 />
                 <Text style={[styles.Textsm, { color: theme.colors.light }]}>
                   {
@@ -138,7 +136,7 @@ const CryptocurrencyCollectorsScreen = props => {
                   style={styles.IconHx}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Foundation/bitcoin-circle'}
                 />
                 <Text style={[styles.TextJQ, { color: theme.colors.light }]}>
                   {
@@ -151,9 +149,7 @@ const CryptocurrencyCollectorsScreen = props => {
             <SwiperItem style={styles.SwiperItem_5N}>
               <Image
                 style={styles.ImageLp}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
+                source={Images.Cryptocurrency19201080Px}
                 resizeMode={'cover'}
               />
               <Text style={[styles.TextcJ, { color: theme.colors.light }]}>
@@ -165,7 +161,7 @@ const CryptocurrencyCollectorsScreen = props => {
                   style={styles.IconjJ}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialIcons/attach-money'}
                 />
                 <Text style={[styles.TextTt, { color: theme.colors.light }]}>
                   {
@@ -179,7 +175,7 @@ const CryptocurrencyCollectorsScreen = props => {
                   style={styles.IconPx}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Ionicons/ios-business'}
                 />
                 <Text style={[styles.Texty8, { color: theme.colors.light }]}>
                   {
@@ -193,7 +189,7 @@ const CryptocurrencyCollectorsScreen = props => {
                   style={styles.IconI1}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Entypo/sports-club'}
                 />
                 <Text style={[styles.TextH3, { color: theme.colors.light }]}>
                   {
@@ -206,10 +202,8 @@ const CryptocurrencyCollectorsScreen = props => {
             <SwiperItem style={styles.SwiperItemH0}>
               <Image
                 style={styles.ImagebG}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
                 resizeMode={'cover'}
+                source={Images.Token}
               />
               <Text style={[styles.TextZo, { color: theme.colors.light }]}>
                 {'What Are Crypto Tokens'}
@@ -220,7 +214,7 @@ const CryptocurrencyCollectorsScreen = props => {
                   style={styles.Iconue}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'AntDesign/copyright'}
                 />
                 <Text style={[styles.TextDt, { color: theme.colors.light }]}>
                   {
@@ -234,7 +228,7 @@ const CryptocurrencyCollectorsScreen = props => {
                   style={styles.IconEw}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/format-wrap-tight'}
                 />
                 <Text style={[styles.Text_3y, { color: theme.colors.light }]}>
                   {
@@ -248,7 +242,7 @@ const CryptocurrencyCollectorsScreen = props => {
                   style={styles.IconRz}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/security-network'}
                 />
                 <Text style={[styles.TextxX, { color: theme.colors.light }]}>
                   {
@@ -268,7 +262,7 @@ const CryptocurrencyCollectorsScreen = props => {
                   style={styles.Icona1}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/parachute'}
                 />
                 <Text style={[styles.Textud, { color: theme.colors.light }]}>
                   {
@@ -286,7 +280,7 @@ const CryptocurrencyCollectorsScreen = props => {
                   style={styles.Iconxw}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'SimpleLineIcons/present'}
                 />
                 <Text style={[styles.Textgn, { color: theme.colors.light }]}>
                   {
@@ -304,7 +298,7 @@ const CryptocurrencyCollectorsScreen = props => {
                   style={styles.Icon_3K}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Ionicons/ios-bonfire-sharp'}
                 />
                 <Text style={[styles.Textpu, { color: theme.colors.light }]}>
                   {'Removing coins/tokens from the available supply.'}
@@ -320,7 +314,7 @@ const CryptocurrencyCollectorsScreen = props => {
                   style={styles.IconZb}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/cash-refund'}
                 />
                 <Text style={[styles.TextEv, { color: theme.colors.light }]}>
                   {
@@ -334,7 +328,7 @@ const CryptocurrencyCollectorsScreen = props => {
                   style={styles.IconRW}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/bitcoin'}
                 />
                 <Text style={[styles.Textvo, { color: theme.colors.light }]}>
                   {
@@ -348,7 +342,7 @@ const CryptocurrencyCollectorsScreen = props => {
                   style={styles.IconDJ}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Foundation/page-search'}
                 />
                 <Text style={[styles.TextmM, { color: theme.colors.light }]}>
                   {'Always do research before investing in a new project.'}

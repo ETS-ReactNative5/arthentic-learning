@@ -78,9 +78,7 @@ const MetaverseScreen = props => {
             <SwiperItem style={styles.SwiperItemjF}>
               <Image
                 style={styles.Image_11}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
+                source={Images.Metaverse19201080Px}
                 resizeMode={'cover'}
               />
               <Text style={[styles.TextyR, { color: theme.colors.light }]}>

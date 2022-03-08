@@ -96,9 +96,7 @@ const TaxesScreen = props => {
             <SwiperItem style={styles.SwiperItem_6Z}>
               <Image
                 style={styles.Image_7a}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
+                source={Images.CryptoTaxLaws19201080Px}
                 resizeMode={'cover'}
               />
               <Text style={[styles.TextaX, { color: theme.colors.light }]}>
@@ -110,7 +108,7 @@ const TaxesScreen = props => {
                   style={styles.IconP8}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'FontAwesome/balance-scale'}
                 />
                 <Text style={[styles.TextDi, { color: theme.colors.light }]}>
                   {
@@ -124,7 +122,7 @@ const TaxesScreen = props => {
                   style={styles.IconrU}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'AntDesign/retweet'}
                 />
                 <Text style={[styles.TextbN, { color: theme.colors.light }]}>
                   {
@@ -138,7 +136,7 @@ const TaxesScreen = props => {
                   style={styles.IcongP}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/account-convert'}
                 />
                 <Text style={[styles.Textiv, { color: theme.colors.light }]}>
                   {
@@ -152,7 +150,7 @@ const TaxesScreen = props => {
                   style={styles.IconB3}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Entypo/wallet'}
                 />
                 <Text style={[styles.TextCl, { color: theme.colors.light }]}>
                   {

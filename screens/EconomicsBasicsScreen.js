@@ -96,10 +96,8 @@ const EconomicsBasicsScreen = props => {
             <SwiperItem style={styles.SwiperItemfo}>
               <Image
                 style={styles.Imaget1}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
-                resizeMode={'cover'}
+                source={Images.SupplyAndDemand}
+                resizeMode={'center'}
               />
               <Text style={[styles.Text_5g, { color: theme.colors.light }]}>
                 {'Supply and Demand'}
@@ -161,9 +159,7 @@ const EconomicsBasicsScreen = props => {
             <SwiperItem style={styles.SwiperItemj8}>
               <Image
                 style={styles.ImageR6}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
+                source={Images.TypesOfEconomicGoods}
                 resizeMode={'cover'}
               />
               <Text style={[styles.TextL2, { color: theme.colors.light }]}>
@@ -175,7 +171,7 @@ const EconomicsBasicsScreen = props => {
                   style={styles.IconGA}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialIcons/money'}
                 />
                 <Text style={[styles.Textjv, { color: theme.colors.light }]}>
                   {
@@ -189,7 +185,7 @@ const EconomicsBasicsScreen = props => {
                   style={styles.Icon_6P}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/purse'}
                 />
                 <Text style={[styles.TextNb, { color: theme.colors.light }]}>
                   {
@@ -203,7 +199,7 @@ const EconomicsBasicsScreen = props => {
                   style={styles.IconZB}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Ionicons/fast-food'}
                 />
                 <Text style={[styles.Text_0u, { color: theme.colors.light }]}>
                   {
@@ -216,9 +212,7 @@ const EconomicsBasicsScreen = props => {
             <SwiperItem style={styles.SwiperItemuh}>
               <Image
                 style={styles.ImageDZ}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
+                source={Images.Inflation}
                 resizeMode={'cover'}
               />
               <Text style={[styles.Textec, { color: theme.colors.light }]}>
@@ -230,7 +224,7 @@ const EconomicsBasicsScreen = props => {
                   style={styles.Iconbd}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'AntDesign/caretup'}
                 />
                 <Text style={[styles.Textfu, { color: theme.colors.light }]}>
                   {
@@ -244,7 +238,7 @@ const EconomicsBasicsScreen = props => {
                   style={styles.Iconit}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'AntDesign/upcircle'}
                 />
                 <Text style={[styles.Textad, { color: theme.colors.light }]}>
                   {
@@ -258,7 +252,7 @@ const EconomicsBasicsScreen = props => {
                   style={styles.IconCT}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialIcons/attach-money'}
                 />
                 <Text style={[styles.Text_2M, { color: theme.colors.light }]}>
                   {'Cost-Push: When production costs increase prices.'}
@@ -270,7 +264,7 @@ const EconomicsBasicsScreen = props => {
                   style={styles.Icons3}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'AntDesign/upsquare'}
                 />
                 <Text style={[styles.TextAD, { color: theme.colors.light }]}>
                   {
@@ -283,10 +277,8 @@ const EconomicsBasicsScreen = props => {
             <SwiperItem style={styles.SwiperItemlg}>
               <Image
                 style={styles.ImageMH}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
                 resizeMode={'cover'}
+                source={Images.Elasticity19201080Px}
               />
               <Text style={[styles.TextTv, { color: theme.colors.light }]}>
                 {'Elasticity'}
@@ -297,7 +289,7 @@ const EconomicsBasicsScreen = props => {
                   style={styles.Iconzc}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialIcons/youtube-searched-for'}
                 />
                 <Text style={[styles.TextnA, { color: theme.colors.light }]}>
                   {
@@ -311,7 +303,7 @@ const EconomicsBasicsScreen = props => {
                   style={styles.IconQb}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'AntDesign/barschart'}
                 />
                 <Text style={[styles.Textyo, { color: theme.colors.light }]}>
                   {
@@ -325,7 +317,7 @@ const EconomicsBasicsScreen = props => {
                   style={styles.Iconeb}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'AntDesign/swapright'}
                 />
                 <Text style={[styles.TextAh, { color: theme.colors.light }]}>
                   {
@@ -338,9 +330,7 @@ const EconomicsBasicsScreen = props => {
             <SwiperItem style={styles.SwiperItemiv}>
               <Image
                 style={styles.ImageDj}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
+                source={Images.OpportunityCosts}
                 resizeMode={'cover'}
               />
               <Text style={[styles.TextD9, { color: theme.colors.light }]}>
@@ -352,7 +342,7 @@ const EconomicsBasicsScreen = props => {
                   style={styles.Icon_3V}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/math-cos'}
                 />
                 <Text style={[styles.Textux, { color: theme.colors.light }]}>
                   {
@@ -366,7 +356,7 @@ const EconomicsBasicsScreen = props => {
                   style={styles.IconnV}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/bank'}
                 />
                 <Text style={[styles.TextbO, { color: theme.colors.light }]}>
                   {
@@ -379,9 +369,7 @@ const EconomicsBasicsScreen = props => {
             <SwiperItem style={styles.SwiperItemB3}>
               <Image
                 style={styles.ImagehS}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
+                source={Images.BearVsBullMarkets}
                 resizeMode={'cover'}
               />
               <Text style={[styles.TextRO, { color: theme.colors.light }]}>
@@ -393,7 +381,7 @@ const EconomicsBasicsScreen = props => {
                   style={styles.IconA7}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Ionicons/analytics-sharp'}
                 />
                 <Text style={[styles.Textb1, { color: theme.colors.light }]}>
                   {
@@ -407,7 +395,7 @@ const EconomicsBasicsScreen = props => {
                   style={styles.Iconaw}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/google-analytics'}
                 />
                 <Text style={[styles.TextAl, { color: theme.colors.light }]}>
                   {

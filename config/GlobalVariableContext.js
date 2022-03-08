@@ -4,7 +4,11 @@ import AppLoading from 'expo-app-loading';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const DeviceVariables = {};
-const AppVariables = {};
+const AppVariables = {
+  Webflow_token:
+    'Bearer f911c99c5c63f4b2c5b2253476b26a342b6f39a3f264e8dc5800189d79668c7e',
+  Accept_Version: '1.0.0',
+};
 const GlobalVariableContext = React.createContext();
 const GlobalVariableUpdater = React.createContext();
 

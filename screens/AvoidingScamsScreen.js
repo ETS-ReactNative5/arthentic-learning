@@ -97,7 +97,7 @@ const AvoidingScamsScreen = props => {
                   style={styles.IcontY}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/water-pump'}
                 />
                 <Text style={[styles.Textow, { color: theme.colors.light }]}>
                   {
@@ -125,7 +125,7 @@ const AvoidingScamsScreen = props => {
                   style={styles.IconJk}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Ionicons/triangle-sharp'}
                 />
                 <Text style={[styles.TexthT, { color: theme.colors.light }]}>
                   {
@@ -153,7 +153,7 @@ const AvoidingScamsScreen = props => {
                   style={styles.IconDb}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'FontAwesome/user-secret'}
                 />
                 <Text style={[styles.TextbZ, { color: theme.colors.light }]}>
                   {
@@ -197,7 +197,7 @@ const AvoidingScamsScreen = props => {
                   style={styles.Iconv0}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/axe'}
                 />
                 <Text style={[styles.TextGa, { color: theme.colors.light }]}>
                   {
@@ -239,7 +239,7 @@ const AvoidingScamsScreen = props => {
                   style={styles.IconWQ}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Ionicons/md-hardware-chip-sharp'}
                 />
                 <Text style={[styles.Text_9V, { color: theme.colors.light }]}>
                   {
@@ -267,7 +267,7 @@ const AvoidingScamsScreen = props => {
                   style={styles.IconBI}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/pot-mix-outline'}
                 />
                 <Text style={[styles.TextOr, { color: theme.colors.light }]}>
                   {
@@ -297,7 +297,7 @@ const AvoidingScamsScreen = props => {
                   style={styles.Iconhh}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Ionicons/contract-outline'}
                 />
                 <Text style={[styles.TextY0, { color: theme.colors.light }]}>
                   {
@@ -311,7 +311,7 @@ const AvoidingScamsScreen = props => {
                   style={styles.Icon_2x}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialIcons/connect-without-contact'}
                 />
                 <Text style={[styles.Textj8, { color: theme.colors.light }]}>
                   {
@@ -325,7 +325,7 @@ const AvoidingScamsScreen = props => {
                   style={styles.IconCL}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Entypo/database'}
                 />
                 <Text style={[styles.TextpT, { color: theme.colors.light }]}>
                   {
@@ -339,7 +339,7 @@ const AvoidingScamsScreen = props => {
                   style={styles.Icon_94}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/washing-machine-alert'}
                 />
                 <Text style={[styles.TextX4, { color: theme.colors.light }]}>
                   {

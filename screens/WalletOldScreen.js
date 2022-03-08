@@ -96,10 +96,8 @@ const WalletOldScreen = props => {
             <SwiperItem style={styles.SwiperItemJn}>
               <Image
                 style={styles.Imageav}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
                 resizeMode={'cover'}
+                source={Images.Wallet2}
               />
               <Text style={[styles.TextUh, { color: theme.colors.light }]}>
                 {'What is a Crypto Wallet'}
@@ -110,7 +108,7 @@ const WalletOldScreen = props => {
                   style={styles.IconfC}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Entypo/megaphone'}
                 />
                 <Text style={[styles.Textx8, { color: theme.colors.light }]}>
                   {
@@ -124,7 +122,7 @@ const WalletOldScreen = props => {
                   style={styles.IconEg}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/sale'}
                 />
                 <Text style={[styles.TextWK, { color: theme.colors.light }]}>
                   {
@@ -138,7 +136,7 @@ const WalletOldScreen = props => {
                   style={styles.Iconzr}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/wallet-plus'}
                 />
                 <Text style={[styles.TextTI, { color: theme.colors.light }]}>
                   {'You can also own more than one wallet.\n'}
@@ -149,10 +147,8 @@ const WalletOldScreen = props => {
             <SwiperItem style={styles.SwiperItemzL}>
               <Image
                 style={styles.ImagegS}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
                 resizeMode={'cover'}
+                source={Images.CryptoWallets}
               />
               <Text style={[styles.TextJQ, { color: theme.colors.light }]}>
                 {'Types of Wallets'}
@@ -163,7 +159,7 @@ const WalletOldScreen = props => {
                   style={styles.IconfZ}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Entypo/wallet'}
                 />
                 <Text style={[styles.TextAb, { color: theme.colors.light }]}>
                   {
@@ -177,7 +173,7 @@ const WalletOldScreen = props => {
                   style={styles.IconrY}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'FontAwesome/align-center'}
                 />
                 <Text style={[styles.Textd6, { color: theme.colors.light }]}>
                   {
@@ -197,7 +193,7 @@ const WalletOldScreen = props => {
                   style={styles.Iconex}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Feather/key'}
                 />
                 <Text style={[styles.TextFH, { color: theme.colors.light }]}>
                   {
@@ -211,7 +207,7 @@ const WalletOldScreen = props => {
                   style={styles.IconKj}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/seed'}
                 />
                 <Text style={[styles.TextaB, { color: theme.colors.light }]}>
                   {
@@ -225,7 +221,7 @@ const WalletOldScreen = props => {
                   style={styles.IconT9}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'FontAwesome/address-book'}
                 />
                 <Text style={[styles.TextAo, { color: theme.colors.light }]}>
                   {
@@ -239,11 +235,11 @@ const WalletOldScreen = props => {
                   style={styles.Icon_6e}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'AntDesign/message1'}
                 />
                 <Text style={[styles.TextxZ, { color: theme.colors.light }]}>
                   {
-                    'ENS(Ethereum Name Service): A name and lookup service built on the Ethereum blockchain that allows crypto users to interact/pay each other, wallet to wallet.'
+                    'ENS(Ethereum Name Service): Basically an address for your crypto wallet that allows you to message other crypto users.'
                   }
                 </Text>
               </View>

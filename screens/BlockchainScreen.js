@@ -95,11 +95,9 @@ const BlockchainScreen = props => {
           >
             <SwiperItem style={styles.SwiperItemXa}>
               <Image
-                style={styles.ImageT2}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
+                style={styles.ImageMU}
                 resizeMode={'cover'}
+                source={Images.Blockchain2}
               />
               <Text style={[styles.TextWK, { color: theme.colors.light }]}>
                 {'A Brief Introduction'}
@@ -110,7 +108,7 @@ const BlockchainScreen = props => {
                   style={styles.Icon_6B}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialIcons/computer'}
                 />
                 <Text style={[styles.Text_64, { color: theme.colors.light }]}>
                   {
@@ -124,7 +122,7 @@ const BlockchainScreen = props => {
                   style={styles.Iconx4}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/google-spreadsheet'}
                 />
                 <Text style={[styles.Texto6, { color: theme.colors.light }]}>
                   {'The data set is called a ledger.\n'}
@@ -136,7 +134,7 @@ const BlockchainScreen = props => {
                   style={styles.IconWe}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'FontAwesome/chain'}
                 />
                 <Text style={[styles.TextTj, { color: theme.colors.light }]}>
                   {
@@ -150,7 +148,7 @@ const BlockchainScreen = props => {
                   style={styles.Iconq4}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Ionicons/infinite-outline'}
                 />
                 <Text style={[styles.Text_3c, { color: theme.colors.light }]}>
                   {
@@ -163,10 +161,8 @@ const BlockchainScreen = props => {
             <SwiperItem style={styles.SwiperItemJY}>
               <Image
                 style={styles.ImagekZ}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
-                resizeMode={'cover'}
+                resizeMode={'center'}
+                source={Images.HowIsBlockchainMade1}
               />
               <Text style={[styles.TextaR, { color: theme.colors.light }]}>
                 {'How Blockchain is Made'}
@@ -177,7 +173,7 @@ const BlockchainScreen = props => {
                   style={styles.Iconas}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/shovel'}
                 />
                 <Text style={[styles.TextjM, { color: theme.colors.light }]}>
                   {
@@ -191,7 +187,7 @@ const BlockchainScreen = props => {
                   style={styles.IconEE}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/update'}
                 />
                 <Text style={[styles.TextKZ, { color: theme.colors.light }]}>
                   {'Every time the network updates, every node updates.\n'}
@@ -203,7 +199,7 @@ const BlockchainScreen = props => {
                   style={styles.Icon_8Z}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Entypo/network'}
                 />
                 <Text style={[styles.Texteo, { color: theme.colors.light }]}>
                   {'The network verifies updates using a consensus mechanism.'}
@@ -214,10 +210,8 @@ const BlockchainScreen = props => {
             <SwiperItem style={styles.SwiperItemwB}>
               <Image
                 style={styles.ImageJf}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
-                resizeMode={'cover'}
+                resizeMode={'contain'}
+                source={Images.Consensus19201080Px}
               />
               <Text style={[styles.TextZE, { color: theme.colors.light }]}>
                 {'Main Consensus Mechanisms'}
@@ -228,7 +222,7 @@ const BlockchainScreen = props => {
                   style={styles.Iconcg}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/folder-network'}
                 />
                 <Text style={[styles.TextUC, { color: theme.colors.light }]}>
                   {
@@ -256,7 +250,7 @@ const BlockchainScreen = props => {
                   style={styles.IconEF}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/folder-key-network'}
                 />
                 <Text style={[styles.TextNH, { color: theme.colors.light }]}>
                   {
@@ -290,7 +284,7 @@ const BlockchainScreen = props => {
                   style={styles.IconUR}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/postage-stamp'}
                 />
                 <Text style={[styles.TexteG, { color: theme.colors.light }]}>
                   {
@@ -304,7 +298,7 @@ const BlockchainScreen = props => {
                   style={styles.IconUl}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/format-columns'}
                 />
                 <Text style={[styles.Textbf, { color: theme.colors.light }]}>
                   {
@@ -330,7 +324,7 @@ const BlockchainScreen = props => {
                   style={styles.IconCH}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/clock-time-eleven'}
                 />
                 <Text style={[styles.TextHp, { color: theme.colors.light }]}>
                   {
@@ -344,7 +338,7 @@ const BlockchainScreen = props => {
                   style={styles.Icon_0D}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Ionicons/ios-bonfire-sharp'}
                 />
                 <Text style={[styles.Textmm, { color: theme.colors.light }]}>
                   {
@@ -358,7 +352,7 @@ const BlockchainScreen = props => {
                   style={styles.IconMF}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/security'}
                 />
                 <Text style={[styles.TextxG, { color: theme.colors.light }]}>
                   {
@@ -372,7 +366,7 @@ const BlockchainScreen = props => {
                   style={styles.IconJF}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/mouse-variant'}
                 />
                 <Text style={[styles.Texth7, { color: theme.colors.light }]}>
                   {
@@ -385,9 +379,7 @@ const BlockchainScreen = props => {
             <SwiperItem style={styles.SwiperItem_0q}>
               <Image
                 style={styles.ImageGP}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
+                source={Images.IPFS}
                 resizeMode={'cover'}
               />
               <Text style={[styles.Texttc, { color: theme.colors.light }]}>
@@ -399,7 +391,7 @@ const BlockchainScreen = props => {
                   style={styles.IconSt}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialIcons/storage'}
                 />
                 <Text style={[styles.TextS1, { color: theme.colors.light }]}>
                   {
@@ -412,10 +404,8 @@ const BlockchainScreen = props => {
             <SwiperItem style={styles.SwiperItemNg}>
               <Image
                 style={styles.ImagerP}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
                 resizeMode={'cover'}
+                source={Images.Forking19201080Px2}
               />
               <Text style={[styles.TextNJ, { color: theme.colors.light }]}>
                 {'Forking, or How Blockchains Update'}
@@ -426,7 +416,7 @@ const BlockchainScreen = props => {
                   style={styles.IconUz}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialIcons/upgrade'}
                 />
                 <Text style={[styles.TextYw, { color: theme.colors.light }]}>
                   {
@@ -440,7 +430,7 @@ const BlockchainScreen = props => {
                   style={styles.IconYd}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/silverware-fork'}
                 />
                 <Text style={[styles.TextGs, { color: theme.colors.light }]}>
                   {
@@ -453,13 +443,11 @@ const BlockchainScreen = props => {
             <SwiperItem style={styles.SwiperItemYu}>
               <Image
                 style={styles.ImageqX}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
-                resizeMode={'cover'}
+                resizeMode={'contain'}
+                source={Images.GasFees5}
               />
               <Text style={[styles.Textav, { color: theme.colors.light }]}>
-                {'Gas Fees, AKA The Price of Using Blockchain'}
+                {'Gas Fees, AKA Blockchain Transaction Prices'}
               </Text>
 
               <View style={styles.ViewBw} pointerEvents={'auto'}>
@@ -467,7 +455,7 @@ const BlockchainScreen = props => {
                   style={styles.Iconz9}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/gas-station'}
                 />
                 <Text style={[styles.Textm1, { color: theme.colors.light }]}>
                   {
@@ -481,7 +469,7 @@ const BlockchainScreen = props => {
                   style={styles.Icon_4A}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'FontAwesome/calculator'}
                 />
                 <Text style={[styles.TextDa, { color: theme.colors.light }]}>
                   {
@@ -495,7 +483,7 @@ const BlockchainScreen = props => {
                   style={styles.Icong9}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/scale-balance'}
                 />
                 <Text style={[styles.Textdf, { color: theme.colors.light }]}>
                   {'Gas is not charged to see the current balances.\n'}
@@ -507,7 +495,7 @@ const BlockchainScreen = props => {
                   style={styles.Iconfd}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'FontAwesome/angle-double-down'}
                 />
                 <Text style={[styles.TextOB, { color: theme.colors.light }]}>
                   {
@@ -697,7 +685,7 @@ const styles = StyleSheet.create({
     marginTop: 12,
     marginBottom: 24,
   },
-  ImageT2: {
+  ImageMU: {
     width: '100%',
     height: 200,
   },

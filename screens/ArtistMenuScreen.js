@@ -83,6 +83,34 @@ const ArtistMenuScreen = props => {
           </Text>
         </View>
 
+        <View style={styles.ViewhX} pointerEvents={'auto'}>
+          <Touchable
+            onPress={() => {
+              try {
+                navigation.navigate('CryptoBasicsScreen');
+              } catch (err) {
+                console.error(err);
+              }
+            }}
+          >
+            <View style={styles.View_1m} pointerEvents={'auto'}>
+              <Circle size={80} bgColor={theme.colors.secondary}>
+                <Circle size={70} bgColor={theme.colors.divider}>
+                  <Icon
+                    size={32}
+                    color={theme.colors.primary}
+                    name={'MaterialCommunityIcons/cellphone-basic'}
+                  />
+                </Circle>
+              </Circle>
+
+              <Text style={[styles.Text_4G, { color: theme.colors.light }]}>
+                {'Crypto Basics'}
+              </Text>
+            </View>
+          </Touchable>
+        </View>
+
         <View style={styles.ViewqG} pointerEvents={'auto'}>
           <View style={styles.ViewmV} pointerEvents={'auto'}>
             <Touchable
@@ -154,7 +182,7 @@ const ArtistMenuScreen = props => {
                     <Icon
                       size={32}
                       color={theme.colors.primary}
-                      name={'Ionicons/disc-outline'}
+                      name={'MaterialCommunityIcons/webpack'}
                     />
                   </Circle>
                 </Circle>
@@ -233,6 +261,20 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginTop: 12,
     marginBottom: 24,
+  },
+  Text_4G: {
+    fontSize: 12,
+    fontFamily: 'Roboto_400Regular',
+    textAlign: 'center',
+  },
+  View_1m: {
+    alignItems: 'center',
+    marginTop: 6,
+    marginBottom: 6,
+  },
+  ViewhX: {
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
   },
   Text_74: {
     fontSize: 12,

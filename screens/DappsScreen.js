@@ -96,10 +96,8 @@ const DappsScreen = props => {
             <SwiperItem style={styles.SwiperItem_4S}>
               <Image
                 style={styles.ImageKV}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
                 resizeMode={'cover'}
+                source={Images.DecentralizedApps1}
               />
               <Text style={[styles.TextmY, { color: theme.colors.light }]}>
                 {'DApps, Entering a World of Trust'}
@@ -110,7 +108,7 @@ const DappsScreen = props => {
                   style={styles.IconmP}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/wallet'}
                 />
                 <Text style={[styles.Textt6, { color: theme.colors.light }]}>
                   {
@@ -124,7 +122,7 @@ const DappsScreen = props => {
                   style={styles.Iconjk}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'AntDesign/play'}
                 />
                 <Text style={[styles.TextFR, { color: theme.colors.light }]}>
                   {
@@ -138,7 +136,7 @@ const DappsScreen = props => {
                   style={styles.Iconun}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/arrow-expand-all'}
                 />
                 <Text style={[styles.Textdz, { color: theme.colors.light }]}>
                   {
@@ -151,10 +149,8 @@ const DappsScreen = props => {
             <SwiperItem style={styles.SwiperItemWo}>
               <Image
                 style={styles.Image_1o}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
                 resizeMode={'cover'}
+                source={Images.PlayToEarn19201080Px}
               />
               <Text style={[styles.TextBL, { color: theme.colors.light }]}>
                 {'Play-to-Earn Games'}
@@ -165,7 +161,7 @@ const DappsScreen = props => {
                   style={styles.IconUa}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialIcons/videogame-asset'}
                 />
                 <Text style={[styles.Textpi, { color: theme.colors.light }]}>
                   {
@@ -179,7 +175,7 @@ const DappsScreen = props => {
                   style={styles.Iconwa}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Ionicons/md-game-controller'}
                 />
                 <Text style={[styles.TextaJ, { color: theme.colors.light }]}>
                   {
@@ -192,9 +188,7 @@ const DappsScreen = props => {
             <SwiperItem style={styles.SwiperItemJN}>
               <Image
                 style={styles.ImageXm}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
+                source={Images.Finance}
                 resizeMode={'cover'}
               />
               <Text style={[styles.Textus, { color: theme.colors.light }]}>
@@ -206,7 +200,7 @@ const DappsScreen = props => {
                   style={styles.Icon_6V}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'AntDesign/creditcard'}
                 />
                 <Text style={[styles.TextUT, { color: theme.colors.light }]}>
                   {
@@ -220,7 +214,7 @@ const DappsScreen = props => {
                   style={styles.IconUT}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/server-security'}
                 />
                 <Text style={[styles.Textav, { color: theme.colors.light }]}>
                   {
@@ -233,9 +227,7 @@ const DappsScreen = props => {
             <SwiperItem style={styles.SwiperItemBB}>
               <Image
                 style={styles.Imagenz}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
+                source={Images.SocialMedia}
                 resizeMode={'cover'}
               />
               <Text style={[styles.TextB5, { color: theme.colors.light }]}>
@@ -247,7 +239,7 @@ const DappsScreen = props => {
                   style={styles.IconMB}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Ionicons/share-social'}
                 />
                 <Text style={[styles.TextLw, { color: theme.colors.light }]}>
                   {

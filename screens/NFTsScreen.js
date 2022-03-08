@@ -48,7 +48,7 @@ const NFTsScreen = props => {
           <ButtonSolid
             onPress={() => {
               try {
-                navigation.navigate('ArtistMenuScreen');
+                navigation.goBack();
               } catch (err) {
                 console.error(err);
               }
@@ -96,9 +96,7 @@ const NFTsScreen = props => {
             <SwiperItem style={styles.SwiperItemVu}>
               <Image
                 style={styles.Image_77}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
+                source={Images.NFTTokens}
                 resizeMode={'cover'}
               />
               <Text style={[styles.Text_7k, { color: theme.colors.light }]}>
@@ -110,25 +108,11 @@ const NFTsScreen = props => {
                   style={styles.IcongX}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Entypo/creative-commons'}
                 />
                 <Text style={[styles.TextGX, { color: theme.colors.light }]}>
                   {
                     'Non-Fungible Tokens are how artists will sell their work in the future. A direct line to support content creation.\n'
-                  }
-                </Text>
-              </View>
-
-              <View style={styles.ViewkH} pointerEvents={'auto'}>
-                <Icon
-                  style={styles.Iconpa}
-                  size={24}
-                  color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
-                />
-                <Text style={[styles.Text_74, { color: theme.colors.light }]}>
-                  {
-                    'Reasons people buy NFTs: \nArt Appreciation\nStatus Symbol\nMake Money\nSupport Content Creation\nJoin a Community\n'
                   }
                 </Text>
               </View>
@@ -138,11 +122,25 @@ const NFTsScreen = props => {
                   style={styles.IconEP}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Entypo/creative-commons-noncommercial-us'}
                 />
                 <Text style={[styles.TextFR, { color: theme.colors.light }]}>
                   {
                     'NFTs represent the proof of ownership of a digital piece of content, which can be tied to benefits and  physical assets.'
+                  }
+                </Text>
+              </View>
+
+              <View style={styles.ViewkH} pointerEvents={'auto'}>
+                <Icon
+                  style={styles.Iconpa}
+                  size={24}
+                  color={theme.colors.light}
+                  name={'FontAwesome/opencart'}
+                />
+                <Text style={[styles.Text_74, { color: theme.colors.light }]}>
+                  {
+                    'Reasons people buy NFTs: \nArt Appreciation\nStatus Symbol\nMake Money\nSupport Content Creation\nJoin a Community\n'
                   }
                 </Text>
               </View>
@@ -151,10 +149,8 @@ const NFTsScreen = props => {
             <SwiperItem style={styles.SwiperItemXZ}>
               <Image
                 style={styles.Imagek4}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
                 resizeMode={'cover'}
+                source={Images.CopyOfToken}
               />
               <Text style={[styles.TextY0, { color: theme.colors.light }]}>
                 {'NFT Terms'}
@@ -165,7 +161,7 @@ const NFTsScreen = props => {
                   style={styles.IconFV}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/google-circles-communities'}
                 />
                 <Text style={[styles.Textcl, { color: theme.colors.light }]}>
                   {
@@ -179,7 +175,7 @@ const NFTsScreen = props => {
                   style={styles.Iconx8}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/face-agent'}
                 />
                 <Text style={[styles.TextNu, { color: theme.colors.light }]}>
                   {
@@ -193,7 +189,7 @@ const NFTsScreen = props => {
                   style={styles.IconwG}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/floor-plan'}
                 />
                 <Text style={[styles.Textlm, { color: theme.colors.light }]}>
                   {
@@ -206,10 +202,8 @@ const NFTsScreen = props => {
             <SwiperItem style={styles.SwiperItemxD}>
               <Image
                 style={styles.ImagegK}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
                 resizeMode={'cover'}
+                source={Images.HowToBuyTokenscrypto}
               />
               <Text style={[styles.Textr4, { color: theme.colors.light }]}>
                 {'How to Buy an NFT'}
@@ -220,7 +214,7 @@ const NFTsScreen = props => {
                   style={styles.Iconj8}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialIcons/local-grocery-store'}
                 />
                 <Text style={[styles.Textuk, { color: theme.colors.light }]}>
                   {
@@ -234,7 +228,7 @@ const NFTsScreen = props => {
                   style={styles.IconMU}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/text-box-search'}
                 />
                 <Text style={[styles.Text_8g, { color: theme.colors.light }]}>
                   {
@@ -248,7 +242,7 @@ const NFTsScreen = props => {
                   style={styles.Iconpi}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialIcons/payments'}
                 />
                 <Text style={[styles.TextKb, { color: theme.colors.light }]}>
                   {
@@ -262,7 +256,7 @@ const NFTsScreen = props => {
                   style={styles.IconQE}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialIcons/integration-instructions'}
                 />
                 <Text style={[styles.TextaJ, { color: theme.colors.light }]}>
                   {
@@ -430,19 +424,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 6,
   },
-  Iconpa: {
-    right: 8,
-  },
-  Text_74: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-  },
-  ViewkH: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: 6,
-    marginBottom: 6,
-  },
   IconEP: {
     right: 8,
   },
@@ -451,6 +432,19 @@ const styles = StyleSheet.create({
     fontSize: 12,
   },
   Viewy4: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 6,
+    marginBottom: 6,
+  },
+  Iconpa: {
+    right: 8,
+  },
+  Text_74: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
+  ViewkH: {
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 6,

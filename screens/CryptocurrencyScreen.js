@@ -96,9 +96,7 @@ const CryptocurrencyScreen = props => {
             <SwiperItem style={styles.SwiperItemzS}>
               <Image
                 style={styles.ImageUd}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
+                source={Images.Cryptocurrency19201080Px}
                 resizeMode={'cover'}
               />
               <Text style={[styles.TextC0, { color: theme.colors.light }]}>
@@ -110,7 +108,7 @@ const CryptocurrencyScreen = props => {
                   style={styles.Icon_3N}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/shape-oval-plus'}
                 />
                 <Text style={[styles.TextjN, { color: theme.colors.light }]}>
                   {
@@ -124,7 +122,7 @@ const CryptocurrencyScreen = props => {
                   style={styles.Icon_2E}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'FontAwesome/chain'}
                 />
                 <Text style={[styles.Textm5, { color: theme.colors.light }]}>
                   {
@@ -138,7 +136,7 @@ const CryptocurrencyScreen = props => {
                   style={styles.Icongw}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Foundation/bitcoin-circle'}
                 />
                 <Text style={[styles.TextaF, { color: theme.colors.light }]}>
                   {
@@ -151,10 +149,8 @@ const CryptocurrencyScreen = props => {
             <SwiperItem style={styles.SwiperItemGf}>
               <Image
                 style={styles.ImageIs}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
                 resizeMode={'cover'}
+                source={Images.Scarcity}
               />
               <Text style={[styles.Texty0, { color: theme.colors.light }]}>
                 {'What Are Crypto Coins'}
@@ -165,7 +161,7 @@ const CryptocurrencyScreen = props => {
                   style={styles.Icontz}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialIcons/attach-money'}
                 />
                 <Text style={[styles.Text_9O, { color: theme.colors.light }]}>
                   {
@@ -179,7 +175,7 @@ const CryptocurrencyScreen = props => {
                   style={styles.IconRx}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Ionicons/business'}
                 />
                 <Text style={[styles.TexteB, { color: theme.colors.light }]}>
                   {
@@ -193,7 +189,7 @@ const CryptocurrencyScreen = props => {
                   style={styles.Icon_5a}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Entypo/sports-club'}
                 />
                 <Text style={[styles.TextL4, { color: theme.colors.light }]}>
                   {
@@ -204,13 +200,7 @@ const CryptocurrencyScreen = props => {
             </SwiperItem>
 
             <SwiperItem style={styles.SwiperItemNh}>
-              <Image
-                style={styles.Imageld}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
-                resizeMode={'cover'}
-              />
+              <Image style={styles.Imageld} resizeMode={'cover'} />
               <Text style={[styles.Text_0c, { color: theme.colors.light }]}>
                 {'What Are Crypto Tokens'}
               </Text>
@@ -220,7 +210,7 @@ const CryptocurrencyScreen = props => {
                   style={styles.IconK3}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'AntDesign/copyright'}
                 />
                 <Text style={[styles.Text_9Q, { color: theme.colors.light }]}>
                   {
@@ -234,7 +224,7 @@ const CryptocurrencyScreen = props => {
                   style={styles.IconVQ}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/format-wrap-tight'}
                 />
                 <Text style={[styles.TextDq, { color: theme.colors.light }]}>
                   {
@@ -248,7 +238,7 @@ const CryptocurrencyScreen = props => {
                   style={styles.Icon_92}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/security-network'}
                 />
                 <Text style={[styles.TextuV, { color: theme.colors.light }]}>
                   {
@@ -268,7 +258,7 @@ const CryptocurrencyScreen = props => {
                   style={styles.IconDI}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/parachute'}
                 />
                 <Text style={[styles.TextNB, { color: theme.colors.light }]}>
                   {
@@ -286,7 +276,7 @@ const CryptocurrencyScreen = props => {
                   style={styles.IconNz}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'SimpleLineIcons/present'}
                 />
                 <Text style={[styles.TextMC, { color: theme.colors.light }]}>
                   {
@@ -304,7 +294,7 @@ const CryptocurrencyScreen = props => {
                   style={styles.IconC5}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Ionicons/ios-bonfire-sharp'}
                 />
                 <Text style={[styles.TextnE, { color: theme.colors.light }]}>
                   {'Removing coins/tokens from the available supply.'}
@@ -320,7 +310,7 @@ const CryptocurrencyScreen = props => {
                   style={styles.IconXH}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/cash-refund'}
                 />
                 <Text style={[styles.Textkb, { color: theme.colors.light }]}>
                   {
@@ -334,7 +324,7 @@ const CryptocurrencyScreen = props => {
                   style={styles.IconmO}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Foundation/bitcoin-circle'}
                 />
                 <Text style={[styles.Text_1d, { color: theme.colors.light }]}>
                   {
@@ -348,7 +338,7 @@ const CryptocurrencyScreen = props => {
                   style={styles.IcontJ}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Foundation/page-search'}
                 />
                 <Text style={[styles.TextPx, { color: theme.colors.light }]}>
                   {'Always do research before investing in a new project.'}

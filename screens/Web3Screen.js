@@ -63,7 +63,11 @@ const Web3Screen = props => {
           <Text style={[styles.TextcP, { color: theme.colors.primary }]}>
             {'Ownership'}
           </Text>
-
+          <Image
+            style={styles.ImageXL}
+            source={Images.Token}
+            resizeMode={'contain'}
+          />
           <View style={styles.View_9u} pointerEvents={'auto'}>
             <View pointerEvents={'auto'}>
               <Text style={[styles.TextHG, { color: theme.colors.light }]}>
@@ -199,6 +203,10 @@ const styles = StyleSheet.create({
     fontSize: 77,
     marginTop: 12,
     marginBottom: 24,
+  },
+  ImageXL: {
+    width: '100%',
+    height: 250,
   },
   TextHG: {
     fontFamily: 'RobotoCondensed_700Bold',

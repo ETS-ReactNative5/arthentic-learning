@@ -88,7 +88,7 @@ const HomeScreen = props => {
                   color: theme.colors.yellow,
                 },
               ]}
-              title={'Accessing Web3\n(Wallets)'}
+              title={'Accessing Web3\n(All About Wallets)'}
             />
           </View>
 

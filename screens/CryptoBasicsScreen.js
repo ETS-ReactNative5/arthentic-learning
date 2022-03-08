@@ -46,7 +46,7 @@ const CryptoBasicsScreen = props => {
           <ButtonSolid
             onPress={() => {
               try {
-                navigation.navigate('InvestorMenuScreen');
+                navigation.goBack();
               } catch (err) {
                 console.error(err);
               }
@@ -235,7 +235,7 @@ const CryptoBasicsScreen = props => {
                       <Icon
                         size={32}
                         color={theme.colors.primary}
-                        name={'Ionicons/md-disc-outline'}
+                        name={'FontAwesome/users'}
                       />
                     </Circle>
                   </Circle>

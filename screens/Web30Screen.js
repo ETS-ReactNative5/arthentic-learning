@@ -96,10 +96,8 @@ const Web30Screen = props => {
             <SwiperItem style={styles.SwiperItemdN}>
               <Image
                 style={styles.ImageJr}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
-                resizeMode={'cover'}
+                source={Images.Web3}
+                resizeMode={'contain'}
               />
               <Text style={[styles.Text_6Z, { color: theme.colors.light }]}>
                 {'Web3 Basics'}
@@ -110,7 +108,7 @@ const Web30Screen = props => {
                   style={styles.Icon_2i}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'FontAwesome/internet-explorer'}
                 />
                 <Text style={[styles.Textwq, { color: theme.colors.light }]}>
                   {
@@ -124,7 +122,7 @@ const Web30Screen = props => {
                   style={styles.IconsK}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Entypo/facebook-with-circle'}
                 />
                 <Text style={[styles.Textp9, { color: theme.colors.light }]}>
                   {
@@ -138,7 +136,7 @@ const Web30Screen = props => {
                   style={styles.IconUb}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'FontAwesome/connectdevelop'}
                 />
                 <Text style={[styles.TextjM, { color: theme.colors.light }]}>
                   {

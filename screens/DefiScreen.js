@@ -96,25 +96,37 @@ const DefiScreen = props => {
             <SwiperItem style={styles.SwiperItemvv}>
               <Image
                 style={styles.ImageCt}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
+                source={Images.Scarcity}
                 resizeMode={'cover'}
               />
               <Text style={[styles.TextkZ, { color: theme.colors.light }]}>
                 {'Introducing a New System of Value'}
               </Text>
 
+              <View style={styles.ViewEs} pointerEvents={'auto'}>
+                <Icon
+                  style={styles.Icony9}
+                  size={24}
+                  color={theme.colors.light}
+                  name={'MaterialCommunityIcons/office-building'}
+                />
+                <Text style={[styles.TextmM, { color: theme.colors.light }]}>
+                  {
+                    'Decentralized Finance (DeFi), as opposed to Centralized Finance, is when no one person, bank, or government controls the financial system.\n'
+                  }
+                </Text>
+              </View>
+
               <View style={styles.View_2d} pointerEvents={'auto'}>
                 <Icon
                   style={styles.IconEV}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Ionicons/people-circle'}
                 />
                 <Text style={[styles.TextYP, { color: theme.colors.light }]}>
                   {
-                    'Decentralized Finance is one of the most important aspects of the coming web3 rollout, focusing on peer-to-peer transactions.\n'
+                    'DeFi is one of the most important aspects of the coming web3 rollout, focusing on peer-to-peer transactions.\n'
                   }
                 </Text>
               </View>
@@ -124,7 +136,7 @@ const DefiScreen = props => {
                   style={styles.Iconbt}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'AntDesign/profile'}
                 />
                 <Text style={[styles.Textbg, { color: theme.colors.light }]}>
                   {
@@ -138,7 +150,7 @@ const DefiScreen = props => {
                   style={styles.IconGb}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/state-machine'}
                 />
                 <Text style={[styles.Textkg, { color: theme.colors.light }]}>
                   {
@@ -151,9 +163,7 @@ const DefiScreen = props => {
             <SwiperItem style={styles.SwiperItemen}>
               <Image
                 style={styles.ImageuC}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
+                source={Images.IntroToDefi19201080Px}
                 resizeMode={'cover'}
               />
               <Text style={[styles.Text_1t, { color: theme.colors.light }]}>
@@ -165,7 +175,7 @@ const DefiScreen = props => {
                   style={styles.IconRp}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Entypo/colours'}
                 />
                 <Text style={[styles.TextOQ, { color: theme.colors.light }]}>
                   {
@@ -179,11 +189,11 @@ const DefiScreen = props => {
                   style={styles.Iconwb}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialIcons/image-aspect-ratio'}
                 />
                 <Text style={[styles.TextFj, { color: theme.colors.light }]}>
                   {
-                    'The funds run on a ratio of one currency to another. For example, an investor will put 50 of Coin A and 50 of Coin B(Assuming equal value) into the pool. A trader can then trade their Coin A for Coin B using the pool. The price of the coins in the pool will change so that there’s always an equal ratio.\n'
+                    'The funds run on a ratio of one currency to another. \n\nFor example, an investor will put 50 of Coin A and 50 of Coin B(Assuming equal value) into the pool. A trader can then trade their Coin A for Coin B using the pool. The price of the coins in the pool will change so that there’s always an equal ratio.\n'
                   }
                 </Text>
               </View>
@@ -191,7 +201,7 @@ const DefiScreen = props => {
 
             <SwiperItem style={styles.SwiperItemwp}>
               <Text style={[styles.Textmp, { color: theme.colors.light }]}>
-                {'Automated Market Maker'}
+                {'Automated Market Maker (AMM)'}
               </Text>
 
               <View style={styles.ViewkG} pointerEvents={'auto'}>
@@ -199,7 +209,7 @@ const DefiScreen = props => {
                   style={styles.IconWi}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'AntDesign/codesquareo'}
                 />
                 <Text style={[styles.TextSL, { color: theme.colors.light }]}>
                   {
@@ -213,7 +223,7 @@ const DefiScreen = props => {
                   style={styles.IconHq}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/storefront'}
                 />
                 <Text style={[styles.TextQw, { color: theme.colors.light }]}>
                   {
@@ -227,7 +237,7 @@ const DefiScreen = props => {
                   style={styles.IconaH}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'FontAwesome/balance-scale'}
                 />
                 <Text style={[styles.TextdZ, { color: theme.colors.light }]}>
                   {
@@ -245,7 +255,7 @@ const DefiScreen = props => {
                   style={styles.Iconze}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/close-circle-multiple-outline'}
                 />
                 <Text style={[styles.TextVj, { color: theme.colors.light }]}>
                   {
@@ -259,7 +269,7 @@ const DefiScreen = props => {
                   style={styles.IconH1}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'FontAwesome/exchange'}
                 />
                 <Text style={[styles.TextLV, { color: theme.colors.light }]}>
                   {
@@ -273,7 +283,7 @@ const DefiScreen = props => {
                   style={styles.Iconpj}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/video-stabilization'}
                 />
                 <Text style={[styles.Text_9h, { color: theme.colors.light }]}>
                   {
@@ -293,7 +303,7 @@ const DefiScreen = props => {
                   style={styles.IconpE}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/format-float-left'}
                 />
                 <Text style={[styles.TextR3, { color: theme.colors.light }]}>
                   {
@@ -307,7 +317,7 @@ const DefiScreen = props => {
                   style={styles.IconxF}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Foundation/bitcoin-circle'}
                 />
                 <Text style={[styles.Textzs, { color: theme.colors.light }]}>
                   {
@@ -325,7 +335,7 @@ const DefiScreen = props => {
                   style={styles.Icon_4b}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialIcons/corporate-fare'}
                 />
                 <Text style={[styles.Text_6G, { color: theme.colors.light }]}>
                   {
@@ -343,7 +353,9 @@ const DefiScreen = props => {
                   style={styles.IconWy}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={
+                    'MaterialCommunityIcons/image-filter-center-focus-strong'
+                  }
                 />
                 <Text style={[styles.Texttq, { color: theme.colors.light }]}>
                   {
@@ -357,7 +369,7 @@ const DefiScreen = props => {
                   style={styles.IconCE}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Ionicons/color-filter-sharp'}
                 />
                 <Text style={[styles.Text_0g, { color: theme.colors.light }]}>
                   {
@@ -512,6 +524,18 @@ const styles = StyleSheet.create({
     marginBottom: 12,
     fontFamily: 'RobotoCondensed_400Regular',
     fontSize: 18,
+  },
+  Icony9: {
+    right: 8,
+  },
+  TextmM: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
+  ViewEs: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 6,
   },
   IconEV: {
     right: 8,

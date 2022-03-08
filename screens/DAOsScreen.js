@@ -96,9 +96,7 @@ const DAOsScreen = props => {
             <SwiperItem style={styles.SwiperItem_7g}>
               <Image
                 style={styles.Imagece}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
+                source={Images.DAO}
                 resizeMode={'cover'}
               />
               <Text style={[styles.Text_8n, { color: theme.colors.light }]}>
@@ -110,11 +108,11 @@ const DAOsScreen = props => {
                   style={styles.IconXa}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/google-circles-communities'}
                 />
                 <Text style={[styles.TextJh, { color: theme.colors.light }]}>
                   {
-                    'A Decentralized Autonomous Organization can be thought of as an LLC on a blockchain. \n'
+                    'A Decentralized Autonomous Organization (DAO) can be thought of as an LLC on a blockchain. \n'
                   }
                 </Text>
               </View>
@@ -124,7 +122,7 @@ const DAOsScreen = props => {
                   style={styles.IconmF}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialIcons/how-to-vote'}
                 />
                 <Text style={[styles.Textoj, { color: theme.colors.light }]}>
                   {
@@ -138,7 +136,7 @@ const DAOsScreen = props => {
                   style={styles.IconqU}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Entypo/key'}
                 />
                 <Text style={[styles.Texthn, { color: theme.colors.light }]}>
                   {
@@ -151,9 +149,7 @@ const DAOsScreen = props => {
             <SwiperItem style={styles.SwiperItem_9J}>
               <Image
                 style={styles.Image_4a}
-                source={{
-                  uri: 'https://static.draftbit.com/images/placeholder-image.png',
-                }}
+                source={Images.DecentralizedApps1}
                 resizeMode={'cover'}
               />
               <Text style={[styles.Textw9, { color: theme.colors.light }]}>
@@ -165,7 +161,7 @@ const DAOsScreen = props => {
                   style={styles.IconpX}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'FontAwesome/bank'}
                 />
                 <Text style={[styles.TextQ1, { color: theme.colors.light }]}>
                   {
@@ -179,7 +175,7 @@ const DAOsScreen = props => {
                   style={styles.Iconnj}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'MaterialCommunityIcons/microsoft-xbox-controller-view'}
                 />
                 <Text style={[styles.TextGc, { color: theme.colors.light }]}>
                   {
@@ -193,7 +189,7 @@ const DAOsScreen = props => {
                   style={styles.Icony4}
                   size={24}
                   color={theme.colors.light}
-                  name={'FontAwesome/dot-circle-o'}
+                  name={'Ionicons/people-sharp'}
                 />
                 <Text style={[styles.TextbR, { color: theme.colors.light }]}>
                   {

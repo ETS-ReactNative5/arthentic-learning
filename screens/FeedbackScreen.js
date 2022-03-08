@@ -2,11 +2,14 @@ import React from 'react';
 import Images from '../config/Images';
 import {
   ButtonSolid,
+  Icon,
   LinearGradient,
   ScreenContainer,
   TextField,
+  Touchable,
   withTheme,
 } from '@draftbit/ui';
+import * as WebBrowser from 'expo-web-browser';
 import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 const FeedbackScreen = props => {
@@ -154,6 +157,84 @@ const FeedbackScreen = props => {
               title={'Thank You For Letting Us Know!'}
             />
           </View>
+
+          <View style={styles.View_94} pointerEvents={'auto'}>
+            <Touchable
+              onPress={async () => {
+                try {
+                  await WebBrowser.openBrowserAsync(
+                    'https://discord.gg/ApGAwuNB8W'
+                  );
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+              style={styles.Touchable_1Z}
+            >
+              <Icon
+                size={24}
+                name={'MaterialCommunityIcons/discord'}
+                color={theme.colors.medium}
+              />
+            </Touchable>
+
+            <Touchable
+              onPress={async () => {
+                try {
+                  await WebBrowser.openBrowserAsync(
+                    'https://twitter.com/ArthenticMe'
+                  );
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+              style={styles.TouchableQE}
+            >
+              <Icon
+                size={24}
+                color={theme.colors.medium}
+                name={'AntDesign/twitter'}
+              />
+            </Touchable>
+
+            <Touchable
+              onPress={async () => {
+                try {
+                  await WebBrowser.openBrowserAsync(
+                    'https://www.instagram.com/arthenticme/'
+                  );
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+              style={styles.Touchablesf}
+            >
+              <Icon
+                size={24}
+                color={theme.colors.medium}
+                name={'AntDesign/instagram'}
+              />
+            </Touchable>
+
+            <Touchable
+              onPress={async () => {
+                try {
+                  await WebBrowser.openBrowserAsync(
+                    'https://www.arthenticme.com'
+                  );
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+              style={styles.TouchableHh}
+            >
+              <Icon
+                size={24}
+                color={theme.colors.medium}
+                name={'MaterialCommunityIcons/web'}
+              />
+            </Touchable>
+          </View>
         </ScrollView>
       </LinearGradient>
     </ScreenContainer>
@@ -229,6 +310,27 @@ const styles = StyleSheet.create({
   },
   Viewjm: {
     alignSelf: 'center',
+  },
+  Touchable_1Z: {
+    marginLeft: 12,
+    marginRight: 12,
+  },
+  TouchableQE: {
+    marginLeft: 12,
+    marginRight: 12,
+  },
+  Touchablesf: {
+    marginLeft: 12,
+    marginRight: 12,
+  },
+  TouchableHh: {
+    marginLeft: 12,
+    marginRight: 12,
+  },
+  View_94: {
+    alignSelf: 'center',
+    marginTop: 24,
+    flexDirection: 'row',
   },
   LinearGradientQj: {
     width: '100%',

@@ -4,11 +4,13 @@ import * as Font from 'expo-font';
 import {
   AntDesign,
   Entypo,
+  Feather,
   FontAwesome,
   Foundation,
   Ionicons,
   MaterialCommunityIcons,
   MaterialIcons,
+  SimpleLineIcons,
 } from '@expo/vector-icons';
 
 import IMAGES from './Images.js';
@@ -32,11 +34,13 @@ export default function cacheAssetsAsync() {
   const iconAssets = cacheFonts([
     AntDesign.font,
     Entypo.font,
+    Feather.font,
     FontAwesome.font,
     Foundation.font,
     Ionicons.font,
     MaterialCommunityIcons.font,
     MaterialIcons.font,
+    SimpleLineIcons.font,
   ]);
 
   return Promise.all([...imageAssets, ...iconAssets]);

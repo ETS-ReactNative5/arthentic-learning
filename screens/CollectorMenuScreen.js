@@ -84,11 +84,37 @@ const CollectorMenuScreen = props => {
         </View>
 
         <ScrollView showsVerticalScrollIndicator={true} bounces={true}>
-          <View style={styles.ViewtV} pointerEvents={'auto'}>
+          <View style={styles.ViewJI} pointerEvents={'auto'}>
             <Touchable
               onPress={() => {
                 try {
-                  navigation.navigate('NFTsCollectorsScreen');
+                  navigation.navigate('CryptoBasicsScreen');
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+            >
+              <View style={styles.ViewN6} pointerEvents={'auto'}>
+                <Circle size={80} bgColor={theme.colors.secondary}>
+                  <Circle size={70} bgColor={theme.colors.divider}>
+                    <Icon
+                      size={32}
+                      color={theme.colors.primary}
+                      name={'MaterialCommunityIcons/cellphone-basic'}
+                    />
+                  </Circle>
+                </Circle>
+
+                <Text style={[styles.TextxO, { color: theme.colors.light }]}>
+                  {'Crypto Basics'}
+                </Text>
+              </View>
+            </Touchable>
+
+            <Touchable
+              onPress={() => {
+                try {
+                  navigation.navigate('NFTsScreen');
                 } catch (err) {
                   console.error(err);
                 }
@@ -209,6 +235,16 @@ const styles = StyleSheet.create({
     marginTop: 12,
     marginBottom: 24,
   },
+  TextxO: {
+    fontSize: 12,
+    fontFamily: 'Roboto_400Regular',
+    textAlign: 'center',
+  },
+  ViewN6: {
+    alignItems: 'center',
+    marginTop: 6,
+    marginBottom: 6,
+  },
   TextNC: {
     fontSize: 12,
     fontFamily: 'Roboto_400Regular',
@@ -219,9 +255,11 @@ const styles = StyleSheet.create({
     marginTop: 6,
     marginBottom: 6,
   },
-  ViewtV: {
+  ViewJI: {
     alignItems: 'center',
     justifyContent: 'space-evenly',
+    flexDirection: 'row',
+    marginTop: 24,
   },
   Textpu: {
     fontSize: 12,
