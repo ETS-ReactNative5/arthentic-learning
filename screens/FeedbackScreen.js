@@ -147,6 +147,13 @@ const FeedbackScreen = props => {
 
           <View style={styles.Viewjm} pointerEvents={'auto'}>
             <ButtonSolid
+              onPress={() => {
+                try {
+                  navigation.navigate('HomeScreen');
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
               style={[
                 styles.ButtonSolidbW,
                 {

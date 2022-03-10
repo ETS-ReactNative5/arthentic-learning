@@ -179,6 +179,18 @@ const HomeScreen = props => {
               </Touchable>
             </View>
           </View>
+
+          <View style={styles.View_72} pointerEvents={'auto'}>
+            <Text style={[styles.TextfP, { color: theme.colors.light }]}>
+              {'Safe Harbor Statement'}
+            </Text>
+
+            <Text style={[styles.TextxX, { color: theme.colors.light }]}>
+              {
+                'We do not consider ourselves the definitive source on any topics in this app. Please do your own research and let us know if we got anything wrong!'
+              }
+            </Text>
+          </View>
         </ScrollView>
       </LinearGradient>
     </ScreenContainer>
@@ -272,6 +284,23 @@ const styles = StyleSheet.create({
   ViewyN: {
     alignItems: 'center',
     justifyContent: 'space-evenly',
+  },
+  TextfP: {
+    fontFamily: 'RobotoCondensed_700Bold',
+    fontSize: 24,
+    textAlign: 'center',
+  },
+  TextxX: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 14,
+    marginTop: 6,
+    marginBottom: 6,
+  },
+  View_72: {
+    alignItems: 'center',
+    paddingLeft: 16,
+    paddingRight: 16,
+    marginTop: 24,
   },
   LinearGradientPo: {
     width: '100%',
