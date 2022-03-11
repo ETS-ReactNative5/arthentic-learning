@@ -39,8 +39,8 @@ const BlockchainScreen = props => {
               styles.ButtonSolidr0,
               {
                 color: theme.colors.light,
-                borderRadius: 12,
                 backgroundColor: theme.colors.mediumInverse,
+                borderBottomRightRadius: 12,
               },
             ]}
             title={'Feedback'}
@@ -58,7 +58,7 @@ const BlockchainScreen = props => {
               {
                 color: theme.colors.light,
                 backgroundColor: theme.colors.mediumInverse,
-                borderRadius: 12,
+                borderBottomLeftRadius: 12,
               },
             ]}
             title={'Back to\nLearning'}

@@ -37,9 +37,9 @@ const HomeScreen = props => {
             style={[
               styles.ButtonSolid_6u,
               {
-                borderRadius: 12,
                 backgroundColor: theme.colors.secondary,
                 color: theme.colors.light,
+                borderBottomLeftRadius: 12,
               },
             ]}
             title={'Feedback'}
@@ -67,8 +67,8 @@ const HomeScreen = props => {
               style={[
                 styles.ButtonSolidDb,
                 {
-                  backgroundColor: theme.colors.mediumInverse,
                   color: theme.colors.primary,
+                  backgroundColor: theme.colors.secondary,
                 },
               ]}
               title={'A New Internet is Here!'}
@@ -84,8 +84,8 @@ const HomeScreen = props => {
               style={[
                 styles.ButtonSolidAM,
                 {
-                  backgroundColor: theme.colors.mediumInverse,
                   color: theme.colors.yellow,
+                  backgroundColor: theme.colors.secondary,
                 },
               ]}
               title={'Accessing Web3\n(All About Wallets)'}

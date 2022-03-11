@@ -37,8 +37,8 @@ const CollectorMenuScreen = props => {
               styles.ButtonSolidaw,
               {
                 color: theme.colors.light,
-                borderRadius: 12,
                 backgroundColor: theme.colors.mediumInverse,
+                borderBottomRightRadius: 12,
               },
             ]}
             title={'Feedback'}
@@ -55,8 +55,8 @@ const CollectorMenuScreen = props => {
               styles.ButtonSolidsD,
               {
                 color: theme.colors.light,
-                borderRadius: 12,
                 backgroundColor: theme.colors.mediumInverse,
+                borderBottomLeftRadius: 12,
               },
             ]}
             title={'Back Home'}

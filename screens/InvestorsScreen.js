@@ -37,6 +37,7 @@ const InvestorsScreen = props => {
               {
                 backgroundColor: theme.colors.primary,
                 color: theme.colors.background,
+                borderBottomLeftRadius: 12,
               },
             ]}
             title={'Back Home'}
@@ -148,7 +149,6 @@ const InvestorsScreen = props => {
 
 const styles = StyleSheet.create({
   ButtonSolidI5: {
-    borderRadius: 12,
     fontFamily: 'RobotoCondensed_700Bold',
     textAlign: 'center',
   },

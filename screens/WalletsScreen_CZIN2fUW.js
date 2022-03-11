@@ -38,6 +38,7 @@ const WalletsScreen_CZIN2fUW = props => {
               {
                 backgroundColor: theme.colors.primary,
                 color: theme.colors.background,
+                borderBottomLeftRadius: 12,
               },
             ]}
             title={'Back Home'}
@@ -292,7 +293,6 @@ const WalletsScreen_CZIN2fUW = props => {
 
 const styles = StyleSheet.create({
   ButtonSolidfQ: {
-    borderRadius: 12,
     fontFamily: 'RobotoCondensed_700Bold',
     textAlign: 'center',
   },

@@ -10,7 +10,7 @@
       "android",
       "web"
     ],
-    "version": "1.17.0",
+    "version": "1.18.0",
     "orientation": "default",
     "icon": "./assets/images/icon.png",
     "splash": {
@@ -24,10 +24,10 @@
     "ios": {
       "bundleIdentifier": "com.draftbit.untitledapp",
       "supportsTablet": false,
-      "buildNumber": "1.17.0"
+      "buildNumber": "1.18.0"
     },
     "android": {
-      "versionCode": 17,
+      "versionCode": 18,
       "package": "com.draftbit.untitledapp",
       "permissions": []
     },

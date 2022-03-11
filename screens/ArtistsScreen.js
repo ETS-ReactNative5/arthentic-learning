@@ -37,6 +37,7 @@ const ArtistsScreen = props => {
               {
                 backgroundColor: theme.colors.primary,
                 color: theme.colors.background,
+                borderBottomLeftRadius: 12,
               },
             ]}
             title={'Back Home'}
@@ -162,7 +163,6 @@ const ArtistsScreen = props => {
 
 const styles = StyleSheet.create({
   ButtonSolidml: {
-    borderRadius: 12,
     fontFamily: 'RobotoCondensed_700Bold',
     textAlign: 'center',
   },

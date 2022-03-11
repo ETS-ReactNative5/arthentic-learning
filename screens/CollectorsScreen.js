@@ -37,6 +37,7 @@ const CollectorsScreen = props => {
               {
                 backgroundColor: theme.colors.primary,
                 color: theme.colors.background,
+                borderBottomLeftRadius: 12,
               },
             ]}
             title={'Back Home'}
@@ -134,7 +135,6 @@ const CollectorsScreen = props => {
 
 const styles = StyleSheet.create({
   ButtonSolidhC: {
-    borderRadius: 12,
     fontFamily: 'RobotoCondensed_700Bold',
     textAlign: 'center',
   },

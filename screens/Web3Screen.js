@@ -37,6 +37,7 @@ const Web3Screen = props => {
               {
                 backgroundColor: theme.colors.primary,
                 color: theme.colors.background,
+                borderBottomLeftRadius: 12,
               },
             ]}
             title={'Back Home'}
@@ -179,7 +180,6 @@ const Web3Screen = props => {
 
 const styles = StyleSheet.create({
   ButtonSolidmm: {
-    borderRadius: 12,
     fontFamily: 'RobotoCondensed_700Bold',
     textAlign: 'center',
   },

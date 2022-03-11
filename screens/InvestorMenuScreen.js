@@ -37,8 +37,8 @@ const InvestorMenuScreen = props => {
               styles.ButtonSolidHm,
               {
                 color: theme.colors.light,
-                borderRadius: 12,
                 backgroundColor: theme.colors.mediumInverse,
+                borderBottomRightRadius: 12,
               },
             ]}
             title={'Feedback'}
@@ -55,8 +55,8 @@ const InvestorMenuScreen = props => {
               styles.ButtonSolidke,
               {
                 color: theme.colors.light,
-                borderRadius: 12,
                 backgroundColor: theme.colors.mediumInverse,
+                borderBottomLeftRadius: 12,
               },
             ]}
             title={'Back Home'}

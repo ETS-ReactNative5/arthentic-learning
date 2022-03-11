@@ -37,8 +37,8 @@ const ArtistMenuScreen = props => {
               styles.ButtonSolidpI,
               {
                 color: theme.colors.light,
-                borderRadius: 12,
                 backgroundColor: theme.colors.mediumInverse,
+                borderBottomRightRadius: 12,
               },
             ]}
             title={'Feedback'}
@@ -55,8 +55,8 @@ const ArtistMenuScreen = props => {
               styles.ButtonSolidn9,
               {
                 color: theme.colors.light,
-                borderRadius: 12,
                 backgroundColor: theme.colors.mediumInverse,
+                borderBottomLeftRadius: 12,
               },
             ]}
             title={'Back Home'}

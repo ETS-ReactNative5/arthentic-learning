@@ -40,7 +40,7 @@ const MetaverseScreen = props => {
               {
                 color: theme.colors.light,
                 backgroundColor: theme.colors.mediumInverse,
-                borderRadius: 12,
+                borderBottomLeftRadius: 12,
               },
             ]}
             title={'Back Home'}
