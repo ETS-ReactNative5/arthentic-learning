@@ -1,16 +1,16 @@
 {
   "expo": {
-    "name": "Pursuit of NFTs",
-    "slug": "pursuit-of-n-f-ts",
-    "scheme": "pursuit-of-n-f-ts",
-    "description": "Financial Literacy for Everyone",
+    "name": "NFTs and Me",
+    "slug": "nfts-and-me",
+    "scheme": "nfts-and-me",
+    "description": "Web3 and Financial Literacy for Everyone",
     "privacy": "unlisted",
     "platforms": [
       "ios",
       "android",
       "web"
     ],
-    "version": "1.18.0",
+    "version": "1.0.0",
     "orientation": "default",
     "icon": "./assets/images/icon.png",
     "splash": {
@@ -24,10 +24,10 @@
     "ios": {
       "bundleIdentifier": "com.draftbit.untitledapp",
       "supportsTablet": false,
-      "buildNumber": "1.18.0"
+      "buildNumber": "1.0.0"
     },
     "android": {
-      "versionCode": 18,
+      "versionCode": 1,
       "package": "com.draftbit.untitledapp",
       "permissions": []
     },

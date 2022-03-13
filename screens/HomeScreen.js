@@ -38,7 +38,7 @@ const HomeScreen = props => {
               styles.ButtonSolid_6u,
               {
                 backgroundColor: theme.colors.secondary,
-                color: theme.colors.light,
+                color: theme.colors.yellow,
                 borderBottomLeftRadius: 12,
               },
             ]}
@@ -84,7 +84,7 @@ const HomeScreen = props => {
               style={[
                 styles.ButtonSolidAM,
                 {
-                  color: theme.colors.yellow,
+                  color: theme.colors.primary,
                   backgroundColor: theme.colors.secondary,
                 },
               ]}

@@ -1,8 +1,8 @@
 {
   "private": true,
-  "name": "pursuit-of-n-f-ts",
-  "homepage": "https://pursuit-of-n-f-ts.draftbit.app",
-  "description": "Pursuit of NFTs, powered by Draftbit",
+  "name": "nfts-and-me",
+  "homepage": "https://nfts-and-me.draftbit.app",
+  "description": "NFTs and Me, powered by Draftbit",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
