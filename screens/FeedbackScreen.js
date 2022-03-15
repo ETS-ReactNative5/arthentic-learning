@@ -1,4 +1,6 @@
 import React from 'react';
+import * as FeedbackApi from '../apis/FeedbackApi.js';
+import * as GlobalVariables from '../config/GlobalVariableContext';
 import Images from '../config/Images';
 import {
   ButtonSolid,
@@ -13,8 +15,13 @@ import * as WebBrowser from 'expo-web-browser';
 import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 const FeedbackScreen = props => {
+  const Constants = GlobalVariables.useValues();
+  const Variables = Constants;
+
   const { theme } = props;
   const { navigation } = props;
+
+  const testPostPOST = FeedbackApi.useTestPostPOST();
 
   const [textAreaValue, setTextAreaValue] = React.useState('');
   const [textFieldValue, setTextFieldValue] = React.useState('');
@@ -81,29 +88,6 @@ const FeedbackScreen = props => {
                 }
               }}
               style={[
-                styles.TextFieldEL,
-                {
-                  color: theme.colors.background,
-                  borderRadius: 12,
-                  borderColor: theme.colors.background,
-                  backgroundColor: theme.colors.medium,
-                },
-              ]}
-              placeholder={'Name'}
-              type={'solid'}
-              value={textFieldValue}
-              placeholderTextColor={theme.colors.background}
-            />
-            <TextField
-              onChangeText={newStyledTextFieldValue => {
-                const textFieldValue = newStyledTextFieldValue;
-                try {
-                  setTextFieldValue(textFieldValue);
-                } catch (err) {
-                  console.error(err);
-                }
-              }}
-              style={[
                 styles.TextFieldEi,
                 {
                   color: theme.colors.background,
@@ -112,7 +96,7 @@ const FeedbackScreen = props => {
                   borderColor: theme.colors.background,
                 },
               ]}
-              placeholder={'IG/Twitter/Email'}
+              placeholder={'IG, Twitter, or Email'}
               type={'solid'}
               value={textFieldValue}
               placeholderTextColor={theme.colors.background}
@@ -147,8 +131,12 @@ const FeedbackScreen = props => {
 
           <View style={styles.Viewjm} pointerEvents={'auto'}>
             <ButtonSolid
-              onPress={() => {
+              onPress={async () => {
                 try {
+                  await testPostPOST.mutateAsync({
+                    feedback: textAreaValue,
+                    name: textFieldValue,
+                  });
                   navigation.navigate('HomeScreen');
                 } catch (err) {
                   console.error(err);
@@ -276,14 +264,6 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  TextFieldEL: {
-    fontSize: 18,
-    fontFamily: 'Roboto_400Regular',
-    marginTop: 12,
-    marginBottom: 12,
-    paddingTop: 8,
-    paddingBottom: 8,
   },
   TextFieldEi: {
     fontSize: 18,

@@ -6,7 +6,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 const DeviceVariables = {};
 const AppVariables = {
   Webflow_token:
-    'Bearer f911c99c5c63f4b2c5b2253476b26a342b6f39a3f264e8dc5800189d79668c7e',
+    'Bearer 5445c4f3267dc513a5a8146d84d8809cfb37105f25b968bf50940553068db04e',
   Accept_Version: '1.0.0',
 };
 const GlobalVariableContext = React.createContext();
