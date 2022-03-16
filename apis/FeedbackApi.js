@@ -30,7 +30,7 @@ export const getFeedbackGET = Constants =>
     })
     .then(res => res.json());
 
-export const useGetFeedbackGET = (args, { refetchInterval }) => {
+export const useGetFeedbackGET = (args, { refetchInterval } = {}) => {
   const Constants = GlobalVariables.useValues();
   const queryClient = useQueryClient();
   return useQuery(['feedback', args], () => getFeedbackGET(Constants, args), {
