@@ -1,13 +1,11 @@
 import React from 'react';
-import * as FeedbackApi from '../apis/FeedbackApi.js';
-import * as GlobalVariables from '../config/GlobalVariableContext';
 import Images from '../config/Images';
 import {
   ButtonSolid,
   Icon,
   LinearGradient,
   ScreenContainer,
-  TextField,
+  SwiperItem,
   Touchable,
   withTheme,
 } from '@draftbit/ui';
@@ -15,16 +13,8 @@ import * as WebBrowser from 'expo-web-browser';
 import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 const FeedbackScreen = props => {
-  const Constants = GlobalVariables.useValues();
-  const Variables = Constants;
-
   const { theme } = props;
   const { navigation } = props;
-
-  const testPostPOST = FeedbackApi.useTestPostPOST();
-
-  const [textAreaValue, setTextAreaValue] = React.useState('');
-  const [textFieldValue, setTextFieldValue] = React.useState('');
 
   return (
     <ScreenContainer>
@@ -35,27 +25,6 @@ const FeedbackScreen = props => {
         color1={theme.colors.background}
         color2={theme.colors.lightInverse}
       >
-        <View style={styles.View_2m} pointerEvents={'auto'}>
-          <ButtonSolid
-            onPress={() => {
-              try {
-                navigation.goBack();
-              } catch (err) {
-                console.error(err);
-              }
-            }}
-            style={[
-              styles.ButtonSolidsK,
-              {
-                color: theme.colors.light,
-                backgroundColor: theme.colors.mediumInverse,
-                borderBottomLeftRadius: 12,
-              },
-            ]}
-            title={'Back to\nLearning'}
-          />
-        </View>
-
         <View style={styles.Viewkw} pointerEvents={'auto'}>
           <Image
             style={styles.ImageTJ}
@@ -78,66 +47,42 @@ const FeedbackScreen = props => {
           </View>
 
           <View style={styles.Viewvw} pointerEvents={'auto'}>
-            <TextField
-              onChangeText={newStyledTextFieldValue => {
-                const textFieldValue = newStyledTextFieldValue;
-                try {
-                  setTextFieldValue(textFieldValue);
-                } catch (err) {
-                  console.error(err);
-                }
-              }}
-              style={[
-                styles.TextFieldEi,
-                {
-                  color: theme.colors.background,
-                  backgroundColor: theme.colors.medium,
-                  borderRadius: 12,
-                  borderColor: theme.colors.background,
-                },
-              ]}
-              placeholder={'IG, Twitter, or Email'}
-              type={'solid'}
-              value={textFieldValue}
-              placeholderTextColor={theme.colors.background}
-            />
-            <TextField
-              onChangeText={newStyledTextAreaValue => {
-                const textAreaValue = newStyledTextAreaValue;
-                try {
-                  setTextAreaValue(textAreaValue);
-                } catch (err) {
-                  console.error(err);
-                }
-              }}
-              style={[
-                styles.TextFieldWp,
-                {
-                  backgroundColor: theme.colors.medium,
-                  color: theme.colors.background,
-                  borderColor: theme.colors.background,
-                },
-              ]}
-              placeholder={
-                'How can we improve? Is there anything we got wrong? Do you need help with setting up an NFT or DAO? Anything we didn’t think of?'
-              }
-              type={'solid'}
-              multiline={true}
-              numberOfLines={6}
-              value={textAreaValue}
-              placeholderTextColor={theme.colors.background}
-            />
+            <SwiperItem style={styles.SwiperItemqW}>
+              <Text style={[styles.TextYp, { color: theme.colors.light }]}>
+                {'Please Contact Us!'}
+              </Text>
+
+              <View style={styles.ViewF9} pointerEvents={'auto'}>
+                <Icon
+                  style={styles.IconCh}
+                  size={24}
+                  color={theme.colors.light}
+                  name={'AntDesign/form'}
+                />
+                <Text style={[styles.Textsk, { color: theme.colors.light }]}>
+                  {'Fill out the form on our website or\n'}
+                </Text>
+              </View>
+
+              <View style={styles.ViewhG} pointerEvents={'auto'}>
+                <Icon
+                  style={styles.IconYL}
+                  size={24}
+                  color={theme.colors.light}
+                  name={'MaterialCommunityIcons/email'}
+                />
+                <Text style={[styles.TextUI, { color: theme.colors.light }]}>
+                  {'Email us at arthentic.me@gmail.com'}
+                </Text>
+              </View>
+            </SwiperItem>
           </View>
 
           <View style={styles.Viewjm} pointerEvents={'auto'}>
             <ButtonSolid
-              onPress={async () => {
+              onPress={() => {
                 try {
-                  await testPostPOST.mutateAsync({
-                    feedback: textAreaValue,
-                    name: textFieldValue,
-                  });
-                  navigation.navigate('HomeScreen');
+                  navigation.goBack();
                 } catch (err) {
                   console.error(err);
                 }
@@ -149,11 +94,30 @@ const FeedbackScreen = props => {
                   color: theme.colors.primary,
                 },
               ]}
-              title={'Thank You For Letting Us Know!'}
+              title={'Back to Learning'}
             />
           </View>
 
           <View style={styles.View_94} pointerEvents={'auto'}>
+            <Touchable
+              onPress={async () => {
+                try {
+                  await WebBrowser.openBrowserAsync(
+                    'https://www.instagram.com/arthenticme/'
+                  );
+                } catch (err) {
+                  console.error(err);
+                }
+              }}
+              style={styles.Touchablesf}
+            >
+              <Icon
+                size={24}
+                color={theme.colors.medium}
+                name={'AntDesign/instagram'}
+              />
+            </Touchable>
+
             <Touchable
               onPress={async () => {
                 try {
@@ -196,25 +160,6 @@ const FeedbackScreen = props => {
               onPress={async () => {
                 try {
                   await WebBrowser.openBrowserAsync(
-                    'https://www.instagram.com/arthenticme/'
-                  );
-                } catch (err) {
-                  console.error(err);
-                }
-              }}
-              style={styles.Touchablesf}
-            >
-              <Icon
-                size={24}
-                color={theme.colors.medium}
-                name={'AntDesign/instagram'}
-              />
-            </Touchable>
-
-            <Touchable
-              onPress={async () => {
-                try {
-                  await WebBrowser.openBrowserAsync(
                     'https://www.arthenticme.com'
                   );
                 } catch (err) {
@@ -237,20 +182,13 @@ const FeedbackScreen = props => {
 };
 
 const styles = StyleSheet.create({
-  ButtonSolidsK: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 12,
-    textAlign: 'center',
-  },
-  View_2m: {
-    alignItems: 'flex-end',
-  },
   ImageTJ: {
     width: 75,
     height: 75,
   },
   Viewkw: {
     alignItems: 'center',
+    marginTop: 48,
   },
   TextGi: {
     fontSize: 24,
@@ -265,21 +203,40 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  TextFieldEi: {
-    fontSize: 18,
-    fontFamily: 'Roboto_400Regular',
-    marginBottom: 12,
+  TextYp: {
     marginTop: 12,
-    paddingTop: 8,
-    paddingBottom: 8,
+    marginBottom: 12,
+    fontFamily: 'RobotoCondensed_400Regular',
+    fontSize: 18,
   },
-  TextFieldWp: {
-    fontSize: 18,
+  IconCh: {
+    right: 8,
+  },
+  Textsk: {
     fontFamily: 'Roboto_400Regular',
-    marginTop: 12,
-    marginBottom: 12,
-    paddingBottom: 12,
-    paddingTop: 12,
+    fontSize: 12,
+  },
+  ViewF9: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 6,
+  },
+  IconYL: {
+    right: 8,
+  },
+  TextUI: {
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 12,
+  },
+  ViewhG: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 6,
+    marginBottom: 6,
+  },
+  SwiperItemqW: {
+    paddingLeft: 16,
+    paddingRight: 16,
   },
   Viewvw: {
     marginTop: 50,
@@ -298,15 +255,15 @@ const styles = StyleSheet.create({
   Viewjm: {
     alignSelf: 'center',
   },
+  Touchablesf: {
+    marginLeft: 12,
+    marginRight: 12,
+  },
   Touchable_1Z: {
     marginLeft: 12,
     marginRight: 12,
   },
   TouchableQE: {
-    marginLeft: 12,
-    marginRight: 12,
-  },
-  Touchablesf: {
     marginLeft: 12,
     marginRight: 12,
   },
